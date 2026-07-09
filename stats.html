@@ -104,7 +104,7 @@ async function loadStats() {
     document.getElementById('domainsTable').querySelector('tbody').innerHTML = domainRows;
 
     // Exclusions
-    const excl = Array.isArray(exclusions) ? exclusions : (exclusions.patterns || []);
+    const excl = Array.isArray(exclusions) ? exclusions : (exclusions.value || exclusions.patterns || []);
     document.getElementById('exclusionsList').innerHTML = excl.length > 0
       ? excl.map(e => `<span class="exclusion-item">${e.pattern || e}</span>`).join('')
       : `<p style="color:#888;font-size:14px">No exclusion patterns configured</p>`;
