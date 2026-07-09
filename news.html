@@ -7,308 +7,195 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:1.7}
-
-.header{background:#1D0707;padding:18px 0;border-bottom:4px solid #FF5432}
+body{font-family:'Poppins',sans-serif;color:#333;background:#f8f6f3;line-height:1.7}
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-.header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-circle{width:36px;height:36px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:16px}
-.logo-text{color:#fff;font-weight:700;font-size:17px;letter-spacing:.3px}
-.logo-text span{color:#FF5432}
+
+/* Header */
+.top-bar{background:#1D0707;padding:14px 0;border-bottom:4px solid #FF5432}
+.top-bar .wrap{display:flex;align-items:center;gap:12px}
+.top-logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
+.top-logo-c{width:34px;height:34px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:15px}
+.top-logo-t{color:#fff;font-weight:700;font-size:15px;letter-spacing:.3px}
+.top-logo-t span{color:#FF5432}
+.top-nav{display:flex;gap:18px;margin-left:auto}
+.top-nav a{color:rgba(255,255,255,.7);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;transition:color .2s}
+.top-nav a:hover{color:#fff}
 
 /* Hero */
-.hero{background:linear-gradient(135deg,#1D0707 0%,#3a1414 50%,#5a2020 100%);padding:40px 0 32px;color:#fff}
-.hero h1{font-size:24px;font-weight:700;margin-bottom:6px}
-.hero p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:16px}
-.sources{display:flex;flex-wrap:wrap;gap:6px}
-.source-tag{background:rgba(255,255,255,.12);padding:4px 12px;border-radius:50px;font-size:11px;font-weight:600;color:rgba(255,255,255,.8)}
+.hero{background:linear-gradient(135deg,#1D0707,#3a1414,#5a2020);padding:36px 0 28px;color:#fff}
+.hero h1{font-size:26px;font-weight:700;margin-bottom:4px}
+.hero p{font-size:13.5px;color:rgba(255,255,255,.6);margin-bottom:14px;max-width:600px}
+.hero-info{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.hero-tags{display:flex;flex-wrap:wrap;gap:5px}
+.hero-tag{background:rgba(255,255,255,.1);padding:3px 11px;border-radius:50px;font-size:10.5px;font-weight:600;color:rgba(255,255,255,.75)}
+.hero-upd{font-size:10.5px;color:rgba(255,255,255,.5);padding:3px 10px;background:rgba(255,255,255,.07);border-radius:50px}
 
 /* Controls */
-.controls{background:#fff;padding:12px 0;border-bottom:1px solid #E1DCCB}
+.controls{background:#fff;padding:12px 0;border-bottom:1px solid #e6e0d6;position:sticky;top:0;z-index:50}
 .controls .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.controls select{padding:7px 12px;border:1px solid #ddd;border-radius:6px;font-size:12px;font-family:'Poppins',sans-serif;background:#fff;cursor:pointer;min-width:120px}
-.controls .count{font-size:13px;color:#777;margin-left:auto}
+.controls select{padding:7px 13px;border:1.5px solid #ddd;border-radius:8px;font-size:12.5px;font-family:inherit;background:#fff;cursor:pointer;min-width:140px;color:#444}
+.controls .count{font-size:12.5px;color:#999;margin-left:auto}
 
-/* ===== NEWS GRID — CATEGORY SECTIONS ===== */
-.news-grid{padding:20px 0 50px}
+/* Grid */
+.news-main{padding:22px 0 50px}
+.cat-block{margin-bottom:44px}
+.cat-head{display:flex;align-items:center;gap:14px;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #e6dfd5}
+.cat-head h2{font-size:18px;font-weight:700;color:#1D0707;margin:0;white-space:nowrap}
+.cat-num{font-size:11.5px;color:#aaa;font-weight:500;white-space:nowrap}
+.cat-line{flex:1;height:1px;background:linear-gradient(to right,#e6dfd5,transparent)}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 
-/* Category section heading */
-.cat-section{margin-bottom:44px}
-.cat-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #e8e0d8}
-.cat-header h2{font-size:17px;font-weight:700;color:#1D0707;text-transform:uppercase;letter-spacing:1px;margin:0;white-space:nowrap}
-.cat-count{font-size:12px;color:#999;font-weight:500;white-space:nowrap}
-.cat-line{flex:1;height:1px;background:linear-gradient(to right,#e8e0d8,transparent)}
+/* Card */
+.card{background:#fff;border-radius:12px;border:1px solid #e6dfd5;overflow:hidden;transition:all .3s ease;display:flex;flex-direction:column}
+.card:hover{box-shadow:0 6px 24px rgba(29,7,7,.1);transform:translateY(-2px);border-color:#d5cbc0}
+.card-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%}
+.card-img{width:100%;height:160px;overflow:hidden;background:#f0ebf5;flex-shrink:0;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-content{padding:15px 18px 18px;display:flex;flex-direction:column;flex:1}
+.card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:7px;align-items:center}
+.card-source{font-size:10px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.6px;background:rgba(255,84,50,.08);padding:2px 8px;border-radius:3px}
+.card-date{font-size:10px;color:#bbb}
+.card-title{font-size:14.5px;font-weight:600;color:#1D0707;margin-bottom:7px;line-height:1.4}
+.card:hover .card-title{color:#FF5432}
+.card-desc{font-size:12px;color:#888;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:auto}
 
-/* Article grid — 3 columns by default */
-.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+/* Loading */
+.ld{text-align:center;padding:70px 0;color:#999}
+.ld-sp{width:36px;height:36px;border:3px solid #e6dfd5;border-top-color:#FF5432;border-radius:50%;animation:lspin .8s linear infinite;margin:0 auto 13px}
+@keyframes lspin{to{transform:rotate(360deg)}}
 
-/* Article card — VERTICAL layout */
-.art-card{background:#fff;border-radius:12px;border:1px solid #e8e0d8;overflow:hidden;transition:all .3s ease;display:flex;flex-direction:column}
-.art-card:hover{box-shadow:0 8px 28px rgba(29,7,7,.12);transform:translateY(-3px);border-color:#d0c8be}
-.art-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%}
-
-.art-img{width:100%;height:165px;overflow:hidden;background:#f0ebf5;flex-shrink:0;position:relative}
-.art-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
-.art-card:hover .art-img img{transform:scale(1.06)}
-
-.art-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
-.art-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
-.art-source{font-size:10px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.7px;background:rgba(255,84,50,.08);padding:3px 9px;border-radius:4px}
-.art-date{font-size:10px;color:#aaa}
-.art-cat{font-size:9px;background:#f0ebf5;color:#1D0707;padding:2px 9px;border-radius:4px;font-weight:600;border:1px solid #e0d0c8}
-
-.art-title{font-size:15px;font-weight:600;color:#1D0707;margin-bottom:8px;line-height:1.4;flex-shrink:0}
-.art-card:hover .art-title{color:#FF5432}
-
-.art-desc{font-size:12.5px;color:#777;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:auto}
-
-/* No image placeholder */
-.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;font-size:34px;background:linear-gradient(135deg,#f5f3ee,#ebe5d8)}
-
-/* Show More */
-.show-more-wrap{text-align:center;padding:10px 0 40px}
-.show-more-wrap button{background:#1D0707;color:#fff;border:none;padding:13px 40px;border-radius:50px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;transition:all .2s}
-.show-more-wrap button:hover{background:#99321E}
-.show-more-wrap button:disabled{background:#888;cursor:default;opacity:.5}
-
-/* Loading state */
-.loading{text-align:center;padding:60px 0;color:#888}
-.loading .spinner{width:36px;height:36px;border:3px solid #e1dccb;border-top-color:#FF5432;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 14px}
-@keyframes spin{to{transform:rotate(360deg)}}
+/* More button */
+.more-wrap{text-align:center;padding:10px 0 30px}
+.more-btn{background:#1D0707;color:#fff;border:none;padding:12px 42px;border-radius:50px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s}
+.more-btn:hover{background:#99321E}
+.more-btn:disabled{background:#888;cursor:default;opacity:.5}
 
 /* Footer */
-.footer{background:#1D0707;color:rgba(255,255,255,.4);padding:20px 0;text-align:center;font-size:12px}
-.footer strong{color:#fff}
-.footer a{color:#FF5432;text-decoration:none}
+.footer{background:#1D0707;color:rgba(255,255,255,.35);padding:18px 0;text-align:center;font-size:11.5px}
+.footer a{color:#FF5432;text-decoration:none;font-weight:500}
 
-/* Responsive */
-@media(max-width:1024px){.art-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1024px){.news-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){
-  .art-grid{grid-template-columns:1fr}
-  .art-img{height:200px}
-  .cat-header h2{font-size:15px}
+  .news-grid{grid-template-columns:1fr}
+  .card-img{height:195px}
+  .cat-head h2{font-size:16px}
+  .hero h1{font-size:21px}
   .wrap{padding:0 16px}
 }
 </style>
 </head>
 <body>
-
-<header class="header">
+<div class="top-bar">
 <div class="wrap">
-<a class="logo" href="/">
-<div class="logo-circle">H</div>
-<div class="logo-text">Hisparos <span>News</span></div>
-</a>
+<a class="top-logo" href="/"><div class="top-logo-c">H</div><div class="top-logo-t">Hisparos <span>News</span></div></a>
+<div class="top-nav"><a href="/">Home</a><a href="jobs.html">Jobs</a><a href="news.html" style="color:#FF5432">News</a><a href="proposal.html">Proposal</a></div>
 </div>
-</header>
+</div>
 
 <section class="hero">
 <div class="wrap">
-<h1>📰 Legal Translation & Sworn Translation News</h1>
-<p>Curated news from the legal translation industry, EU legislation, Spanish law updates, and professional resources.</p>
-<div class="sources">
-<span class="source-tag">📡 Sources:</span>
-<span class="source-tag">EU Official Journal</span>
-<span class="source-tag">Slator</span>
-<span class="source-tag">MultiLingual</span>
-<span class="source-tag">BOE</span>
-<span class="source-tag">Traducción Jurada</span>
-</div>
-<div class="hero-right">
-<div class="hero-last-upd"><strong>Last updated</strong><span id="lastUpdated">—</span></div>
+<h1>📰 Legal & Sworn Translation News</h1>
+<p>Curated news from localization, EU legislation, Spanish law, and translation technology sources.</p>
+<div class="hero-info">
+<div class="hero-tags"><span class="hero-tag">Industry</span><span class="hero-tag">EU</span><span class="hero-tag">Spain</span><span class="hero-tag">Tech</span><span class="hero-tag">Global</span></div>
+<div class="hero-upd"><strong>⟳</strong> <span id="lastUpd">—</span></div>
 </div>
 </div>
 </section>
 
 <section class="controls">
 <div class="wrap">
-<select id="catFilter" onchange="applyFilters()">
-<option value="">All Categories</option>
-<option value="EU">EU</option>
-<option value="UK">UK</option>
-<option value="Spain">Spain</option>
-<option value="Tech">Tech/AI</option>
-<option value="Careers">Careers</option>
-</select>
-<select id="srcFilter" onchange="applyFilters()">
-<option value="">All Sources</option>
-</select>
-<div class="count" id="artCount">0 articles</div>
+<select id="catF" onchange="doFilter()"><option value="">All Categories</option></select>
+<select id="srcF" onchange="doFilter()"><option value="">All Sources</option></select>
+<div class="count" id="artC">0 articles</div>
 </div>
 </section>
 
-<section class="news-grid">
+<section class="news-main">
 <div class="wrap">
-<div id="artContainer">
-<div class="loading"><div class="spinner"></div>Loading news...</div>
-</div>
-<div class="show-more-wrap" id="moreWrap">
-<button id="moreBtn" onclick="showMore()">Show More Articles →</button>
-</div>
+<div class="ld" id="loader"><div class="ld-sp"></div>Loading news…</div>
+<div id="gridArea"></div>
+<div class="more-wrap" id="moreW"><button class="more-btn" id="moreB" onclick="showM()">Show More →</button></div>
 </div>
 </section>
 
-<footer class="footer">
-<div class="wrap">
-A <a href="https://www.translastars.com">TranslaStars</a> Solution · 2026<br>
-Aggregated from public RSS feeds
-</div>
-</footer>
+<footer class="footer"><div class="wrap">A <a href="https://www.translastars.com">TranslaStars</a> Solution &middot; 2026 &middot; Aggregated from public RSS feeds</div></footer>
 
 <script>
-// ===== News API (Vercel serverless RSS parser) =====
-// Fallback articles — fresh legal/judicial/sworn translation news
-const FALLBACK = [
-  { title:'EU AI Act Implementation: New Translation Requirements for Legal Documents', source:'EU Official', cat:'EU', date:'2026-07-10', link:'https://europa.eu/newsroom/search?query=translation+AI+act', desc:'The European Union publishes updated translation certification requirements under the AI Act, affecting sworn translators handling AI-generated legal content.' },
-  { title:'Slator 2026 Report: Legal Translation Market Grows 15% Driven by Cross-Border Litigation', source:'Slator', cat:'Tech', date:'2026-07-09', link:'https://slator.com/?s=legal+translation+market', desc:'Legal translation remains the fastest-growing segment in the language services industry, with sworn translation demand surging across EU jurisdictions.' },
-  { title:'Spain Updates Sworn Translation Certification for Digital Documents', source:'Traducción Jurada', cat:'Spain', date:'2026-07-08', link:'https://www.traduccionjurada.com/actualidad/', desc:'The Spanish Ministry of Foreign Affairs has updated digital document certification standards for sworn translators, including new e-signature requirements.' },
-  { title:'CJEU Rules on Language Rights in Cross-Border Criminal Proceedings', source:'EU Official', cat:'EU', date:'2026-07-07', link:'https://curia.europa.eu/jcms/jcms/p1_3717879/', desc:'The Court of Justice of the EU reinforces the right to interpretation and translation in cross-border criminal cases, setting new quality benchmarks.' },
-  { title:'BOE: New Digital Justice Law Published - Impact on Legal Translations', source:'BOE', cat:'Spain', date:'2026-07-06', link:'https://www.boe.es/legislacion/', desc:'Spain’s new Digital Justice Law mandates electronic document submission and affects how sworn translators handle certified digital translations.' },
-  { title:'GALA Webinar: AI-Assisted Legal Translation Best Practices for 2026', source:'GALA', cat:'Tech', date:'2026-07-05', link:'https://www.gala-global.org/resources', desc:'GALA hosts expert webinar on integrating AI tools in legal translation workflows while maintaining sworn certification quality standards.' },
-  { title:'ProZ.com Reports 40% Increase in Legal Translation Job Postings', source:'ProZ.com', cat:'Careers', date:'2026-07-04', link:'https://www.proz.com/translation-jobs/?keyword=legal', desc:'Demand for sworn and certified legal translators surges across European job platforms, with remote and hybrid positions leading growth.' },
-  { title:'UK-Spain Bilateral Agreement Creates New Translation Demand', source:'MultiLingual', cat:'UK', date:'2026-07-03', link:'https://multilingual.com/?s=legal+translation', desc:'Post-Brexit UK-Spain judicial cooperation agreement generates significant demand for certified legal translations in both language directions.' },
-  { title:'New LOPDGDD Requirements Affect Sworn Translation Data Handling', source:'Lexology', cat:'Spain', date:'2026-07-02', link:'https://www.lexology.com/search/?q=sworn+translation', desc:'Updated Spanish data protection law imposes stricter requirements on sworn translators handling personal data in certified legal documents.' },
-  { title:'Patent Translation Demand Surges with Unified Patent Court', source:'MultiLingual', cat:'Tech', date:'2026-07-01', link:'https://multilingual.com/?s=patent+translation', desc:'The Unified Patent Court system drives record demand for patent translations across European languages, with Spanish among the most requested.' },
-  { title:'Poder Judicial Approves Fully Digital Document Exchange', source:'Poder Judicial', cat:'Spain', date:'2026-06-30', link:'https://www.poderjudicial.es/cgpj/es/Servicios/RSS/', desc:'Spanish judicial system greenlights fully digital document exchange between courts, notaries, and sworn translators.' },
-  { title:'NMT for Legal Translation: New Study on Accuracy and Certification', source:'Slator', cat:'Tech', date:'2026-06-29', link:'https://slator.com/?s=NMT+legal+translation', desc:'Comprehensive study finds neural machine translation achieves 90% adequacy for legal texts but human sworn certification remains essential.' },
-  { title:'EU Commission Launches Multilingual AI Translation Hub', source:'EU Official', cat:'EU', date:'2026-06-28', link:'https://digital-strategy.ec.europa.eu/en/policies/translation', desc:'New EU-funded project develops AI tools for legal translation across all 24 official languages with human-certified output pipelines.' },
-  { title:'Traducción Jurada: New Online Portal for Certification Applications', source:'Traducción Jurada', cat:'Spain', date:'2026-06-27', link:'https://www.traduccionjurada.com/certificados/', desc:'Spanish Ministry launches digital portal for sworn translator certification applications, reducing processing times by 60%.' },
-  { title:'Job Alert: Senior Legal Translator EN/ES - EU Institutions Brussels', source:'ProZ.com', cat:'Careers', date:'2026-06-26', link:'https://epso.europa.eu/en/job-opportunities', desc:'EU institutions hiring senior legal translators for English-Spanish. Permanent contract, Brussels-based. Translation exams required.' },
-  { title:'European Arrest Warrant Translation Guidelines Published', source:'EU Official', cat:'EU', date:'2026-06-25', link:'https://europa.eu/newsroom/search?query=european+arrest+warrant+translation', desc:'New EU guidelines standardise translation and interpretation requirements for European Arrest Warrants across all member state languages.' },
-  { title:'New Spanish Apostille Regulations: Simplified Certification Process', source:'Lexology', cat:'Spain', date:'2026-06-24', link:'https://www.lexology.com/search/?q=apostille+spain', desc:'Updated Spanish apostille regulations simplify document certification for sworn translations, reducing processing times significantly.' },
-  { title:'Language Services Market Exceeds $60B in 2025 - GALA Annual Report', source:'GALA', cat:'Tech', date:'2026-06-23', link:'https://www.gala-global.org/resources/reports', desc:'Global language services market surpasses $60 billion with legal translation representing 18% of total market value, reports GALA.' },
-  { title:'FIT Europe Publishes Ethical AI Guidelines for Sworn Translators', source:'MultiLingual', cat:'Tech', date:'2026-06-22', link:'https://multilingual.com/?s=FIT+ethical+AI+translators', desc:'International Federation of Translators releases ethical guidelines for sworn translators using AI-assisted tools in legal certification workflows.' },
-  { title:'Cross-Border Commercial Litigation Up 40% - Lexology Legal Trends', source:'Lexology', cat:'EU', date:'2026-06-21', link:'https://www.lexology.com/search/?q=cross+border+litigation', desc:'Analysis shows 40% increase in cross-border commercial litigation requiring certified translations across EU and UK jurisdictions.' }
+const FBK = [
+  {title:"EU AI Act: New Translation Certification Rules",source:"EU Official",cat:"EU",link:"https://europa.eu/newsroom/search?query=translation+AI+act",desc:"EU publishes updated certification rules under the AI Act for sworn translators."},
+  {title:"Elia Launches Hybrid Conference Model for 2026",source:"ELIA",cat:"Industry",link:"https://elia-association.org/news/",desc:"ELIA announces hybrid format for networking events blending in-person and virtual attendance."},
+  {title:"Slator 2026: Legal Translation Market Grows 15%",source:"Slator",cat:"Industry",link:"https://slator.com/?s=legal+translation+market",desc:"Legal translation remains the fastest-growing language services segment."},
+  {title:"Spain Updates Digital Sworn Translation Standards",source:"Traducción Jurada",cat:"Spain",link:"https://www.traduccionjurada.com/actualidad/",desc:"Spanish Ministry updates certification standards for digital sworn translations."},
+  {title:"CJEU Rules on Language Rights in Criminal Cases",source:"EU Official",cat:"EU",link:"https://curia.europa.eu/jcms/jcms/p1_3717879/",desc:"CJEU reinforces translation and interpretation rights in cross-border criminal proceedings."},
+  {title:"Unbabel Legal Translation AI Module",source:"Unbabel",cat:"Tech",link:"https://unbabel.com/blog/",desc:"New specialised AI module for certified legal translations."},
+  {title:"Spanish Apostille Rules Simplified",source:"Noticias Jurídicas",cat:"Spain",link:"https://noticias.juridicas.com/",desc:"Updated Spanish apostille regulations streamline sworn translation certification."},
+  {title:"Translators Without Borders Legal Glossary",source:"TWB",cat:"Global",link:"https://translatorswithoutborders.org/news/",desc:"Multilingual legal glossary for humanitarian and asylum contexts."},
+  {title:"Globalization Partners: EU Translated Content Up 30%",source:"Glob. Partners",cat:"Industry",link:"https://www.globalizationpartners.com/resources/",desc:"Cross-border business translation demand rises sharply across EU."},
+  {title:"Welocalize Expands Legal Translation Unit",source:"Welocalize",cat:"Industry",link:"https://www.welocalize.com/news/",desc:"Major LSP expands legal and sworn translation services for European regulatory demand."},
+  {title:"EU Arrest Warrant Translation Standards Updated",source:"EU Official",cat:"EU",link:"https://europa.eu/newsroom/search?query=arrest+warrant+translation",desc:"New EU guidelines standardise translation requirements across member states."},
+  {title:"FIT Europe: Ethical AI for Sworn Translators",source:"Slator",cat:"Tech",link:"https://slator.com/?s=FIT+ethical+AI",desc:"FIT Europe releases ethical guidelines for AI-assisted legal translation."},
+  {title:"LSPs Embracing AI for Legal Documents",source:"Slator",cat:"Tech",link:"https://slator.com/?s=AI+legal+document",desc:"73% of LSPs now integrate AI tools in legal translation workflows."},
+  {title:"ATA Spanish-English Legal Certification",source:"Slator",cat:"Careers",link:"https://slator.com/?s=ATA+legal+certification",desc:"ATA introduces certification focused on Spanish-English legal translation."},
+  {title:"Digital Justice Law Impact on Spain Translations",source:"Noticias Jurídicas",cat:"Spain",link:"https://noticias.juridicas.com/",desc:"Spain's Digital Justice Law affects sworn translator document submission."}
 ];
-// Category display order
-const CAT_ORDER = ['EU', 'Spain', 'UK', 'Tech', 'Careers'];
-// Per-category image pools
-const CAT_IMGS = {
-  'EU': ['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=300&fit=crop'],
-  'Spain': ['https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=300&fit=crop'],
-  'UK': ['https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=400&h=300&fit=crop'],
-  'Tech': ['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop'],
-  'Careers': ['https://images.unsplash.com/photo-1521791055366-0d553872125f?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop', 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop']
+const CATS = ['Industry','EU','Spain','Tech','Global','Careers'];
+const CAT_IM = {
+  Industry:['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=260&fit=crop'],
+  EU:['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=260&fit=crop'],
+  Spain:['https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=260&fit=crop'],
+  Tech:['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=260&fit=crop'],
+  Global:['https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=400&h=260&fit=crop'],
+  Careers:['https://images.unsplash.com/photo-1521791055366-0d553872125f?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=260&fit=crop','https://images.unsplash.com/photo-1559827291-baf8ed1d95e4?w=400&h=260&fit=crop']
 };
 
-// Source image mapping
-const SRC_IMG = {
-  'EU Official': 0, 'Slator': 0, 'MultiLingual': 3, 'Traducción Jurada': 4,
-  'BOE': 4, 'ProZ.com': 5, 'GALA': 2, 'Lexology': 3, 'Poder Judicial': 4,
-  'CJEU': 0
-};
-
-let allArticles = [];
-let perCat = 3;
-
-function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-function imgFallback(el) { el.onerror=null; el.style.display='none'; el.parentElement.classList.add('no-img'); el.parentElement.textContent='📰'; }
-function getFallbackImg(source, cat) {
-  var catImgs = CAT_IMGS[cat];
-  if (catImgs && catImgs.length > 0) return catImgs[0];
-  return 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop';
-}
-
-function renderArticles(articles) {
-  var groups = {};
-  articles.forEach(function(a) {
-    var c = a.cat || 'General';
-    if (!groups[c]) groups[c] = [];
-    groups[c].push(a);
-  });
-  var sortedCats = CAT_ORDER.filter(function(c) { return groups[c] && groups[c].length > 0; });
-  var html = '';
-  var total = 0;
-  var anyMore = false;
-  sortedCats.forEach(function(cat) {
-    var items = groups[cat];
-    var show = Math.min(items.length, perCat);
-    total += show;
-    if (items.length > perCat) anyMore = true;
-    html += '<div class="cat-section">';
-    html += '<div class="cat-header"><h2>' + esc(cat) + '</h2><span class="cat-count">' + items.length + ' articles</span><div class="cat-line"></div></div>';
-    html += '<div class="art-grid">';
-    for (var i = 0; i < show; i++) {
-      var a = items[i];
-      var img = a.image && a.image.length > 5 && a.image.indexOf('placeholder') < 0 ? a.image : (CAT_IMGS[cat] ? CAT_IMGS[cat][i % CAT_IMGS[cat].length] : getFallbackImg(a.source, cat));
-      var d = '';
-      if (a.date) d = new Date(a.date).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
-      html += '<div class="art-card"><a class="art-link" href="' + esc(a.link || '#') + '" target="_blank" rel="noopener">';
-      html += '<div class="art-img' + (img ? '' : ' no-img-bg') + '">';
-      if (img) html += '<img class="art-img" src="' + esc(img) + '" alt="" loading="lazy" onerror="imgFallback(this)">';
-      else html += '<div class="no-img">📰</div>';
-      html += '</div><div class="art-body">';
-      html += '<div class="art-meta"><span class="art-source">' + esc(a.source) + '</span>' + (d ? '<span class="art-date">' + d + '</span>' : '') + '</div>';
-      html += '<div class="art-title">' + esc(a.title) + '</div>';
-      html += '<div class="art-desc">' + esc((a.description || a.desc || '').substring(0, 160)) + '</div>';
-      html += '</div></a></div>';
+var ALL=[],N=3;
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function fmtDate(s){if(!s)return'';try{var d=new Date(s);return isNaN(d)?'':d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}catch(e){return''}}
+function pickImg(a,i,cat){if(a.image&&a.image.length>5&&!a.image.includes('placeholder'))return a.image;var im=CAT_IM[cat||'Industry'];return im?im[i%im.length]:'https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=260&fit=crop'}
+function render(){
+  document.getElementById('loader').style.display='none';
+  var gr={};ALL.forEach(function(a){var c=a.cat||'General';if(!gr[c])gr[c]=[];gr[c].push(a)});
+  var sCat=CATS.filter(function(c){return gr[c]&&gr[c].length>0});
+  var h='',ttl=0,anyM=false;
+  var sel=document.getElementById('catF');sel.innerHTML='<option value="">All Categories</option>';
+  sCat.forEach(function(c){sel.innerHTML+='<option value="'+c+'">'+c+' ('+gr[c].length+')</option>'});
+  sCat.forEach(function(c){
+    var it=gr[c],sh=Math.min(it.length,N);ttl+=sh;if(it.length>N)anyM=true;
+    h+='<div class="cat-block"><div class="cat-head"><h2>'+c+'</h2><span class="cat-num">'+it.length+' articles</span><div class="cat-line"></div></div><div class="news-grid">';
+    for(var i=0;i<sh;i++){
+      var a=it[i],img=pickImg(a,i,c);
+      h+='<div class="card"><a class="card-link" href="'+esc(a.link||'#')+'" target="_blank" rel="noopener">';
+      h+='<div class="card-img"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'"></div>';
+      h+='<div class="card-content"><div class="card-meta"><span class="card-source">'+esc(a.source)+'</span>';
+      var fd=fmtDate(a.date||a.pubDate);if(fd)h+='<span class="card-date">'+fd+'</span>';
+      h+='</div><div class="card-title">'+esc(a.title)+'</div><div class="card-desc">'+esc((a.description||a.desc||'').substring(0,160))+'</div></div></a></div>';
     }
-    html += '</div></div>';
+    h+='</div></div>';
   });
-  document.getElementById('artContainer').innerHTML = html;
-  document.getElementById('artCount').textContent = total + ' articles';
-  var btn = document.getElementById('moreBtn');
-  if (!btn) return;
-  if (!anyMore) {
-    btn.disabled = true;
-    btn.textContent = 'All articles loaded ✓';
-  } else {
-    btn.disabled = false;
-    btn.textContent = 'Show More (∞)';
-  }
+  document.getElementById('gridArea').innerHTML=h;
+  document.getElementById('artC').textContent=ttl+' articles';
+  var b=document.getElementById('moreB');if(b){b.disabled=!anyM;b.textContent=anyM?'Show More (∞)':'All loaded ✓'}
 }
-
-function applyFilters() {
-  var cat = document.getElementById('catFilter').value;
-  var src = document.getElementById('srcFilter').value;
-  var filtered = allArticles.slice();
-  if (cat) filtered = filtered.filter(function(a) { return (a.cat || 'General') === cat; });
-  if (src) filtered = filtered.filter(function(a) { return a.source === src; });
-  renderArticles(filtered);
+function doFilter(){
+  var cf=document.getElementById('catF').value,sf=document.getElementById('srcF').value;
+  var f=ALL.slice();if(cf)f=f.filter(function(a){return(a.cat||'General')===cf});if(sf)f=f.filter(function(a){return a.source===sf});
+  ALL=f;N=3;render();
 }
-
-function showMore() {
-  perCat += 3;
-  applyFilters();
+function showM(){N+=3;doFilter()}
+function popSrc(){
+  var ss=[...new Set(ALL.map(function(a){return a.source}))].sort();
+  var sel=document.getElementById('srcF');sel.innerHTML='<option value="">All Sources</option>';
+  ss.forEach(function(s){sel.innerHTML+='<option value="'+esc(s)+'">'+esc(s)+'</option>'});
 }
-
-function populateSources() {
-  var sources = [...new Set(allArticles.map(function(a) { return a.source; }))].sort();
-  var sel = document.getElementById('srcFilter');
-  sel.innerHTML = '<option value="">All Sources</option>';
-  sources.forEach(function(s) { sel.innerHTML += '<option value="' + esc(s) + '">' + esc(s) + '</option>'; });
+async function init(){
+  document.getElementById('lastUpd').textContent=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric','hour':'2-digit','minute':'2-digit'});
+  try{var r=await fetch('/api/news');var d=await r.json();if(d.articles&&d.articles.length>0)ALL=d.articles.map(function(a){return a});else ALL=FBK}
+  catch(e){ALL=FBK}
+  popSrc();render();
 }
-
-async function fetchNews() {
-  try {
-    var now = new Date();
-    var h = String(now.getHours()).padStart(2,'0');
-    var m = String(now.getMinutes()).padStart(2,'0');
-    var d = String(now.getDate()).padStart(2,'0');
-    var mn = String(now.getMonth()+1).padStart(2,'0');
-    var y = now.getFullYear();
-    document.getElementById('lastUpdated').textContent = d + '/' + mn + '/' + y + ' ' + h + ':' + m;
-    var res = await fetch('/api/news');
-    var data = await res.json();
-    if (data.articles && data.articles.length > 0) {
-      // Map API response: some feeds use 'category' instead of 'cat'
-      allArticles = data.articles.map(function(a) {
-        if (!a.cat && a.category) { a.cat = a.category; }
-        return a;
-      });
-    } else {
-      allArticles = FALLBACK;
-    }
-  } catch (e) {
-    allArticles = FALLBACK;
-  }
-  populateSources();
-  applyFilters();
-}
-
-fetchNews();
+init();
 </script>
 </body>
 </html>
