@@ -1,0 +1,95 @@
+{
+    "value":  [
+                  {
+                      "id":  5,
+                      "name":  "Academic",
+                      "slug":  "academic",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  9,
+                      "name":  "Administrative",
+                      "slug":  "administrative",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  12,
+                      "name":  "Commercial",
+                      "slug":  "commercial",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  4,
+                      "name":  "Corporate",
+                      "slug":  "corporate",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  2,
+                      "name":  "Financial",
+                      "slug":  "financial",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  3,
+                      "name":  "Immigration",
+                      "slug":  "immigration",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  11,
+                      "name":  "Judicial",
+                      "slug":  "judicial",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  14,
+                      "name":  "Labor",
+                      "slug":  "labor",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  1,
+                      "name":  "Legal",
+                      "slug":  "legal",
+                      "term_count":  55
+                  },
+                  {
+                      "id":  7,
+                      "name":  "Medical",
+                      "slug":  "medical",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  10,
+                      "name":  "Notarial",
+                      "slug":  "notarial",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  6,
+                      "name":  "Patent",
+                      "slug":  "patent",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  13,
+                      "name":  "Property",
+                      "slug":  "property",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  15,
+                      "name":  "Tax",
+                      "slug":  "tax",
+                      "term_count":  0
+                  },
+                  {
+                      "id":  8,
+                      "name":  "Technical",
+                      "slug":  "technical",
+                      "term_count":  0
+                  }
+              ],
+    "Count":  15
+}

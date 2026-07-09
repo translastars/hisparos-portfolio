@@ -240,7 +240,7 @@ td .del-btn{background:#dc3545;color:#fff;border:none;padding:3px 10px;border-ra
 
 <script>
 // Vercel static frontend -> tunnel API backend
-const API = 'https://fast-eagle-24.loca.lt';
+const API = window.location.origin;
 
 function showSection(id) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));

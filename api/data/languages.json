@@ -1,0 +1,75 @@
+{
+    "value":  [
+                  {
+                      "id":  13,
+                      "code":  "AR",
+                      "name":  "Arabic"
+                  },
+                  {
+                      "id":  9,
+                      "code":  "EU",
+                      "name":  "Basque"
+                  },
+                  {
+                      "id":  7,
+                      "code":  "CA",
+                      "name":  "Catalan"
+                  },
+                  {
+                      "id":  12,
+                      "code":  "ZH",
+                      "name":  "Chinese"
+                  },
+                  {
+                      "id":  10,
+                      "code":  "NL",
+                      "name":  "Dutch"
+                  },
+                  {
+                      "id":  1,
+                      "code":  "EN",
+                      "name":  "English"
+                  },
+                  {
+                      "id":  3,
+                      "code":  "FR",
+                      "name":  "French"
+                  },
+                  {
+                      "id":  8,
+                      "code":  "GA",
+                      "name":  "Galician"
+                  },
+                  {
+                      "id":  4,
+                      "code":  "DE",
+                      "name":  "German"
+                  },
+                  {
+                      "id":  5,
+                      "code":  "IT",
+                      "name":  "Italian"
+                  },
+                  {
+                      "id":  14,
+                      "code":  "JA",
+                      "name":  "Japanese"
+                  },
+                  {
+                      "id":  6,
+                      "code":  "PT",
+                      "name":  "Portuguese"
+                  },
+                  {
+                      "id":  11,
+                      "code":  "RU",
+                      "name":  "Russian"
+                  },
+                  {
+                      "id":  2,
+                      "code":  "ES",
+                      "name":  "Spanish"
+                  }
+              ],
+    "Count":  14
+}

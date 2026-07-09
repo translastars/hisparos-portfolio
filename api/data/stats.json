@@ -1,0 +1,136 @@
+{
+    "totalTerms":  55,
+    "totalTranslations":  55,
+    "totalDomains":  15,
+    "totalUploads":  1,
+    "totalExclusions":  19,
+    "recentTerms":  55,
+    "languages":  {
+                      "source":  [
+                                     {
+                                         "lang_code":  "EN",
+                                         "count":  55
+                                     }
+                                 ],
+                      "target":  [
+                                     {
+                                         "lang_code":  "ES",
+                                         "count":  55
+                                     }
+                                 ]
+                  },
+    "domainStats":  [
+                        {
+                            "name":  "Legal",
+                            "count":  55
+                        },
+                        {
+                            "name":  "Financial",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Immigration",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Corporate",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Academic",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Patent",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Medical",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Technical",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Administrative",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Notarial",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Judicial",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Commercial",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Property",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Labor",
+                            "count":  0
+                        },
+                        {
+                            "name":  "Tax",
+                            "count":  0
+                        }
+                    ],
+    "topTerms":  [
+                     {
+                         "term_text":  "Breach of contract",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "The lessor shall be entitled to terminate the lease agreement in the event of breach of contract by the lessee.",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Power of attorney",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "By means of this power of attorney, the principal grants the agent full authority to represent him in all legal proceedings.",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Intellectual property",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "All intellectual property rights arising from this agreement shall vest in the client upon full payment.",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Force majeure",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Neither party shall be liable for any delay or failure to perform its obligations under this agreement if caused by a force majeure event.",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Arbitration clause",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     },
+                     {
+                         "term_text":  "Any dispute arising out of or in connection with this contract shall be referred to and finally resolved by arbitration.",
+                         "lang_code":  "EN",
+                         "trans_count":  1
+                     }
+                 ]
+}

@@ -1,0 +1,1057 @@
+{
+    "terms":  [
+                  {
+                      "id":  1,
+                      "term":  "Breach of contract",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Incumplimiento de contrato",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  2,
+                      "term":  "The lessor shall be entitled to terminate the lease agreement in the event of breach of contract by the lessee.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El arrendador tendrá derecho a rescindir el contrato de arrendamiento en caso de incumplimiento de contrato por parte del arrendatario.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The lessor shall be entitled to terminate the lease agreement in the event of breach of contract by the lessee.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  3,
+                      "term":  "Power of attorney",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Poder notarial",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  4,
+                      "term":  "By means of this power of attorney, the principal grants the agent full authority to represent him in all legal proceedings.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Mediante este poder notarial, el poderdante otorga al apoderado facultades plenas para representarle en todos los procedimientos judiciales.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "By means of this power of attorney, the principal grants the agent full authority to represent him in all legal proceedings.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  5,
+                      "term":  "Intellectual property",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Propiedad intelectual",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  6,
+                      "term":  "All intellectual property rights arising from this agreement shall vest in the client upon full payment.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Todos los derechos de propiedad intelectual que se deriven del presente acuerdo corresponderán al cliente tras el pago íntegro.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "All intellectual property rights arising from this agreement shall vest in the client upon full payment.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  7,
+                      "term":  "Force majeure",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Fuerza mayor",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  8,
+                      "term":  "Neither party shall be liable for any delay or failure to perform its obligations under this agreement if caused by a force majeure event.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Ninguna de las partes será responsable de cualquier retraso o incumplimiento de sus obligaciones en virtud del presente acuerdo si se debe a un evento de fuerza mayor.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Neither party shall be liable for any delay or failure to perform its obligations under this agreement if caused by a force majeure event.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  9,
+                      "term":  "Arbitration clause",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Cláusula de arbitraje",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  10,
+                      "term":  "Any dispute arising out of or in connection with this contract shall be referred to and finally resolved by arbitration.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Cualquier controversia que surja de o en relación con este contrato se someterá a arbitraje y será resuelta definitivamente mediante el mismo.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Any dispute arising out of or in connection with this contract shall be referred to and finally resolved by arbitration.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  11,
+                      "term":  "Due diligence",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Diligencia debida",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  12,
+                      "term":  "The purchaser shall conduct a thorough due diligence review of the target company prior to closing.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El comprador llevará a cabo una revisión exhaustiva de diligencia debida de la empresa objetivo antes del cierre.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The purchaser shall conduct a thorough due diligence review of the target company prior to closing.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  13,
+                      "term":  "Liquidated damages",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Cláusula penal",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  14,
+                      "term":  "In the event of delay in delivery, the contractor shall pay liquidated damages in the amount of 0.1% of the contract value per day.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "En caso de retraso en la entrega, el contratista pagará una cláusula penal del 0,1% del valor del contrato por día.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "In the event of delay in delivery, the contractor shall pay liquidated damages in the amount of 0.1% of the contract value per day.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  15,
+                      "term":  "Non-disclosure agreement",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Acuerdo de confidencialidad",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  16,
+                      "term":  "For the purposes of this non-disclosure agreement, \"Confidential Information\" shall mean any proprietary data disclosed by one party to the other.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "A los efectos del presente acuerdo de confidencialidad, \"Información Confidencial\" significará cualquier dato de propiedad divulgado por una parte a la otra.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "For the purposes of this non-disclosure agreement, \"Confidential Information\" shall mean any proprietary data disclosed by one party to the other.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  17,
+                      "term":  "Witnesseth",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "EXPONEN / Comparecen",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  18,
+                      "term":  "NOW, THEREFORE, in consideration of the mutual covenants contained herein, the parties agree as follows:",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "EN CONSECUENCIA, en consideración a las estipulaciones mutuas contenidas en el presente, las partes acuerdan lo siguiente:",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "NOW, THEREFORE, in consideration of the mutual covenants contained herein, the parties agree as follows:",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  19,
+                      "term":  "Indemnification",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Indemnización",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  20,
+                      "term":  "The supplier agrees to indemnify and hold harmless the client from any claims arising from the supplier\u0027s negligence.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El proveedor se obliga a indemnizar y mantener indemne al cliente de cualquier reclamación derivada de la negligencia del proveedor.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The supplier agrees to indemnify and hold harmless the client from any claims arising from the supplier\u0027s negligence.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  21,
+                      "term":  "Jurisdiction",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Jurisdicción",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  22,
+                      "term":  "The parties submit to the exclusive jurisdiction of the courts of Madrid, Spain for the resolution of any disputes.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Las partes se someten a la jurisdicción exclusiva de los tribunales de Madrid, España para la resolución de cualquier controversia.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The parties submit to the exclusive jurisdiction of the courts of Madrid, Spain for the resolution of any disputes.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  23,
+                      "term":  "Severability",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Separabilidad / Nulidad parcial",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  24,
+                      "term":  "If any provision of this agreement is held to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Si alguna disposición del presente acuerdo se considerara inválida o inejecutable, las disposiciones restantes permanecerán en pleno vigor y efecto.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "If any provision of this agreement is held to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  25,
+                      "term":  "Escrow agreement",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Contrato de depósito en garantía",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Contrato de depósito en garantía",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  26,
+                      "term":  "The purchase price shall be deposited in an escrow account with a mutually agreed financial institution.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El precio de compra se depositará en una cuenta de depósito en garantía en una entidad financiera acordada mutuamente.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The purchase price shall be deposited in an escrow account with a mutually agreed financial institution.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  27,
+                      "term":  "Best endeavors",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Mejores esfuerzos",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  28,
+                      "term":  "The licensee shall use its best endeavors to commercialize the licensed products in the territory.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El licenciatario empleará sus mejores esfuerzos para comercializar los productos licenciados en el territorio.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The licensee shall use its best endeavors to commercialize the licensed products in the territory.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  29,
+                      "term":  "Subrogation",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Subrogación",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  30,
+                      "term":  "Upon payment of the claim, the insurer shall be subrogated to all rights of the insured against third parties.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Tras el pago de la indemnización, la aseguradora se subrogará en todos los derechos del asegurado frente a terceros.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Upon payment of the claim, the insurer shall be subrogated to all rights of the insured against third parties.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  31,
+                      "term":  "Warranty",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Garantía",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  32,
+                      "term":  "The seller warrants that the goods are free from any encumbrances and defects in title.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El vendedor garantiza que los bienes están libres de cualquier gravamen y defecto de título.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The seller warrants that the goods are free from any encumbrances and defects in title.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  33,
+                      "term":  "Consideration",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Contraprestación",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  34,
+                      "term":  "In consideration of the services provided, the company agrees to pay a monthly fee of €2,000.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Como contraprestación por los servicios prestados, la sociedad se obliga a pagar una cuota mensual de 2.000€.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "In consideration of the services provided, the company agrees to pay a monthly fee of €2,000.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  35,
+                      "term":  "Visa application",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Solicitud de visado",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  36,
+                      "term":  "The applicant must submit a completed visa application form together with all supporting documents no later than 15 days before the intended travel date.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El solicitante deberá presentar un formulario de solicitud de visado cumplimentado junto con todos los documentos justificativos a más tardar 15 días antes de la fecha prevista de viaje.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The applicant must submit a completed visa application form together with all supporting documents no later than 15 days before the intended travel date.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  37,
+                      "term":  "Sworn translation",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Traducción jurada",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  38,
+                      "term":  "A sworn translation issued by a duly authorized translator shall be required for all official documents submitted to Spanish public authorities.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Se requerirá una traducción jurada emitida por un traductor jurado debidamente autorizado para todos los documentos oficiales presentados ante las autoridades públicas españolas.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "A sworn translation issued by a duly authorized translator shall be required for all official documents submitted to Spanish public authorities.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  39,
+                      "term":  "Merger clause",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Cláusula de integración",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  40,
+                      "term":  "This agreement constitutes the entire agreement between the parties and supersedes all prior negotiations, representations, and agreements.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "El presente acuerdo constituye el acuerdo íntegro entre las partes y sustituye a todas las negociaciones, declaraciones y acuerdos anteriores.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "This agreement constitutes the entire agreement between the parties and supersedes all prior negotiations, representations, and agreements.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  41,
+                      "term":  "Legal entity",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Persona jurídica / Entidad legal",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Persona jurídica / Entidad legal",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  42,
+                      "term":  "Goldman Sachs International",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Goldman Sachs International",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  43,
+                      "term":  "123 Main Street, London, UK",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "123 Main Street, London, Reino Unido",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "123 Main Street, London, UK",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  44,
+                      "term":  "Notary public",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Notario / fedatario público",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  45,
+                      "term":  "The deed must be executed before a notary public and subsequently registered with the relevant registry.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "La escritura debe otorgarse ante notario público e inscribirse posteriormente en el registro correspondiente.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The deed must be executed before a notary public and subsequently registered with the relevant registry.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  46,
+                      "term":  "Annual general meeting",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Junta general anual",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  47,
+                      "term":  "Shareholders representing at least 25% of the share capital may request the convening of an extraordinary general meeting.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Los accionistas que representen al menos el 25% del capital social podrán solicitar la convocatoria de una junta general extraordinaria.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Shareholders representing at least 25% of the share capital may request the convening of an extraordinary general meeting.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  48,
+                      "term":  "Insolvency proceedings",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Procedimiento concursal",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  49,
+                      "term":  "The company was declared insolvent and insolvency proceedings were commenced before the Commercial Court of Barcelona.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "La sociedad fue declarada insolvente y se inició un procedimiento concursal ante el Juzgado de lo Mercantil de Barcelona.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The company was declared insolvent and insolvency proceedings were commenced before the Commercial Court of Barcelona.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  50,
+                      "term":  "Enforceability",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Ejecutividad / Exigibilidad",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  51,
+                      "term":  "A judgment rendered by a court of a Member State shall be recognized and enforced in other Member States without any special procedure.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Una sentencia dictada por un tribunal de un Estado miembro será reconocida y ejecutada en los demás Estados miembros sin ningún procedimiento especial.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "A judgment rendered by a court of a Member State shall be recognized and enforced in other Member States without any special procedure.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  52,
+                      "term":  "Pre-nuptial agreement",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Capitulaciones matrimoniales",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  53,
+                      "term":  "Letters of administration",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Acta de nombramiento de administrador",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "Acta de nombramiento de administrador",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  54,
+                      "term":  "Mortgage deed",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "Escritura de hipoteca",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  null,
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  },
+                  {
+                      "id":  55,
+                      "term":  "The mortgage deed shall be registered with the Land Registry within 30 days of execution before the notary.",
+                      "lang":  "EN",
+                      "translations":  [
+                                           {
+                                               "text":  "La escritura de hipoteca se inscribirá en el Registro de la Propiedad dentro de los 30 días siguientes a su otorgamiento ante notario.",
+                                               "lang":  "ES"
+                                           }
+                                       ],
+                      "domain":  "Legal",
+                      "domain_slug":  "legal",
+                      "context":  "The mortgage deed shall be registered with the Land Registry within 30 days of execution before the notary.",
+                      "notes":  null,
+                      "confidence":  0.85,
+                      "created_at":  "2026-07-09 07:18:50",
+                      "source_file":  "legal_demo.tmx",
+                      "lang_count":  1
+                  }
+              ],
+    "pagination":  {
+                       "page":  1,
+                       "limit":  200,
+                       "total":  55,
+                       "totalPages":  1,
+                       "hasNext":  false,
+                       "hasPrev":  false
+                   }
+}

@@ -162,8 +162,8 @@ Sworn & Legal Translation Terminology Database
 </footer>
 
 <script>
-// Vercel static frontend -> tunnel API backend
-const API = 'https://fast-eagle-24.loca.lt';
+// Self-hosted Vercel API (no tunnel needed)
+const API = window.location.origin;
 let currentPage = 1;
 
 async function loadFilters() {
