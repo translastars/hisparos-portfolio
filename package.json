@@ -2,22 +2,13 @@
   "name": "hisparos_portfolio",
   "version": "1.0.0",
   "description": "Hisparos legal translation practice - portfolio site",
-  "main": "api/index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/translastars/hisparos-portfolio.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/translastars/hisparos-portfolio/issues"
-  },
-  "homepage": "https://github.com/translastars/hisparos-portfolio#readme",
-  "dependencies": {
-    "rss-parser": "^3.13.0"
-  }
+  "license": "ISC"
 }
