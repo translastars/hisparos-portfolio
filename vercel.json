@@ -2,11 +2,6 @@
   "version": 2,
   "buildCommand": null,
   "outputDirectory": ".",
-  "functions": {
-    "api/index.js": {
-      "maxDuration": 10
-    }
-  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.js" }
   ]
