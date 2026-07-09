@@ -10,5 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/translastars/hisparos-portfolio.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
 }

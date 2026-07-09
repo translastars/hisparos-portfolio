@@ -292,8 +292,12 @@ async function fetchNews() {
     document.getElementById('lastUpdated').textContent = d + '/' + mn + '/' + y + ' ' + h + ':' + m;
     var res = await fetch('/api/news');
     var data = await res.json();
-    if (data.articles && data.articles.length >= 6) {
-      allArticles = data.articles;
+    if (data.articles && data.articles.length > 0) {
+      // Map API response: some feeds use 'category' instead of 'cat'
+      allArticles = data.articles.map(function(a) {
+        if (!a.cat && a.category) { a.cat = a.category; }
+        return a;
+      });
     } else {
       allArticles = FALLBACK;
     }
