@@ -219,7 +219,7 @@ function renderTemplates(list){
       <div class="template-top">
         <div class="template-type">${t.category}</div>
         <h3>${t.title}</h3>
-        <div class="template-langs"><strong>Language:</strong> ${t.langs}</div>
+        ${t.download === 'ready' ? '<div class="template-langs"><strong>Language:</strong> ' + t.langs + '</div>' : ''}
       </div>
       <div class="template-body">
         <p class="template-desc">${t.desc}</p>
