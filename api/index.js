@@ -34,6 +34,11 @@ module.exports = (req, res) => {
   const params = url.searchParams;
 
   try {
+    // Debug: show what pathname we're matching
+    if (pathname.includes('upload')) {
+      res.end(JSON.stringify({debug_pathname: pathname, raw_url: req.url, full_url: url.href}));
+      return;
+    }
     switch (pathname) {
       case '/':
       case '/health': {
