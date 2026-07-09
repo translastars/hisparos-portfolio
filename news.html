@@ -18,13 +18,14 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .logo-text span{color:#FF5432}
 
 /* Hero */
-.hero{background:linear-gradient(135deg,#1D0707,#3a1414);padding:32px 0 28px;color:#fff}
+.hero{background:linear-gradient(135deg,#1D0707 0%,#3a1414 50%,#5a2020 100%);padding:40px 0 32px;color:#fff}
 .hero h1{font-size:24px;font-weight:700;margin-bottom:6px}
 .hero p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:16px}
 .sources{display:flex;flex-wrap:wrap;gap:6px}
 .source-tag{background:rgba(255,255,255,.12);padding:4px 12px;border-radius:50px;font-size:11px;font-weight:600;color:rgba(255,255,255,.8)}
 .source-tag a{color:#FF5432;text-decoration:none}
-.source-tag a:hover{text-decoration:underline}
+.source-tag a{pointer-events:none;cursor:default}
+.source-tag a:hover{text-decoration:none}
 
 /* Controls */
 .controls{background:#fff;padding:12px 0;border-bottom:1px solid #E1DCCB}
@@ -34,16 +35,16 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 
 /* News grid */
 .news-grid{padding:20px 0 50px}
-.article{background:#fff;border-radius:10px;margin-bottom:14px;border:1px solid #E1DCCB;overflow:hidden;transition:box-shadow .2s}
-.article:hover{box-shadow:0 3px 15px rgba(0,0,0,.06)}
+.article{background:#fff;border-radius:12px;margin-bottom:16px;border:1px solid #e8e0d8;overflow:hidden;transition:all .25s ease}
+.article:hover{box-shadow:0 6px 24px rgba(29,7,7,.12);transform:translateY(-2px);border-color:#d0c8be}
 .article-inner{display:flex;padding:16px 20px;gap:16px;text-decoration:none;color:inherit;align-items:flex-start}
-.article-img{width:100px;height:100px;border-radius:8px;background:#f0ebf5;flex-shrink:0;overflow:hidden}
+.article-img{width:140px;height:120px;border-radius:10px;background:#f0ebf5;flex-shrink:0;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .article-img img{width:100%;height:100%;object-fit:cover}
 .article-body{flex:1;min-width:0}
-.article-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4px}
-.article-source{font-size:11px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.article-meta{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;align-items:center}
+.article-source{font-size:10px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.8px;background:rgba(255,84,50,.08);padding:2px 10px;border-radius:4px;display:inline-block}
 .article-date{font-size:11px;color:#999}
-.article-category{font-size:10px;background:#f0ebf5;color:#99321E;padding:2px 8px;border-radius:4px;font-weight:600}
+.article-category{font-size:10px;background:#f0ebf5;color:#1D0707;padding:2px 10px;border-radius:4px;font-weight:600;border:1px solid #e0d0c8}
 .article-title{font-size:16px;font-weight:600;color:#1D0707;margin-bottom:4px;line-height:1.4}
 .article-desc{font-size:13px;color:#666;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .article:hover .article-title{color:#FF5432}
@@ -55,7 +56,7 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .show-more button:disabled{opacity:.5;cursor:default}
 
 /* No image placeholder */
-.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;font-size:28px}
+.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:36px;background:linear-gradient(135deg,#f5f3ee,#ebe5d8)}
 
 /* Loading */
 .loading{text-align:center;padding:60px 0;color:#888}
@@ -130,7 +131,7 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 
 <footer class="footer">
 <div class="wrap">
-Powered by <strong>OpenClaw</strong> · A <a href="https://www.translastars.com">TranslaStars</a> Solution · 2026<br>
+A <a href="https://www.translastars.com">TranslaStars</a> Solution · 2026<br>
 Aggregated from public RSS feeds
 </div>
 </footer>
@@ -180,40 +181,91 @@ const CATEGORY_ORDER = ['EU', 'Spain', 'UK', 'Tech', 'Careers'];
 async function fetchNews() {
   const container = document.getElementById('articlesContainer');
   const showMore = document.getElementById('showMoreContainer');
-  
+
+  // Source image pool (high-quality legal/justice themed Unsplash)
+  const FI = {
+    'Slator': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop',
+    'MultiLingual': 'https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=200&h=200&fit=crop',
+    'EU Official': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
+    'BOE': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=200&h=200&fit=crop',
+    'Traducción Jurada': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop',
+    'El Confidencial (Spain)': 'https://images.unsplash.com/photo-1504711434969-e33886168d1c?w=200&h=200&fit=crop',
+    'ProZ.com': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=200&h=200&fit=crop',
+    'GALA': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=200&fit=crop',
+    'Lexology (Legal)': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
+    'tcworld': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop'
+  };
+  const CI = {
+    'EU': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
+    'Spain': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=200&h=200&fit=crop',
+    'UK': 'https://images.unsplash.com/photo-1559827291-baf8ed1d95e4?w=200&h=200&fit=crop',
+    'Tech': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop',
+    'Careers': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=200&h=200&fit=crop'
+  };
+
   // Try fetching from RSS feeds
   const rssPromises = RSS_FEEDS.map(async (feed) => {
     try {
-      const rssUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`;
+      const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feed.url);
       const res = await fetch(rssUrl);
       const data = await res.json();
       if (data.status === 'ok' && data.items) {
-        return data.items.map(item => ({
-          title: item.title,
-          source: feed.source,
-          category: feed.category,
-          date: item.pubDate,
-          link: item.link,
-          description: item.description?.replace(/<[^>]*>/g, '').substring(0, 300) || '',
-          image: (item.enclosure?.link || item.thumbnail || (item.content || item.description || '').match(/<img[^>]+src=["']([^"']+)["']/i)?.[1] || '')
-        }));
+        return data.items.slice(0, 5).map(function(item) {
+          var imgUrl = '';
+          if (item.enclosure && item.enclosure.link && item.enclosure.link.indexOf('placeholder') < 0) {
+            imgUrl = item.enclosure.link;
+          } else if (item.thumbnail && item.thumbnail.indexOf('placeholder') < 0) {
+            imgUrl = item.thumbnail;
+          } else {
+            var contentMatch = (item.content || item.description || '').match(/<img[^>]+src=["']([^"'\s]+)["']/i);
+            if (contentMatch) imgUrl = contentMatch[1];
+          }
+          if (!imgUrl || imgUrl.indexOf('placeholder') >= 0 || imgUrl.indexOf('1x1') >= 0) {
+            imgUrl = FI[feed.source] || CI[feed.category] || '';
+          }
+          return {
+            title: item.title,
+            source: feed.source,
+            category: feed.category,
+            date: item.pubDate,
+            link: item.link,
+            description: (item.description || '').replace(/<[^>]*>/g, '').substring(0, 300),
+            image: imgUrl
+          };
+        });
       }
     } catch(e) { /* silent */ }
     return [];
   });
 
   const results = await Promise.all(rssPromises);
-  let fetched = results.flat().filter(a => a.title);
-  
+  var fetched = results.flat().filter(function(a) { return a && a.title; });
+
   if (fetched.length < 10) {
-    // Not enough from RSS, use fallback
-    console.log('Using curated content as primary source');
-    fetched = [...FALLBACK_ARTICLES];
+    fetched = FALLBACK_ARTICLES.map(function(a) {
+      return {
+        title: a.title,
+        source: a.source,
+        category: a.category,
+        date: a.date,
+        link: a.link,
+        description: a.description,
+        image: FI[a.source] || CI[a.category] || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop'
+      };
+    });
   }
-  
+
+  // Assign source-level images to any article still without one
+  fetched = fetched.map(function(a) {
+    if (!a.image || a.image.indexOf('placeholder') >= 0 || a.image.indexOf('1x1') >= 0) {
+      return { title: a.title, source: a.source, category: a.category, date: a.date, link: a.link, description: a.description, image: FI[a.source] || CI[a.category] || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop' };
+    }
+    return a;
+  });
+
   // Sort by date (newest first)
-  fetched.sort((a, b) => new Date(b.date) - new Date(a.date));
-  
+  fetched.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+
   allArticles = fetched;
   populateSourceFilter();
   applyFilters();
@@ -251,14 +303,14 @@ function renderArticles(articles, reset) {
   for (let i = displayedCount; i < toShow.length; i++) {
     const a = toShow[i];
     const date = new Date(a.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    const hasImage = a.image && !a.image.includes('placeholder');
+    const hasImage = a.image && a.image.length > 5;
     
     const div = document.createElement('div');
     div.className = 'article';
     div.innerHTML = `
       <a class="article-inner" href="${a.link}" target="_blank" rel="noopener">
         <div class="article-img">
-          ${hasImage ? `<img src="${a.image}" alt="" onerror="this.parentElement.innerHTML='<div class=\\'no-img\\'>📄</div>'">` : `<div class="no-img">📄</div>`}
+          ${hasImage ? `<img src="${a.image}" alt="" onerror="this.parentElement.innerHTML='<div class=\\'no-img\\'>📰</div>'">` : `<div class="no-img">📰</div>`}
         </div>
         <div class="article-body">
           <div class="article-meta">
