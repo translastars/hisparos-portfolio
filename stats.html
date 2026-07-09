@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Terminology Database — Live Stats | Hisparos</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:#f9f5f5;color:#333;min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+h1{font-size:28px;color:#1D0707;margin-bottom:4px}
+.sub{font-size:14px;color:#888;margin-bottom:24px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px}
+.stat-card{background:#fff;border-radius:12px;padding:24px;text-align:center;border:1px solid #e0d5d5;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.stat-card .num{font-size:42px;font-weight:800;color:#1D0707;line-height:1}
+.stat-card .num span{font-size:16px;color:#FF5432;font-weight:600}
+.stat-card .label{font-size:13px;color:#888;margin-top:6px;font-weight:500}
+.stat-card.accent{background:linear-gradient(135deg,#1D0707,#2a0b0b);color:#fff}
+.stat-card.accent .num{color:#FF5432}
+.stat-card.accent .label{color:rgba(255,255,255,.65)}
+h2{font-size:20px;color:#1D0707;margin:24px 0 14px;font-weight:700}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04);font-size:14px}
+th{background:#1D0707;color:#fff;padding:12px 16px;text-align:left;font-weight:600}
+td{padding:10px 16px;border-bottom:1px solid #f0e8e8;color:#555}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fdf5f0}
+.languages-list{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.lang-tag{background:#fff;border:1px solid #e0d5d5;border-radius:20px;padding:6px 16px;font-size:13px;color:#555;font-weight:500}
+.lang-tag strong{color:#1D0707}
+.exclusions-list{margin:8px 0}
+.exclusion-item{display:inline-block;background:#fff;border:1px solid #e0d5d5;border-radius:6px;padding:5px 12px;font-size:12px;color:#666;margin:3px}
+.error-box{background:#fff3f0;border:1px solid #FF5432;border-radius:10px;padding:20px;text-align:center;color:#99321E;margin:20px 0}
+.loading{text-align:center;padding:40px;color:#888;font-size:15px}
+.back-link{display:inline-block;margin-bottom:20px;color:#FF5432;text-decoration:none;font-weight:600;font-size:14px}
+.back-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="https://hisparosportfolio.vercel.app/" class="back-link">← Back to Terminology Search</a>
+<h1>📊 Terminology Database — Live Stats</h1>
+<div class="sub">Real-time overview of the Hisparos terminology system</div>
+
+<div id="loading" class="loading">Loading statistics...</div>
+<div id="content" style="display:none">
+
+<div class="stats-grid" id="bigStats"></div>
+
+<h2>🌐 Languages</h2>
+<div class="languages-list" id="languagesList"></div>
+
+<h2>📂 Domains</h2>
+<table id="domainsTable"><thead><tr><th>Domain</th><th>Terms</th></tr></thead><tbody></tbody></table>
+
+<h2>🔒 Exclusion Patterns</h2>
+<div class="exclusions-list" id="exclusionsList"></div>
+
+<h2>🏆 Top Terms</h2>
+<table id="topTermsTable"><thead><tr><th>#</th><th>Term</th><th>Language</th><th>Translations</th></tr></thead><tbody></tbody></table>
+
+</div>
+</div>
+
+<script>
+const API = window.location.origin;
+
+async function loadStats() {
+  try {
+    const [stats, langs, domains, exclusions, terms] = await Promise.all([
+      fetch(`${API}/api/stats`).then(r=>r.json()),
+      fetch(`${API}/api/languages`).then(r=>r.json()),
+      fetch(`${API}/api/domains`).then(r=>r.json()),
+      fetch(`${API}/api/exclusions`).then(r=>r.json()),
+      fetch(`${API}/api/terms?limit=10`).then(r=>r.json())
+    ]);
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+
+    // Big stat cards
+    document.getElementById('bigStats').innerHTML = `
+      <div class="stat-card accent"><div class="num">${stats.totalTerms}</div><div class="label">Total Terms</div></div>
+      <div class="stat-card"><div class="num">${stats.totalTranslations}</div><div class="label">Translations</div></div>
+      <div class="stat-card"><div class="num">${stats.totalDomains}</div><div class="label">Domains</div></div>
+      <div class="stat-card"><div class="num">${stats.totalExclusions}</div><div class="label">Exclusion Patterns</div></div>
+    `;
+
+    // Languages
+    const allLangs = new Set();
+    (langs.source || []).forEach(l => allLangs.add(l.lang_code));
+    (langs.target || []).forEach(l => allLangs.add(l.lang_code));
+    if (allLangs.size === 0) {
+      // Fallback if API format differs
+      if (Array.isArray(langs)) langs.forEach(l => allLangs.add(l.lang_code || l));
+    }
+    document.getElementById('languagesList').innerHTML = 
+      Array.from(allLangs).sort().map(l => `<span class="lang-tag"><strong>${l}</strong></span>`).join('');
+
+    // Domains
+    const domainRows = (stats.domainStats || []).filter(d => d.count > 0).map(d =>
+      `<tr><td>${d.name}</td><td>${d.count}</td></tr>`
+    ).join('');
+    document.getElementById('domainsTable').querySelector('tbody').innerHTML = domainRows;
+
+    // Exclusions
+    const excl = Array.isArray(exclusions) ? exclusions : (exclusions.patterns || []);
+    document.getElementById('exclusionsList').innerHTML = excl.length > 0
+      ? excl.map(e => `<span class="exclusion-item">${e.pattern || e}</span>`).join('')
+      : `<p style="color:#888;font-size:14px">No exclusion patterns configured</p>`;
+
+    // Top terms
+    const topTerms = stats.topTerms || (terms.terms || []).slice(0,10);
+    document.getElementById('topTermsTable').querySelector('tbody').innerHTML = topTerms.map((t, i) =>
+      `<tr><td>${i+1}</td><td>${t.term_text || t.term || '-'}</td><td>${t.lang_code || t.lang || '-'}</td><td>${t.trans_count || (t.translations ? t.translations.length : 1)}</td></tr>`
+    ).join('');
+
+  } catch(e) {
+    document.getElementById('loading').innerHTML = `
+      <div class="error-box">
+        <strong>⚠️ Could not load stats</strong><br>
+        ${e.message}<br><br>
+        <a href="javascript:location.reload()" style="color:#FF5432;font-weight:700">Retry</a>
+      </div>`;
+  }
+}
+loadStats();
+</script>
+</body>
+</html>
