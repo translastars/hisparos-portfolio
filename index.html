@@ -175,6 +175,7 @@ async function loadFilters() {
     const lf = document.getElementById('langFilter');
     const langArr = (langs.value || langs);
     if (Array.isArray(langArr)) langArr.forEach(l => { lf.innerHTML += `<option value="${l.code}">${l.name} (${l.code})</option>`; });
+    const df = document.getElementById('domainFilter');
     const domArr = (domains.value || domains);
     if (Array.isArray(domArr)) domArr.forEach(d => { df.innerHTML += `<option value="${d.slug}">${d.name}</option>`; });
     loadStats();
