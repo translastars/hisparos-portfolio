@@ -1,6 +1,7 @@
 {
   "version": 2,
   "buildCommand": null,
+  "installCommand": "echo 'no install needed'",
   "outputDirectory": ".",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.js" }
