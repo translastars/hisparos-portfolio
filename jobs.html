@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hisparos — Legal Translation Job Board</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:1.7}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+/* Header */
+.header{background:#1D0707;padding:28px 0;border-bottom:4px solid #FF5432}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:44px;height:44px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px}
+.logo-text{color:#fff;font-weight:700;font-size:22px;letter-spacing:1px}
+.logo-text span{color:#FF5432}
+.header-tag{color:rgba(255,255,255,.65);font-size:13px}
+/* Hero */
+.hero{background:linear-gradient(135deg,#1D0707 0%,#2a0c0c 100%);padding:60px 0;text-align:center;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#99321E,#FF5432,#99321E)}
+.hero h1{color:#fff;font-size:36px;font-weight:700;margin-bottom:8px}
+.hero p{color:rgba(255,255,255,.7);font-size:16px;max-width:640px;margin:0 auto}
+.hero-badge{display:inline-block;background:#FF5432;color:#fff;padding:4px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.hero-stats{display:flex;justify-content:center;gap:40px;margin-top:28px;flex-wrap:wrap}
+.hero-stat{text-align:center;color:#fff}
+.hero-stat-num{font-size:28px;font-weight:800;color:#FF5432}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.5px}
+/* Toolbar */
+.toolbar{background:#fff;padding:24px 0;border-bottom:1px solid #e0ddd4}
+.toolbar .wrap{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.toolbar select{padding:12px 16px;border:2px solid #e0ddd4;border-radius:8px;font-family:'Poppins',sans-serif;font-size:13px;background:#fff;cursor:pointer;min-width:140px;transition:border-color .2s}
+.toolbar select:focus{outline:none;border-color:#FF5432}
+.toolbar .count{font-size:14px;color:#666;margin-left:auto;white-space:nowrap}
+/* Job Grid */
+.jobs-section{padding:32px 0}
+.jobs-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:768px){.jobs-grid{grid-template-columns:1fr 1fr}}
+.job-card{background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;border-top:4px solid #99321E;position:relative}
+.job-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.job-card.featured{border-top-color:#FF5432}
+.job-featured-badge{position:absolute;top:-1px;right:16px;background:#FF5432;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;padding:3px 10px;border-radius:0 0 4px 4px;letter-spacing:1px}
+.job-card .job-type{display:inline-block;background:#E1DCCB;color:#1D0707;padding:3px 12px;border-radius:4px;font-size:11px;font-weight:600}
+.job-card .job-type.freelance{background:#d4edda;color:#155724}
+.job-card .job-type.fulltime{background:#cce5ff;color:#004085}
+.job-card .job-type.hybrid{background:#fff3cd;color:#856404}
+.job-card h3{font-size:18px;font-weight:700;color:#1D0707;margin:10px 0 6px;line-height:1.3}
+.job-card .company{font-size:14px;color:#99321E;font-weight:500;margin-bottom:6px}
+.job-meta{font-size:13px;color:#666;display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}
+.job-meta span{display:flex;align-items:center;gap:4px}
+.job-desc{font-size:13px;color:#555;line-height:1.6;margin-bottom:14px}
+.job-categories{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.job-categories span{background:#F5F3EE;color:#1D0707;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:500}
+.job-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding-top:14px;border-top:1px solid #f0ede4}
+.job-date{font-size:12px;color:#999}
+.job-apply{background:#FF5432;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;cursor:pointer;transition:background .2s;text-decoration:none;display:inline-block}
+.job-apply:hover{background:#99321E}
+/* Post a job CTA */
+.post-cta{background:#E1DCCB;padding:40px 0;text-align:center}
+.post-cta h2{font-size:22px;color:#1D0707;margin-bottom:6px}
+.post-cta p{color:#555;font-size:14px;margin-bottom:16px}
+.post-cta .btn{display:inline-block;background:#FF5432;color:#fff;padding:12px 32px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;transition:background .2s}
+.post-cta .btn:hover{background:#99321E}
+/* Footer */
+.footer{background:#1D0707;color:rgba(255,255,255,.6);padding:32px 0;margin-top:48px;text-align:center;font-size:13px}
+.footer strong{color:#fff}
+.footer a{color:#FF5432;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.empty-state{text-align:center;padding:60px 20px;color:#888}
+.empty-state h3{color:#1D0707;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<div class="logo">
+<div class="logo-circle">H</div>
+<div><div class="logo-text">Hisparos<span>.</span></div></div>
+</div>
+<div class="header-tag">Legal &amp; Sworn Translation — Job Board</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<div class="hero-badge">💼 Job Board</div>
+<h1>Legal Translation &amp; Interpreting Jobs</h1>
+<p>Find sworn translation, legal, financial, patent, and court interpreting opportunities from leading law firms, translation agencies, and international organisations.</p>
+<div class="hero-stats">
+<div><div class="hero-stat-num">18</div><div class="hero-stat-label">Active Jobs</div></div>
+<div><div class="hero-stat-num">12</div><div class="hero-stat-label">Language Pairs</div></div>
+<div><div class="hero-stat-num">8</div><div class="hero-stat-label">New This Week</div></div>
+</div>
+</div>
+</section>
+
+<div class="toolbar">
+<div class="wrap">
+<select id="catFilter" onchange="filterJobs()">
+<option value="all">All Categories</option>
+<option value="Sworn Translation">Sworn Translation</option>
+<option value="Legal">Legal</option>
+<option value="Financial">Financial</option>
+<option value="Patent">Patent</option>
+<option value="Court Interpreting">Court Interpreting</option>
+</select>
+<select id="typeFilter" onchange="filterJobs()">
+<option value="all">All Types</option>
+<option value="Freelance">Freelance</option>
+<option value="Full-time">Full-time</option>
+<option value="Hybrid">Hybrid</option>
+</select>
+<div class="count"><span id="jobCount">18</span> jobs</div>
+</div>
+</div>
+
+<section class="jobs-section">
+<div class="wrap">
+<div class="jobs-grid" id="jobsContainer"></div>
+</div>
+</section>
+
+<section class="post-cta">
+<div class="wrap">
+<h2>📢 Hiring? Post a Job</h2>
+<p>Reach qualified sworn and legal translation professionals. Free for registered law firms and agencies.</p>
+<a href="#" class="btn">Post a Job — Free</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="wrap">
+<p><strong>Hisparos</strong> — Legal Translation Job Board. Connecting sworn translators with top employers.</p>
+<p style="margin-top:8px">📧 <a href="mailto:jobs@hisparos.com">jobs@hisparos.com</a> &nbsp;|&nbsp; <a href="#">Post a Job</a> &nbsp;|&nbsp; <a href="#">Job Alerts</a></p>
+<p style="margin-top:12px;opacity:.5">© 2026 Hisparos. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const jobs = [
+  {title:"Sworn Translator EN→ES (Full-Time)",company:"Garrigues",location:"Madrid, Spain",type:"Full-time",typeClass:"fulltime",categories:["Sworn Translation","Legal"],desc:"Full-time sworn translator for one of Spain's largest law firms. Handling corporate contracts, litigation documents, and notarial deeds. Official sworn translator appointment required.",date:"3 days ago",featured:true},
+  {title:"Legal Translation Specialist (Freelance)",company:"TransPerfect Legal",location:"Remote",type:"Freelance",typeClass:"freelance",categories:["Legal","Financial"],desc:"Freelance legal translator for EN→ES and ES→EN work. Specialising in mergers & acquisitions, financial disclosures, and regulatory filings. CAT tools experience essential.",date:"5 days ago",featured:false},
+  {title:"Court Interpreter — Spanish Criminal Courts",company":"Ministry of Justice (Spain)",location:"Barcelona, Spain",type:"Hybrid",typeClass:"hybrid",categories:["Court Interpreting","Sworn Translation"],desc:"Sworn interpreter for criminal proceedings in Catalonia. Requires certification from the Spanish Ministry of Justice. Catalan language skills highly valued.",date:"1 week ago",featured:true},
+  {title:"Patent Translator DE→ES (In-House)",company:"Hoffmann Eitle",location:"Munich, Germany",type:"Full-time",typeClass:"fulltime",categories:["Patent","Legal"],desc:"In-house patent translator for one of Europe's top IP law firms. Focus on mechanical engineering and pharmaceutical patents. German mother tongue preferred.",date:"1 week ago",featured:false},
+  {title:"Financial Translation Reviewer",company:"KPMG Spain",location:"Remote (Spain-based)",type:"Freelance",typeClass:"freelance",categories:["Financial","Legal"],desc:"Review and certify financial translations for audit reports, annual accounts, and regulatory submissions. Minimum 5 years experience required.",date:"2 weeks ago",featured:false},
+  {title:"Sworn Translator EN↔ES (Corporate)",company:"Cuatrecasas",location:"Barcelona, Spain",type:"Full-time",typeClass:"fulltime",categories:["Sworn Translation","Corporate"],desc:"In-house sworn translator for corporate, M&A, and banking practice groups. Sworn appointment by Spanish Ministry of Foreign Affairs required.",date:"2 weeks ago",featured:false},
+  {title:"Legal Document Translator FR→ES",company:"CMS Legal",location:"Paris / Remote",type:"Hybrid",typeClass:"hybrid",categories:["Legal","Sworn Translation"],desc:"French-to-Spanish legal translator for cross-border litigation and contract work. Sworn translator status an advantage but not required.",date:"3 weeks ago",featured:false},
+  {title:"Immigration Document Translator",company:"LexLaw Immigration",location:"Remote",type:"Freelance",typeClass:"freelance",categories:["Legal","Immigration"],desc:"Translating visa applications, residence permits, and supporting documents from multiple languages into English or Spanish. Fast turnaround required.",date:"3 weeks ago",featured:false},
+  {title:"Senior Legal Translation Project Manager",company:"SEMIC SL",location:"Madrid, Spain",type:"Full-time",typeClass:"fulltime",categories:["Legal","Financial"],desc:"Lead a team of 15+ sworn and legal translators. Manage workflows, quality assurance, and client relationships for a top Madrid-based LSP.",date:"1 month ago",featured:false},
+  {title:"Audiovisual Translation for Legal Training",company:"EU Council — DG TRAD",location:"Brussels / Remote",type:"Freelance",typeClass:"freelance",categories:["Legal"],desc:"Subtitling and translating legal training materials for EU institutions. Languages: EN→ES, FR→ES. AI-powered tools provided.",date:"1 month ago",featured:false},
+  {title:"Court Interpreter (Arabic↔Spanish)",company:"Regional Courts of Valencia",location:"Valencia, Spain",type:"Freelance",typeClass:"freelance",categories:["Court Interpreting","Sworn Translation"],desc:"Sworn court interpreter for Arabic and Spanish in the Valencian Community. Official interpreter certification mandatory. Civil and criminal cases.",date:"1 month ago",featured:false},
+  {title:"Legal Proofreader EN→ES",company:"Bird & Bird",location:"Remote",type:"Freelance",typeClass:"freelance",categories:["Legal","Financial"],desc:"Proofread legal documents translated from English to Spanish. Must have legal background or sworn translator qualification. Tech contracts a plus.",date:"5 weeks ago",featured:false},
+  {title:"Sworn Translator ES→EN (UK-based)",company:"The Translation People",location:"London, UK",type:"Full-time",typeClass:"fulltime",categories:["Sworn Translation"],desc:"Sworn translator based in London for Spanish-to-English document certification. Hybrid working, 3 days in office. UK residency required.",date:"5 weeks ago",featured:false},
+  {title:"Technical Patent Translator IT→ES",company:"Clarke, Modet & Cº",location:"Madrid, Spain",type:"Full-time",typeClass:"fulltime",categories:["Patent"],desc:"Italian-to-Spanish patent translator focusing on biotechnology and pharmaceuticals. Specialised terminology databases provided.",date:"6 weeks ago",featured:false},
+  {title:"Litigation Translation Freelancer",company:"Gomez-Acebo & Pombo",location:"Remote",type:"Freelance",typeClass:"freelance",categories:["Legal","Sworn Translation"],desc:"Freelance sworn translator for litigation support. Translation of court rulings, expert reports, and procedural documents. CAT tools required.",date:"6 weeks ago",featured:false},
+  {title:"Associate Legal Translator — EU Institutions",company:"European Commission (EPSO)",location:"Brussels, Belgium",type:"Full-time",typeClass:"fulltime",categories:["Legal","Financial"],desc:"Full-time legal translator for the European Commission's Directorate-General for Translation. Permanent staff position. EU-wide competition.",date:"2 months ago",featured:true},
+  {title:"Notarial Deed Specialist ES↔EN",company:"Garrigues Notarial",location:"Madrid / Remote",type:"Hybrid",typeClass:"hybrid",categories:["Sworn Translation","Legal"],desc:"Specialist in the translation of notarial deeds, powers of attorney, and incorporation documents. Notarial experience essential.",date:"2 months ago",featured:false},
+  {title:"AI-Assisted Legal Translation Contractor",company:"Unbabel — Legal Division",location:"Remote (EU time zones)",type:"Freelance",typeClass:"freelance",categories:["Legal","Sworn Translation"],desc:"Post-edit AI-generated legal translations with human certification. Premium rates for sworn translators. Portuguese a plus.",date:"2 months ago",featured:false}
+];
+
+function renderJobs(list){
+  const container=document.getElementById('jobsContainer');
+  const count=document.getElementById('jobCount');
+  if(!list.length){
+    container.innerHTML=`<div class="empty-state" style="grid-column:1/-1"><h3>No jobs match your filters</h3><p>Try a different category or type.</p></div>`;
+    count.textContent='0';
+    return;
+  }
+  container.innerHTML=list.map(j=>`
+    <div class="job-card${j.featured?' featured':''}">
+      ${j.featured?'<div class="job-featured-badge">Featured</div>':''}
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <span class="job-type ${j.typeClass}">${j.type}</span>
+      </div>
+      <h3>${j.title}</h3>
+      <div class="company">${j.company}</div>
+      <div class="job-meta">
+        <span>📍 ${j.location}</span>
+        <span>📅 ${j.date}</span>
+      </div>
+      <p class="job-desc">${j.desc}</p>
+      <div class="job-categories">${j.categories.map(c=>`<span>${c}</span>`).join('')}</div>
+      <div class="job-footer">
+        <span class="job-date">Posted ${j.date}</span>
+        <a href="#" class="job-apply">Apply Now</a>
+      </div>
+    </div>
+  `).join('');
+  count.textContent=list.length;
+}
+
+function filterJobs(){
+  const cat=document.getElementById('catFilter').value;
+  const type=document.getElementById('typeFilter').value;
+  const filtered=jobs.filter(j=>{
+    if(cat!=='all' && !j.categories.includes(cat)) return false;
+    if(type!=='all' && j.type!==type) return false;
+    return true;
+  });
+  renderJobs(filtered);
+}
+
+renderJobs(jobs);
+</script>
+
+</body>
+</html>

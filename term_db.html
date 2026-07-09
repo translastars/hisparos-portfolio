@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hisparos — Legal Terminology Database</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:1.7}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+/* Header */
+.header{background:#1D0707;padding:28px 0;border-bottom:4px solid #FF5432}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:44px;height:44px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px}
+.logo-text{color:#fff;font-weight:700;font-size:22px;letter-spacing:1px}
+.logo-text span{color:#FF5432}
+.header-tag{color:rgba(255,255,255,.65);font-size:13px}
+/* Hero */
+.hero{background:linear-gradient(135deg,#1D0707 0%,#2a0c0c 100%);padding:60px 0;text-align:center;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#99321E,#FF5432,#99321E)}
+.hero h1{color:#fff;font-size:36px;font-weight:700;margin-bottom:8px}
+.hero p{color:rgba(255,255,255,.7);font-size:16px;max-width:640px;margin:0 auto}
+.hero-badge{display:inline-block;background:#FF5432;color:#fff;padding:4px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+/* Free badge bar */
+.free-bar{background:#99321E;color:#fff;padding:12px 0;text-align:center;font-size:14px;font-weight:500}
+.free-bar strong{color:#fff;background:#FF5432;padding:2px 12px;border-radius:4px;font-size:12px;text-transform:uppercase;margin-right:8px}
+/* Search & Filter */
+.toolbar{background:#fff;padding:24px 0;border-bottom:1px solid #e0ddd4}
+.toolbar .wrap{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.search-box{flex:2;min-width:240px;position:relative}
+.search-box input{width:100%;padding:12px 16px 12px 44px;border:2px solid #e0ddd4;border-radius:8px;font-family:'Poppins',sans-serif;font-size:14px;transition:border-color .2s}
+.search-box input:focus{outline:none;border-color:#FF5432}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#999;font-size:18px}
+.filter-selects{display:flex;gap:10px;flex-wrap:wrap}
+.filter-selects select{padding:12px 16px;border:2px solid #e0ddd4;border-radius:8px;font-family:'Poppins',sans-serif;font-size:13px;background:#fff;cursor:pointer;min-width:140px;transition:border-color .2s}
+.filter-selects select:focus{outline:none;border-color:#FF5432}
+.search-stats{font-size:13px;color:#666;display:flex;align-items:center;gap:6px;margin-left:auto}
+/* Results */
+.results-section{padding:32px 0}
+.results-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.results-grid{grid-template-columns:1fr 1fr}}
+.term-card{background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-left:4px solid #99321E;transition:transform .2s,box-shadow .2s}
+.term-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.term-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.term-source{font-size:20px;font-weight:700;color:#1D0707}
+.term-target{font-size:20px;font-weight:600;color:#FF5432}
+.term-domain{display:inline-block;background:#E1DCCB;color:#1D0707;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600}
+.term-language{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#666;margin-bottom:8px}
+.term-language strong{color:#1D0707;font-weight:600}
+.term-context{background:#F5F3EE;padding:12px 16px;border-radius:6px;font-size:13px;color:#444;border-left:3px solid #FF5432;margin-top:10px;line-height:1.5}
+.term-context em{font-style:italic;color:#99321E}
+/* API Section */
+.api-section{background:#E1DCCB;padding:40px 0;margin-top:32px}
+.api-section h2{text-align:center;font-size:22px;font-weight:700;color:#1D0707;margin-bottom:8px}
+.api-section p{text-align:center;color:#555;font-size:14px;max-width:600px;margin:0 auto 24px}
+.api-box{background:#1D0707;color:#e0ddd4;padding:24px;border-radius:10px;font-family:'Courier New',monospace;font-size:13px;line-height:1.8;overflow-x:auto}
+.api-box .cmt{color:#6a6a6a}
+.api-box .key{color:#FF5432;font-weight:600}
+.api-box .str{color:#4caf50}
+.api-box .endp{color:#64b5f6}
+/* Footer */
+.footer{background:#1D0707;color:rgba(255,255,255,.6);padding:32px 0;margin-top:48px;text-align:center;font-size:13px}
+.footer strong{color:#fff}
+.footer a{color:#FF5432;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+/* Empty state */
+.empty-state{text-align:center;padding:60px 20px;color:#888}
+.empty-state h3{color:#1D0707;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<div class="logo">
+<div class="logo-circle">H</div>
+<div><div class="logo-text">Hisparos<span>.</span></div></div>
+</div>
+<div class="header-tag">Legal &amp; Sworn Translation Terminology Database</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<div class="hero-badge">📖 Terminology Database</div>
+<h1>Legal &amp; Sworn Translation Glossary</h1>
+<p>A comprehensive, searchable database of legal terminology across multiple language pairs — curated by experienced sworn translators. Designed for law firms, in-house counsel, and legal translation professionals.</p>
+</div>
+</section>
+
+<div class="free-bar">
+<div class="wrap">
+<strong>FREE FOR CLIENTS</strong> Registered Hisparos clients get unlimited access. <a href="#" style="color:#fff;text-decoration:underline;">Request access →</a>
+</div>
+</div>
+
+<div class="toolbar">
+<div class="wrap">
+<div class="search-box">
+<span class="search-icon">🔍</span>
+<input type="text" id="searchInput" placeholder="Search terms, contexts, domains..." oninput="filterTerms()">
+</div>
+<div class="filter-selects">
+<select id="langFilter" onchange="filterTerms()">
+<option value="all">All Language Pairs</option>
+<option value="en-es">EN → ES</option>
+<option value="es-en">ES → EN</option>
+<option value="fr-es">FR → ES</option>
+<option value="de-es">DE → ES</option>
+<option value="it-es">IT → ES</option>
+</select>
+<select id="domainFilter" onchange="filterTerms()">
+<option value="all">All Domains</option>
+<option value="Legal">Legal</option>
+<option value="Financial">Financial</option>
+<option value="Immigration">Immigration</option>
+<option value="Corporate">Corporate</option>
+</select>
+</div>
+<div class="search-stats">
+<span id="resultCount">24</span> terms found
+</div>
+</div>
+</div>
+
+<section class="results-section">
+<div class="wrap">
+<div class="results-grid" id="termResults"></div>
+</div>
+</section>
+
+<!-- API Integration Section -->
+<section class="api-section">
+<div class="wrap">
+<h2>🔌 AJAX-Ready API Integration</h2>
+<p>Connect this frontend to your backend or a third-party terminology API. Below is the expected endpoint structure for developers.</p>
+<div class="api-box">
+<div class="cmt">// GET /api/terms — Search the terminology database</div>
+<div class="cmt">// Supports query params: q, lang, domain, page, limit</div><br>
+<a class="endp">GET</a> /api/v1/terms?<span class="key">q</span>=<span class="str">habeas+corpus</span>&<span class="key">lang</span>=<span class="str">en-es</span>&<span class="key">domain</span>=<span class="str">Legal</span>&<span class="key">page</span>=1&<span class="key">limit</span>=20<br><br>
+<div class="cmt">// Response format (JSON):</div>
+{<br>
+&nbsp;&nbsp;"total": 5,<br>
+&nbsp;&nbsp;"page": 1,<br>
+&nbsp;&nbsp;"terms": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"source_term": "habeas corpus",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"target_term": "hábeas corpus",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"source_lang": "en",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"target_lang": "es",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"domain": "Legal",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"context": "The right to ...",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usage_example": "..."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;]<br>
+}<br><br>
+<div class="cmt">// JavaScript frontend example:</div>
+const res = await fetch(<span class="str">`/api/v1/terms?q=${query}&lang=${lang}&domain=${domain}`</span>);<br>
+const data = await res.json();<br>
+renderTerms(data.terms);
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="wrap">
+<p><strong>Hisparos</strong> — Sworn &amp; Legal Translation Terminology Database.</p>
+<p style="margin-top:8px">📧 <a href="mailto:terminology@hisparos.com">terminology@hisparos.com</a> &nbsp;|&nbsp; <a href="#">Request New Terms</a> &nbsp;|&nbsp; <a href="#">API Documentation</a></p>
+<p style="margin-top:12px;opacity:.5">© 2026 Hisparos. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const terms = [
+  {source:"habeas corpus",target:"hábeas corpus",sl:"EN",tl:"ES",domain:"Legal",pair:"en-es",context:"The right of a detained person to appear before a court to challenge the lawfulness of their detention."},
+  {source:"power of attorney",target:"poder notarial",sl:"EN",tl:"ES",domain:"Legal",pair:"en-es",context:"A legal document authorising someone to act on behalf of another in legal or financial matters."},
+  {source:"due diligence",target:"diligencia debida",sl:"EN",tl:"ES",domain:"Corporate",pair:"en-es",context:"Investigation or audit of a potential investment or product to confirm all facts."},
+  {source:"estado de cuenta",target:"statement of account",sl:"ES",tl:"EN",domain:"Financial",pair:"es-en",context:"A periodic document summarising financial transactions over a specific period."},
+  {source:"residencia legal",target:"legal residence",sl:"ES",tl:"EN",domain:"Immigration",pair:"es-en",context:"The status of a foreign national authorised to reside in a country under its immigration laws."},
+  {source:"contrat de travail",target:"contrato de trabajo",sl:"FR",tl:"ES",domain:"Legal",pair:"fr-es",context:"Employment contract specifying the terms of the working relationship between employer and employee."},
+  {source:"procès-verbal",target:"acta / diligencia",sl:"FR",tl:"ES",domain:"Legal",pair:"fr-es",context:"Official written record of proceedings, often used in company board meetings or court hearings."},
+  {source:"expediente de extranjería",target:"foreigner's file",sl:"ES",tl:"EN",domain:"Immigration",pair:"es-en",context:"Administrative file containing all documentation related to a foreign national's immigration status in Spain."},
+  {source:"escritura pública",target:"notarial deed / public deed",sl:"ES",tl:"EN",domain:"Legal",pair:"es-en",context:"A document executed before a notary public certifying the identity and capacity of the signatories."},
+  {source:"GmbH",target:"Sociedad de Responsabilidad Limitada",sl:"DE",tl:"ES",domain:"Corporate",pair:"de-es",context:"A German limited liability company, equivalent to the Spanish S.L. or UK Ltd."},
+  {source:"acta de nacimiento",target:"birth certificate",sl:"ES",tl:"EN",domain:"Legal",pair:"es-en",context:"Official document certifying the birth of a person, required for passport and visa applications."},
+  {source:"expediente judicial",target:"court record / case file",sl:"ES",tl:"EN",domain:"Legal",pair:"es-en",context:"Complete documentation of a judicial proceeding kept by the court clerk's office."},
+  {source:"injunction",target:"medida cautelar / interdicto",sl:"EN",tl:"ES",domain:"Legal",pair:"en-es",context:"A court order requiring a party to do or refrain from doing a specific act."},
+  {source:"memoria anual",target:"annual report",sl:"ES",tl:"EN",domain:"Corporate",pair:"es-en",context:"Comprehensive report on a company's activities and financial performance throughout the preceding year."},
+  {source:"NIE (Número de Identidad de Extranjero)",target:"Foreigner Identity Number",sl:"ES",tl:"EN",domain:"Immigration",pair:"es-en",context:"Unique identification number assigned to foreign nationals residing in or conducting business in Spain."},
+  {source:"cláusula penal",target:"penalty clause",sl:"ES",tl:"EN",domain:"Legal",pair:"es-en",context:"A contractual provision imposing a monetary penalty for breach of contract."},
+  {source:"arbitrage",target:"arbitraje",sl:"FR",tl:"ES",domain:"Legal",pair:"fr-es",context:"Alternative dispute resolution method where a neutral third party renders a binding decision."},
+  {source:"Liquiditätsausweis",target:"certificado de liquidez",sl:"DE",tl:"ES",domain:"Financial",pair:"de-es",context:"Document certifying the liquidity position of a company, often required for credit applications."},
+  {source:"intellectual property",target:"propiedad intelectual",sl:"EN",tl:"ES",domain:"Legal",pair:"en-es",context:"Legal rights protecting creations of the mind, such as inventions, literary works, and trademarks."},
+  {source:"sentencia firme",target:"final judgment / final ruling",sl:"ES",tl:"EN",domain:"Legal",pair:"es-en",context:"A court ruling against which no further appeal is possible."},
+  {source:"factura pro forma",target:"pro forma invoice",sl:"ES",tl:"EN",domain:"Financial",pair:"es-en",context:"A preliminary bill of sale sent to buyers before shipping or delivery of goods."},
+  {source:"visado de estudios",target:"student visa",sl:"ES",tl:"EN",domain:"Immigration",pair:"es-en",context:"Visa category allowing foreign nationals to reside in a country for the purpose of study."},
+  {source:"escritura de constitución",target:"articles of incorporation",sl:"ES",tl:"EN",domain:"Corporate",pair:"es-en",context:"The founding document filed with a government entity to legally document the creation of a corporation."},
+  {source:"Gesellschaftsvertrag",target:"contrato de sociedad",sl:"DE",tl:"ES",domain:"Corporate",pair:"de-es",context:"The partnership or shareholders' agreement governing a German company's internal affairs."}
+];
+
+function renderTerms(list){
+  const container=document.getElementById('termResults');
+  const count=document.getElementById('resultCount');
+  if(!list.length){
+    container.innerHTML=`<div class="empty-state"><h3>No terms found</h3><p>Try a different search term or filter combination.</p></div>`;
+    count.textContent='0';
+    return;
+  }
+  container.innerHTML=list.map(t=>`
+    <div class="term-card">
+      <div class="term-language">
+        <strong>${t.sl}</strong> → <strong>${t.tl}</strong>
+        <span style="margin:0 8px;color:#ccc">|</span>
+        <span class="term-domain">${t.domain}</span>
+      </div>
+      <div class="term-header">
+        <div class="term-source">${t.source}</div>
+        <div class="term-target">${t.target}</div>
+      </div>
+      <div class="term-context"><em>Context:</em> ${t.context}</div>
+    </div>
+  `).join('');
+  count.textContent=list.length;
+}
+
+function filterTerms(){
+  const q=document.getElementById('searchInput').value.toLowerCase().trim();
+  const lang=document.getElementById('langFilter').value;
+  const domain=document.getElementById('domainFilter').value;
+  const filtered=terms.filter(t=>{
+    if(lang!=='all' && t.pair!==lang) return false;
+    if(domain!=='all' && t.domain!==domain) return false;
+    if(q && !t.source.toLowerCase().includes(q) && !t.target.toLowerCase().includes(q) && !t.context.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  renderTerms(filtered);
+}
+
+// Initial render
+renderTerms(terms);
+</script>
+
+</body>
+</html>

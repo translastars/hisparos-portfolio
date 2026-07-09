@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TermDB Admin — Manage Terminology</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:#333;background:#f5f3ee;line-height:1.6}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+.header{background:#3D1F52;padding:16px 0;border-bottom:3px solid #FF6B00}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.logo-text{color:#fff;font-weight:700;font-size:18px}
+.logo-text span{color:#FF6B00}
+.admin-badge{background:#FF6B00;color:#fff;padding:4px 14px;border-radius:20px;font-size:11px;font-weight:700}
+
+nav{background:#fff;padding:12px 0;border-bottom:1px solid #e1dccb}
+nav .wrap{display:flex;gap:8px;flex-wrap:wrap}
+nav a{color:#522D6D;text-decoration:none;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:500;transition:all .2s}
+nav a:hover, nav a.active{background:#522D6D;color:#fff}
+
+.section{display:none;padding:24px 0 50px}
+.section.active{display:block}
+h2{font-size:22px;color:#3D1F52;margin-bottom:16px;font-weight:700}
+h3{font-size:16px;color:#522D6D;margin:16px 0 10px;font-weight:600}
+
+.card{background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;border:1px solid #e1dccb}
+.card-title{font-size:14px;font-weight:600;color:#522D6D;margin-bottom:8px}
+
+.drop-zone{border:2px dashed #c4b5d4;border-radius:10px;padding:40px;text-align:center;cursor:pointer;transition:all .3s;background:#f8f4fc}
+.drop-zone:hover,.drop-zone.dragover{border-color:#FF6B00;background:#fff6ee}
+.drop-zone p{font-size:14px;color:#888;margin:8px 0}
+.drop-zone .icon{font-size:40px;margin-bottom:8px}
+.drop-zone .btn{background:#522D6D;color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;margin-top:10px}
+.drop-zone .btn:hover{background:#3D1F52}
+.drop-zone.supported{border-color:#2e7d32;background:#e8f5e9}
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:#3D1F52;color:#fff;padding:10px 12px;text-align:left;font-weight:600}
+td{padding:8px 12px;border-bottom:1px solid #eee;vertical-align:top}
+tr:hover td{background:#f8f4fc}
+td .del-btn{background:#dc3545;color:#fff;border:none;padding:3px 10px;border-radius:4px;cursor:pointer;font-size:11px;font-family:'Poppins',sans-serif}
+
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:13px;color:#555;font-weight:600;margin-bottom:4px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:9px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px;font-family:'Poppins',sans-serif}
+.form-group textarea{min-height:60px;resize:vertical}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#7B3FAF;outline:none}
+.form-row{display:flex;gap:12px;flex-wrap:wrap}
+.form-row>*{flex:1;min-width:150px}
+.submit-btn{background:#522D6D;color:#fff;border:none;padding:10px 28px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif}
+.submit-btn:hover{background:#3D1F52}
+.submit-btn.orange{background:#FF6B00}
+.submit-btn.orange:hover{background:#e66000}
+.submit-btn.green{background:#2e7d32}
+.submit-btn.green:hover{background:#1b5e20}
+
+.alert{padding:12px 16px;border-radius:6px;margin:12px 0;font-size:13px;display:none}
+.alert.success{display:block;background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9}
+.alert.error{display:block;background:#ffebee;color:#c62828;border:1px solid #ffcdd2}
+.alert.info{display:block;background:#e3f2fd;color:#1565c0;border:1px solid #bbdefb}
+
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:#fff;border:1px solid #e1dccb;border-radius:8px;padding:16px;text-align:center}
+.stat-card .num{font-size:28px;font-weight:700;color:#3D1F52}
+.stat-card .label{font-size:12px;color:#888;margin-top:4px}
+
+.exclusion-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#f8f4fc;border-radius:6px;font-size:13px;margin:4px 0}
+.exclusion-item .pattern{font-weight:600;color:#3D1F52;flex:1}
+.exclusion-item .cat{font-size:11px;color:#888;background:#eee;padding:2px 8px;border-radius:4px}
+.exclusion-item .del-btn{background:#dc3545;color:#fff;border:none;padding:2px 8px;border-radius:4px;cursor:pointer;font-size:11px}
+
+@media(max-width:768px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .form-row>*{min-width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<div><span class="logo-text">Terminology <span>DB</span></span></div>
+<span class="admin-badge">🔒 ADMIN PANEL</span>
+</div>
+</header>
+
+<nav>
+<div class="wrap">
+<a href="#" onclick="showSection('dashboard')" class="active" id="nav-dashboard">📊 Dashboard</a>
+<a href="#" onclick="showSection('upload')" id="nav-upload">📤 Upload TMX</a>
+<a href="#" onclick="showSection('terms')" id="nav-terms">📝 Manage Terms</a>
+<a href="#" onclick="showSection('exclusions')" id="nav-exclusions">🚫 Exclusions</a>
+<a href="#" onclick="showSection('settings')" id="nav-settings">⚙️ Settings</a>
+<a href="/" target="_blank" style="color:#FF6B00">🔍 Public Search →</a>
+</div>
+</nav>
+
+<div class="wrap">
+
+<!-- DASHBOARD -->
+<div class="section active" id="section-dashboard">
+  <h2>📊 Dashboard</h2>
+  <div class="stats-grid" id="statsGrid"></div>
+  <div class="card">
+    <div class="card-title">📄 Upload Log</div>
+    <div id="uploadLog"><p style="color:#888;font-size:13px">Loading...</p></div>
+  </div>
+</div>
+
+<!-- UPLOAD TMX -->
+<div class="section" id="section-upload">
+  <h2>📤 Upload Translation Memory (TMX)</h2>
+  <p style="color:#888;font-size:13px;margin-bottom:16px">Upload a TMX file to extract terminology terms. The system will automatically detect terms, context, and exclude sensitive information.</p>
+  
+  <div class="drop-zone" id="dropZone">
+    <div class="icon">📄</div>
+    <p><strong>Drop a .tmx file here</strong></p>
+    <p style="font-size:12px">or click to select one</p>
+    <input type="file" id="fileInput" accept=".tmx" style="display:none">
+    <button class="btn" onclick="document.getElementById('fileInput').click()">Select TMX File</button>
+    <p style="font-size:11px;color:#aaa;margin-top:8px">Max 50MB · Supports TMX v1.4 · UTF-8 encoded</p>
+  </div>
+  
+  <div id="uploadStatus"></div>
+  
+  <div class="card">
+    <div class="card-title">📋 How it works</div>
+    <ol style="font-size:13px;color:#555;padding-left:18px;line-height:1.8">
+      <li>The system reads your TMX file and extracts all bilingual units</li>
+      <li>Short segments (1-4 words) are treated as <strong>terms</strong></li>
+      <li>Longer segments are treated as <strong>context</strong> and attached to related short terms</li>
+      <li>Sensitive data (company names, addresses, emails, etc.) is automatically <strong>excluded</strong></li>
+      <li>You can review and manage the exclusion list in the Exclusions tab</li>
+    </ol>
+  </div>
+</div>
+
+<!-- MANAGE TERMS -->
+<div class="section" id="section-terms">
+  <h2>📝 Browse & Manage Terms</h2>
+  <div style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap">
+    <input type="text" id="termSearch" placeholder="Search terms..." style="flex:1;min-width:200px;padding:9px 14px;border:1px solid #ddd;border-radius:6px;font-size:13px;font-family:'Poppins'">
+    <button class="submit-btn" onclick="searchTerms()">Search</button>
+    <button class="submit-btn orange" onclick="document.getElementById('addForm').style.display='block'">+ Add Term</button>
+  </div>
+
+  <div class="card" id="addForm" style="display:none">
+    <div class="card-title">✏️ Add New Term</div>
+    <div class="form-row">
+      <div class="form-group"><label>Term</label><input type="text" id="newTerm" placeholder="e.g. Power of Attorney"></div>
+      <div class="form-group"><label>Language</label>
+        <select id="newLang">
+          <option value="EN">English</option><option value="ES">Spanish</option>
+          <option value="FR">French</option><option value="DE">German</option>
+          <option value="IT">Italian</option><option value="PT">Portuguese</option>
+        </select>
+      </div>
+    </div>
+    <div class="card-title" style="margin-top:12px;">Translations</div>
+    <div id="transInputs">
+      <div class="form-row" style="margin-bottom:8px">
+        <div class="form-group"><input type="text" class="transText" placeholder="Translation text"></div>
+        <div class="form-group">
+          <select class="transLang">
+            <option value="">Lang...</option><option value="EN">EN</option><option value="ES">ES</option>
+            <option value="FR">FR</option><option value="DE">DE</option><option value="IT">IT</option><option value="PT">PT</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <button class="submit-btn green" style="font-size:12px;padding:6px 14px" onclick="addTransRow()">+ Add translation</button>
+    <div class="form-group" style="margin-top:12px">
+      <label>Context (optional)</label>
+      <textarea id="newContext" placeholder="e.g. The client signed a power of attorney authorizing the lawyer..."></textarea>
+    </div>
+    <button class="submit-btn" style="margin-top:8px" onclick="addTerm()">Save Term</button>
+    <span id="addStatus"></span>
+  </div>
+
+  <div id="termsList"><p style="color:#888;font-size:13px">Use the search above to browse terms.</p></div>
+  <div id="termPagination" class="pagination" style="display:flex;justify-content:center;gap:6px;margin-top:12px;flex-wrap:wrap"></div>
+</div>
+
+<!-- EXCLUSIONS -->
+<div class="section" id="section-exclusions">
+  <h2>🚫 Exclusion List</h2>
+  <p style="font-size:13px;color:#888;margin-bottom:12px">Terms matching these patterns will be automatically excluded when uploading TMX files. This prevents company names, personal data, and other sensitive information from appearing in the database.</p>
+  
+  <div class="card">
+    <div class="card-title">Add exclusion pattern</div>
+    <div class="form-row">
+      <div class="form-group"><label>Pattern</label><input type="text" id="exclPattern" placeholder="e.g. S.L. or @ or Company Name"></div>
+      <div class="form-group"><label>Match type</label>
+        <select id="exclType">
+          <option value="contains">Contains</option>
+          <option value="exact">Exact match</option>
+          <option value="regex">Regex</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Category</label>
+        <select id="exclCategory">
+          <option value="company">Company</option>
+          <option value="person">Person</option>
+          <option value="address">Address</option>
+          <option value="email">Email</option>
+          <option value="url">URL</option>
+          <option value="number">Number/ID</option>
+          <option value="date">Date</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <button class="submit-btn" onclick="addExclusion()">Add Pattern</button>
+    <span id="exclStatus"></span>
+  </div>
+  
+  <div id="exclusionsList"><div class="card"><p style="color:#888;font-size:13px">Loading exclusions...</p></div></div>
+</div>
+
+<!-- SETTINGS -->
+<div class="section" id="section-settings">
+  <h2>⚙️ Settings</h2>
+  <div class="card">
+    <div class="card-title">🗄️ Database</div>
+    <p style="font-size:13px;color:#555;margin-bottom:12px">Use the seed button to load demonstration legal terminology data. Use reset to clear all custom data.</p>
+    <button class="submit-btn green" onclick="seedDB()" id="seedBtn">🌱 Seed Demo Data</button>
+    <button class="submit-btn orange" onclick="resetDB()" id="resetBtn" style="margin-left:8px">🗑️ Reset Database</button>
+    <span id="dbStatus"></span>
+  </div>
+  <div class="card">
+    <div class="card-title">📦 Export</div>
+    <a href="/api/export" target="_blank"><button class="submit-btn">📥 Download All Terms (JSON)</button></a>
+  </div>
+</div>
+
+</div>
+
+<script>
+const API = window.location.origin;
+
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('section-' + id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  if (id === 'dashboard') loadDashboard();
+  if (id === 'exclusions') loadExclusions();
+}
+
+// ===== DASHBOARD =====
+async function loadDashboard() {
+  try {
+    const s = await fetch(API + '/api/stats').then(r => r.json());
+    document.getElementById('statsGrid').innerHTML = `
+      <div class="stat-card"><div class="num">${s.totalTerms}</div><div class="label">Terms</div></div>
+      <div class="stat-card"><div class="num">${s.totalTranslations}</div><div class="label">Translations</div></div>
+      <div class="stat-card"><div class="num">${s.totalDomains}</div><div class="label">Domains</div></div>
+      <div class="stat-card"><div class="num">${s.totalUploads}</div><div class="label">Uploads</div></div>
+      <div class="stat-card"><div class="num">${s.totalExclusions}</div><div class="label">Exclusion Rules</div></div>
+      <div class="stat-card"><div class="num">${s.recentTerms}</div><div class="label">Added This Week</div></div>
+    `;
+  } catch(e) { document.getElementById('statsGrid').innerHTML = `<p>Error loading stats</p>`; }
+
+  try {
+    const logs = await fetch(API + '/api/uploads').then(r => r.json());
+    if (logs.length === 0) {
+      document.getElementById('uploadLog').innerHTML = '<p style="color:#888;font-size:13px">No uploads yet</p>';
+      return;
+    }
+    let html = '<table><tr><th>Date</th><th>File</th><th>Terms</th><th>Trans.</th><th>Status</th></tr>';
+    logs.forEach(l => {
+      const d = new Date(l.created_at).toLocaleDateString();
+      html += `<tr><td>${d}</td><td>${l.filename}</td><td>${l.terms_imported}</td><td>${l.translations_imported || '-'}</td>
+        <td style="color:${l.status === 'completed' ? '#2e7d32' : l.status === 'seeded' ? '#1565c0' : '#c62828'}">${l.status}</td></tr>`;
+    });
+    html += '</table>';
+    document.getElementById('uploadLog').innerHTML = html;
+  } catch(e) {}
+}
+
+// ===== UPLOAD =====
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', (e) => { e.preventDefault(); dropZone.classList.remove('dragover');
+  if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]); });
+fileInput.addEventListener('change', (e) => { if (e.target.files.length) handleFile(e.target.files[0]); });
+
+async function handleFile(file) {
+  if (!file.name.endsWith('.tmx')) {
+    showUploadStatus('Only .tmx files are supported', 'error');
+    return;
+  }
+  
+  dropZone.classList.add('supported');
+  dropZone.querySelector('p strong').textContent = `📤 ${file.name}`;
+  dropZone.querySelector('.btn').textContent = 'Uploading...';
+  
+  const form = new FormData();
+  form.append('file', file);
+  
+  try {
+    const res = await fetch(API + '/api/upload/tmx', { method: 'POST', body: form });
+    const data = await res.json();
+    if (res.ok) {
+      showUploadStatus(`✅ Imported ${data.imported} terms with ${data.translations} translations from "${file.name}"`, 'success');
+      dropZone.querySelector('p strong').textContent = 'Drop another .tmx file here';
+      dropZone.querySelector('.btn').textContent = 'Select TMX File';
+      dropZone.classList.remove('supported');
+      loadDashboard();
+    } else {
+      showUploadStatus(`❌ ${data.error}`, 'error');
+    }
+  } catch(e) {
+    showUploadStatus(`❌ Upload failed: ${e.message}`, 'error');
+  }
+}
+
+function showUploadStatus(msg, type) {
+  const el = document.getElementById('uploadStatus');
+  el.innerHTML = `<div class="alert ${type}">${msg}</div>`;
+  setTimeout(() => el.innerHTML = '', 8000);
+}
+
+// ===== MANAGE TERMS =====
+async function searchTerms(page) {
+  page = page || 1;
+  const q = document.getElementById('termSearch').value.trim();
+  const params = new URLSearchParams({ q, page, limit: 20 });
+  
+  try {
+    const res = await fetch(API + '/api/terms?' + params);
+    const data = await res.json();
+    
+    if (!data.terms || data.terms.length === 0) {
+      document.getElementById('termsList').innerHTML = '<p style="color:#888;font-size:13px">No terms found.</p>';
+      document.getElementById('termPagination').innerHTML = '';
+      return;
+    }
+    
+    let html = '<table><tr><th>ID</th><th>Term</th><th>Lang</th><th>Translations</th><th>Domain</th><th></th></tr>';
+    data.terms.forEach(t => {
+      const transStr = t.translations.map(tr => `${tr.lang}: ${tr.text}`).join(', ');
+      html += `<tr>
+        <td>${t.id}</td><td>${escapeHtml(t.term)}</td><td>${t.lang}</td>
+        <td style="max-width:300px;font-size:12px">${escapeHtml(transStr).substring(0, 200)}</td>
+        <td>${t.domain}</td>
+        <td><button class="del-btn" onclick="deleteTerm(${t.id})">✕</button></td>
+      </tr>`;
+    });
+    html += '</table>';
+    document.getElementById('termsList').innerHTML = html;
+    
+    const p = data.pagination;
+    let pg = '';
+    for (let i = Math.max(1, p.page - 2); i <= Math.min(p.totalPages, p.page + 2); i++) {
+      pg += `<button onclick="searchTerms(${i})" style="background:${i === p.page ? '#522D6D' : '#fff'};color:${i === p.page ? '#fff' : '#333'};border:1px solid #ddd;padding:6px 12px;border-radius:4px;cursor:pointer;font-size:12px;font-family:Poppins">${i}</button>`;
+    }
+    document.getElementById('termPagination').innerHTML = pg;
+  } catch(e) {}
+}
+
+function addTransRow() {
+  const div = document.createElement('div');
+  div.className = 'form-row';
+  div.style.marginBottom = '8px';
+  div.innerHTML = `<div class=\"form-group\"><input type=\"text\" class=\"transText\" placeholder=\"Translation text\"></div>
+    <div class=\"form-group\"><select class=\"transLang\">
+      <option value=\"\">Lang...</option><option value=\"EN\">EN</option><option value=\"ES\">ES</option>
+      <option value=\"FR\">FR</option><option value=\"DE\">DE</option><option value=\"IT\">IT</option><option value=\"PT\">PT</option>
+    </select></div>`;
+  document.getElementById('transInputs').appendChild(div);
+}
+
+async function addTerm() {
+  const term = document.getElementById('newTerm').value.trim();
+  const lang = document.getElementById('newLang').value;
+  const context = document.getElementById('newContext').value.trim();
+  
+  if (!term || !lang) { document.getElementById('addStatus').textContent = '⚠️ Term and language required'; return; }
+  
+  const transInputs = document.querySelectorAll('.trans-row');
+  const translations = [];
+  document.querySelectorAll('#transInputs .form-row').forEach(row => {
+    const text = row.querySelector('.transText')?.value?.trim();
+    const lang = row.querySelector('.transLang')?.value;
+    if (text && lang) translations.push({ text, lang });
+  });
+  
+  if (translations.length === 0) { document.getElementById('addStatus').textContent = '⚠️ At least one translation required'; return; }
+  
+  try {
+    const res = await fetch(API + '/api/terms', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ term, lang, translations, context })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      document.getElementById('addStatus').innerHTML = `<span style="color:#2e7d32">✅ Term added (ID: ${data.id})</span>`;
+      document.getElementById('newTerm').value = '';
+      document.getElementById('newContext').value = '';
+      document.getElementById('transInputs').innerHTML = '<div class="form-row" style="margin-bottom:8px"><div class="form-group"><input type="text" class="transText" placeholder="Translation text"></div><div class="form-group"><select class="transLang"><option value="">Lang...</option><option value="EN">EN</option><option value="ES">ES</option><option value="FR">FR</option><option value="DE">DE</option><option value="IT">IT</option><option value="PT">PT</option></select></div></div>';
+      searchTerms();
+      loadDashboard();
+    } else {
+      document.getElementById('addStatus').innerHTML = `<span style="color:#c62828">❌ ${data.error}</span>`;
+    }
+  } catch(e) {}
+}
+
+async function deleteTerm(id) {
+  if (!confirm('Delete this term and all its translations?')) return;
+  try {
+    await fetch(API + '/api/terms/' + id, { method: 'DELETE' });
+    searchTerms();
+    loadDashboard();
+  } catch(e) {}
+}
+
+// ===== EXCLUSIONS =====
+async function loadExclusions() {
+  try {
+    const excls = await fetch(API + '/api/exclusions').then(r => r.json());
+    if (excls.length === 0) {
+      document.getElementById('exclusionsList').innerHTML = '<div class="card"><p style="color:#888;font-size:13px">No exclusion patterns configured.</p></div>';
+      return;
+    }
+    let html = '<div class="card"><div class="card-title">Current exclusion patterns</div>';
+    excls.forEach(e => {
+      html += `<div class="exclusion-item">
+        <span class="pattern">${escapeHtml(e.pattern)}</span>
+        <span class="cat">${e.match_type}</span>
+        <span class="cat">${e.category}</span>
+        <button class="del-btn" onclick="deleteExclusion(${e.id})">✕</button>
+      </div>`;
+    });
+    html += `<p style="font-size:11px;color:#aaa;margin-top:8px">${excls.length} patterns active</p></div>`;
+    document.getElementById('exclusionsList').innerHTML = html;
+  } catch(e) {}
+}
+
+async function addExclusion() {
+  const pattern = document.getElementById('exclPattern').value.trim();
+  const match_type = document.getElementById('exclType').value;
+  const category = document.getElementById('exclCategory').value;
+  if (!pattern) { document.getElementById('exclStatus').textContent = '⚠️ Pattern required'; return; }
+  
+  try {
+    const res = await fetch(API + '/api/exclusions', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ pattern, match_type, category })
+    });
+    if (res.ok) {
+      document.getElementById('exclPattern').value = '';
+      document.getElementById('exclStatus').innerHTML = '<span style="color:#2e7d32">✅ Pattern added</span>';
+      loadExclusions();
+    } else {
+      const d = await res.json();
+      document.getElementById('exclStatus').innerHTML = `<span style="color:#c62828">❌ ${d.error}</span>`;
+    }
+  } catch(e) {}
+}
+
+async function deleteExclusion(id) {
+  try {
+    await fetch(API + '/api/exclusions/' + id, { method: 'DELETE' });
+    loadExclusions();
+  } catch(e) {}
+}
+
+// ===== SETTINGS =====
+async function seedDB() {
+  document.getElementById('seedBtn').disabled = true;
+  document.getElementById('seedBtn').textContent = 'Seeding...';
+  try {
+    const res = await fetch(API + '/api/seed', { method: 'POST' });
+    const data = await res.json();
+    document.getElementById('dbStatus').innerHTML = `<span style="color:#2e7d32">✅ ${data.message}</span>`;
+    loadDashboard();
+  } catch(e) {
+    document.getElementById('dbStatus').innerHTML = `<span style="color:#c62828">❌ ${e.message}</span>`;
+  }
+  document.getElementById('seedBtn').disabled = false;
+  document.getElementById('seedBtn').textContent = '🌱 Seed Demo Data';
+}
+
+async function resetDB() {
+  if (!confirm('This will delete ALL data. Are you sure?')) return;
+  if (!confirm('Really? All terms and upload logs will be lost.')) return;
+  try {
+    await fetch(API + '/api/reset', { method: 'POST' });
+    document.getElementById('dbStatus').innerHTML = '<span style="color:#1565c0">ℹ️ Database cleared</span>';
+    loadDashboard();
+  } catch(e) {}
+}
+
+function escapeHtml(t) { if (!t) return ''; const d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+
+// Init
+loadDashboard();
+</script>
+</body>
+</html>

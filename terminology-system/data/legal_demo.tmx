@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+  <header creationtool="TranslaStars" creationtoolversion="1.0" segtype="sentence" o-tmf="TranslaStarsTM" adminlang="en-US" srclang="en-US" datatype="plaintext"/>
+  <body>
+    <!-- LEGAL TERMS - English to Spanish -->
+    <tu creationdate="20240701" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Breach of contract</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Incumplimiento de contrato</seg></tuv>
+    </tu>
+    <tu creationdate="20240701" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>The lessor shall be entitled to terminate the lease agreement in the event of breach of contract by the lessee.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El arrendador tendrá derecho a rescindir el contrato de arrendamiento en caso de incumplimiento de contrato por parte del arrendatario.</seg></tuv>
+    </tu>
+    <tu creationdate="20240702" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Power of attorney</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Poder notarial</seg></tuv>
+    </tu>
+    <tu creationdate="20240702" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>By means of this power of attorney, the principal grants the agent full authority to represent him in all legal proceedings.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Mediante este poder notarial, el poderdante otorga al apoderado facultades plenas para representarle en todos los procedimientos judiciales.</seg></tuv>
+    </tu>
+    <tu creationdate="20240703" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Intellectual property</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Propiedad intelectual</seg></tuv>
+    </tu>
+    <tu creationdate="20240703" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>All intellectual property rights arising from this agreement shall vest in the client upon full payment.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Todos los derechos de propiedad intelectual que se deriven del presente acuerdo corresponderán al cliente tras el pago íntegro.</seg></tuv>
+    </tu>
+    <tu creationdate="20240704" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Force majeure</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Fuerza mayor</seg></tuv>
+    </tu>
+    <tu creationdate="20240704" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>Neither party shall be liable for any delay or failure to perform its obligations under this agreement if caused by a force majeure event.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Ninguna de las partes será responsable de cualquier retraso o incumplimiento de sus obligaciones en virtud del presente acuerdo si se debe a un evento de fuerza mayor.</seg></tuv>
+    </tu>
+    <tu creationdate="20240705" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Arbitration clause</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Cláusula de arbitraje</seg></tuv>
+    </tu>
+    <tu creationdate="20240705" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>Any dispute arising out of or in connection with this contract shall be referred to and finally resolved by arbitration.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Cualquier controversia que surja de o en relación con este contrato se someterá a arbitraje y será resuelta definitivamente mediante el mismo.</seg></tuv>
+    </tu>
+    <tu creationdate="20240706" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Due diligence</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Diligencia debida</seg></tuv>
+    </tu>
+    <tu creationdate="20240706" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The purchaser shall conduct a thorough due diligence review of the target company prior to closing.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El comprador llevará a cabo una revisión exhaustiva de diligencia debida de la empresa objetivo antes del cierre.</seg></tuv>
+    </tu>
+    <tu creationdate="20240707" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>Liquidated damages</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Cláusula penal</seg></tuv>
+    </tu>
+    <tu creationdate="20240707" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>In the event of delay in delivery, the contractor shall pay liquidated damages in the amount of 0.1% of the contract value per day.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>En caso de retraso en la entrega, el contratista pagará una cláusula penal del 0,1% del valor del contrato por día.</seg></tuv>
+    </tu>
+    <tu creationdate="20240708" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Non-disclosure agreement</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Acuerdo de confidencialidad</seg></tuv>
+    </tu>
+    <tu creationdate="20240708" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>For the purposes of this non-disclosure agreement, "Confidential Information" shall mean any proprietary data disclosed by one party to the other.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>A los efectos del presente acuerdo de confidencialidad, "Información Confidencial" significará cualquier dato de propiedad divulgado por una parte a la otra.</seg></tuv>
+    </tu>
+    <tu creationdate="20240709" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Witnesseth</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>EXPONEN / Comparecen</seg></tuv>
+    </tu>
+    <tu creationdate="20240709" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>NOW, THEREFORE, in consideration of the mutual covenants contained herein, the parties agree as follows:</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>EN CONSECUENCIA, en consideración a las estipulaciones mutuas contenidas en el presente, las partes acuerdan lo siguiente:</seg></tuv>
+    </tu>
+    <tu creationdate="20240710" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>Indemnification</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Indemnización</seg></tuv>
+    </tu>
+    <tu creationdate="20240710" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The supplier agrees to indemnify and hold harmless the client from any claims arising from the supplier's negligence.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El proveedor se obliga a indemnizar y mantener indemne al cliente de cualquier reclamación derivada de la negligencia del proveedor.</seg></tuv>
+    </tu>
+    <tu creationdate="20240711" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Jurisdiction</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Jurisdicción</seg></tuv>
+    </tu>
+    <tu creationdate="20240711" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>The parties submit to the exclusive jurisdiction of the courts of Madrid, Spain for the resolution of any disputes.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Las partes se someten a la jurisdicción exclusiva de los tribunales de Madrid, España para la resolución de cualquier controversia.</seg></tuv>
+    </tu>
+    <tu creationdate="20240712" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Severability</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Separabilidad / Nulidad parcial</seg></tuv>
+    </tu>
+    <tu creationdate="20240712" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>If any provision of this agreement is held to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Si alguna disposición del presente acuerdo se considerara inválida o inejecutable, las disposiciones restantes permanecerán en pleno vigor y efecto.</seg></tuv>
+    </tu>
+    <tu creationdate="20240713" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Escrow agreement</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Contrato de depósito en garantía</seg></tuv>
+    </tu>
+    <tu creationdate="20240713" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>The purchase price shall be deposited in an escrow account with a mutually agreed financial institution.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El precio de compra se depositará en una cuenta de depósito en garantía en una entidad financiera acordada mutuamente.</seg></tuv>
+    </tu>
+    <tu creationdate="20240714" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Best endeavors</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Mejores esfuerzos</seg></tuv>
+    </tu>
+    <tu creationdate="20240714" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The licensee shall use its best endeavors to commercialize the licensed products in the territory.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El licenciatario empleará sus mejores esfuerzos para comercializar los productos licenciados en el territorio.</seg></tuv>
+    </tu>
+    <tu creationdate="20240715" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Subrogation</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Subrogación</seg></tuv>
+    </tu>
+    <tu creationdate="20240715" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>Upon payment of the claim, the insurer shall be subrogated to all rights of the insured against third parties.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Tras el pago de la indemnización, la aseguradora se subrogará en todos los derechos del asegurado frente a terceros.</seg></tuv>
+    </tu>
+    <tu creationdate="20240716" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Warranty</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Garantía</seg></tuv>
+    </tu>
+    <tu creationdate="20240716" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>The seller warrants that the goods are free from any encumbrances and defects in title.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El vendedor garantiza que los bienes están libres de cualquier gravamen y defecto de título.</seg></tuv>
+    </tu>
+    <tu creationdate="20240717" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Consideration</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Contraprestación</seg></tuv>
+    </tu>
+    <tu creationdate="20240717" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>In consideration of the services provided, the company agrees to pay a monthly fee of €2,000.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Como contraprestación por los servicios prestados, la sociedad se obliga a pagar una cuota mensual de 2.000€.</seg></tuv>
+    </tu>
+    <tu creationdate="20240718" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Visa application</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Solicitud de visado</seg></tuv>
+    </tu>
+    <tu creationdate="20240718" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The applicant must submit a completed visa application form together with all supporting documents no later than 15 days before the intended travel date.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El solicitante deberá presentar un formulario de solicitud de visado cumplimentado junto con todos los documentos justificativos a más tardar 15 días antes de la fecha prevista de viaje.</seg></tuv>
+    </tu>
+    <tu creationdate="20240719" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Sworn translation</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Traducción jurada</seg></tuv>
+    </tu>
+    <tu creationdate="20240719" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>A sworn translation issued by a duly authorized translator shall be required for all official documents submitted to Spanish public authorities.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Se requerirá una traducción jurada emitida por un traductor jurado debidamente autorizado para todos los documentos oficiales presentados ante las autoridades públicas españolas.</seg></tuv>
+    </tu>
+    <tu creationdate="20240720" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Merger clause</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Cláusula de integración</seg></tuv>
+    </tu>
+    <tu creationdate="20240720" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>This agreement constitutes the entire agreement between the parties and supersedes all prior negotiations, representations, and agreements.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>El presente acuerdo constituye el acuerdo íntegro entre las partes y sustituye a todas las negociaciones, declaraciones y acuerdos anteriores.</seg></tuv>
+    </tu>
+    <tu creationdate="20240721" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>Legal entity</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Persona jurídica / Entidad legal</seg></tuv>
+    </tu>
+    <tu creationdate="20240721" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Goldman Sachs International</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Goldman Sachs International</seg></tuv>
+    </tu>
+    <tu creationdate="20240721" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Baker McKenzie LLP</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Baker McKenzie LLP</seg></tuv>
+    </tu>
+    <tu creationdate="20240721" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>123 Main Street, London, UK</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>123 Main Street, London, Reino Unido</seg></tuv>
+    </tu>
+    <tu creationdate="20240722" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>Notary public</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Notario / fedatario público</seg></tuv>
+    </tu>
+    <tu creationdate="20240722" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The deed must be executed before a notary public and subsequently registered with the relevant registry.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>La escritura debe otorgarse ante notario público e inscribirse posteriormente en el registro correspondiente.</seg></tuv>
+    </tu>
+    <tu creationdate="20240723" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Annual general meeting</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Junta general anual</seg></tuv>
+    </tu>
+    <tu creationdate="20240723" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>Shareholders representing at least 25% of the share capital may request the convening of an extraordinary general meeting.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Los accionistas que representen al menos el 25% del capital social podrán solicitar la convocatoria de una junta general extraordinaria.</seg></tuv>
+    </tu>
+    <tu creationdate="20240724" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Insolvency proceedings</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Procedimiento concursal</seg></tuv>
+    </tu>
+    <tu creationdate="20240724" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>The company was declared insolvent and insolvency proceedings were commenced before the Commercial Court of Barcelona.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>La sociedad fue declarada insolvente y se inició un procedimiento concursal ante el Juzgado de lo Mercantil de Barcelona.</seg></tuv>
+    </tu>
+    <tu creationdate="20240725" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Enforceability</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Ejecutividad / Exigibilidad</seg></tuv>
+    </tu>
+    <tu creationdate="20240725" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>A judgment rendered by a court of a Member State shall be recognized and enforced in other Member States without any special procedure.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Una sentencia dictada por un tribunal de un Estado miembro será reconocida y ejecutada en los demás Estados miembros sin ningún procedimiento especial.</seg></tuv>
+    </tu>
+    <tu creationdate="20240726" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Pre-nuptial agreement</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Capitulaciones matrimoniales</seg></tuv>
+    </tu>
+    <tu creationdate="20240726" creationid="translator1">
+      <tuv xml:lang="en-US"><seg>Letters of administration</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Acta de nombramiento de administrador</seg></tuv>
+    </tu>
+    <tu creationdate="20240727" creationid="translator3">
+      <tuv xml:lang="en-US"><seg>Mortgage deed</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>Escritura de hipoteca</seg></tuv>
+    </tu>
+    <tu creationdate="20240727" creationid="translator2">
+      <tuv xml:lang="en-US"><seg>The mortgage deed shall be registered with the Land Registry within 30 days of execution before the notary.</seg></tuv>
+      <tuv xml:lang="es-ES"><seg>La escritura de hipoteca se inscribirá en el Registro de la Propiedad dentro de los 30 días siguientes a su otorgamiento ante notario.</seg></tuv>
+    </tu>
+  </body>
+</tmx>

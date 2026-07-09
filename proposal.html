@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TranslaStars Proposal — Hisparos Digital Ecosystem</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;color:#333;background:#f9f7fc;line-height:1.7}
+a{color:#FF6B00;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.header{background:linear-gradient(135deg,#3D1F52 0%,#522D6D 50%,#7B3FAF 100%);padding:36px 0 28px;color:#fff;position:relative;overflow:hidden}
+.header::after{content:'';position:absolute;top:0;right:0;width:300px;height:300px;background:rgba(255,107,0,.08);border-radius:50%;transform:translate(100px,-100px)}
+.header .wrap{position:relative;z-index:1}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:6px 18px;border-radius:50px;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.header h1{font-size:38px;font-weight:800;line-height:1.15;margin-bottom:10px}
+.header h1 span{color:#FF6B00}
+.header p{font-size:17px;color:rgba(255,255,255,.75);max-width:650px;line-height:1.6}
+
+/* Price banner */
+.price-banner{background:linear-gradient(90deg,#FF6B00,#ff8c38);padding:20px 0;text-align:center;color:#fff}
+.price-banner .big{font-size:42px;font-weight:800;letter-spacing:-1px}
+.price-banner .small{font-size:14px;opacity:.85;margin-top:2px}
+.price-banner .sub{font-size:15px;margin-top:6px;opacity:.9}
+
+/* Sections */
+.section{padding:44px 0}
+.section h2{font-size:28px;color:#3D1F52;font-weight:700;margin-bottom:8px;position:relative}
+.section h2::after{content:'';display:block;width:50px;height:3px;background:#FF6B00;margin-top:6px}
+.section .subtitle{font-size:15px;color:#777;margin-bottom:28px}
+.section:nth-child(even){background:#f4f0f8}
+
+/* Service cards */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:8px}
+.service-card{background:#fff;border-radius:12px;padding:28px;border:1px solid #e8e0f0;transition:all .25s;position:relative;overflow:hidden}
+.service-card:hover{box-shadow:0 8px 30px rgba(82,45,109,.1);transform:translateY(-3px)}
+.service-card .icon{font-size:32px;margin-bottom:10px}
+.service-card h3{font-size:18px;color:#522D6D;font-weight:700;margin-bottom:6px}
+.service-card p{font-size:14px;color:#666;line-height:1.6;margin-bottom:10px}
+.service-card .tag{display:inline-block;background:#522D6D;color:#fff;padding:3px 12px;border-radius:50px;font-size:11px;font-weight:600;margin-bottom:10px}
+.service-card .demo-btn{display:inline-block;margin-top:4px;background:#FF6B00;color:#fff;padding:8px 18px;border-radius:6px;font-size:13px;font-weight:600;transition:all .2s}
+.service-card .demo-btn:hover{background:#e66000;text-decoration:none}
+.service-card .badge{position:absolute;top:18px;right:18px;background:#e8f5e9;color:#2e7d32;padding:3px 12px;border-radius:50px;font-size:11px;font-weight:600}
+.service-card.featured{border:2px solid #7B3FAF;background:linear-gradient(135deg,#fff,#f8f4fc)}
+
+/* Feature list */
+.feature-list{list-style:none;margin:8px 0}
+.feature-list li{padding:4px 0;font-size:14px;color:#555}
+.feature-list li::before{content:'✓ ';color:#2e7d32;font-weight:700}
+
+/* Tech section */
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0}
+.tech-card{background:#fff;border:1px solid #e8e0f0;border-radius:10px;padding:20px;text-align:center;transition:all .2s}
+.tech-card:hover{box-shadow:0 4px 15px rgba(82,45,109,.08)}
+.tech-card .icon{font-size:36px;margin-bottom:8px}
+.tech-card h4{font-size:14px;color:#522D6D;font-weight:600;margin-bottom:4px}
+.tech-card p{font-size:12px;color:#888}
+
+/* Pricing table */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:16px}
+.pricing-card{background:#fff;border-radius:12px;padding:28px;border:1px solid #e8e0f0;text-align:center}
+.pricing-card.featured{background:linear-gradient(135deg,#3D1F52,#522D6D);color:#fff;border-color:#522D6D;transform:scale(1.02)}
+.pricing-card.featured h3{color:#fff}
+.pricing-card.featured .price{color:#FF6B00}
+.pricing-card.featured li{color:rgba(255,255,255,.85)}
+.pricing-card.featured li::before{color:#FF6B00}
+.pricing-card h3{font-size:20px;color:#522D6D;font-weight:700}
+.pricing-card .price{font-size:44px;font-weight:800;color:#3D1F52;margin:12px 0 6px}
+.pricing-card .price-sub{font-size:14px;color:#888;margin-bottom:16px}
+.pricing-card.featured .price-sub{color:rgba(255,255,255,.6)}
+.pricing-card ul{list-style:none;text-align:left;margin:16px 0;padding:0}
+.pricing-card li{padding:5px 0;font-size:14px;color:#555}
+.pricing-card li::before{content:'✓ ';color:#2e7d32;font-weight:700}
+.pricing-card .btn{display:inline-block;padding:12px 32px;border-radius:6px;font-size:15px;font-weight:700;transition:all .2s;margin-top:8px}
+.pricing-card .btn.outline{border:2px solid #522D6D;color:#522D6D}
+.pricing-card .btn.solid{background:#FF6B00;color:#fff}
+.pricing-card .btn.solid:hover{background:#e66000;text-decoration:none}
+
+/* Demo links */
+.demo-section{background:#fff;border:1px solid #e8e0f0;border-radius:12px;padding:24px}
+.demo-section h3{font-size:18px;color:#522D6D;margin-bottom:14px;font-weight:700}
+.demo-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.demo-link{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f8f4fc;border-radius:8px;transition:all .2s;text-decoration:none;color:#333}
+.demo-link:hover{background:#522D6D;color:#fff;text-decoration:none}
+.demo-link:hover .arrow{color:#FF6B00}
+.demo-link .arrow{color:#7B3FAF;font-weight:700;font-size:16px}
+.demo-link strong{font-size:14px}
+
+/* Call to Action */
+.cta{background:linear-gradient(135deg,#3D1F52,#522D6D);padding:50px 0;text-align:center;color:#fff}
+.cta h2{font-size:30px;font-weight:700;margin-bottom:10px;color:#fff}
+.cta h2::after{background:#FF6B00;margin:10px auto}
+.cta p{font-size:16px;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto 20px}
+.cta .btn{display:inline-block;background:#FF6B00;color:#fff;padding:14px 36px;border-radius:8px;font-size:17px;font-weight:700;transition:all .2s}
+.cta .btn:hover{background:#e66000;text-decoration:none}
+.cta .note{font-size:13px;color:rgba(255,255,255,.5);margin-top:12px}
+
+/* Footer */
+.footer{background:#1a0d24;color:rgba(255,255,255,.4);padding:24px 0;text-align:center;font-size:12px}
+.footer strong{color:#fff}
+.footer a{color:#FF6B00}
+
+/* Responsive */
+@media(max-width:768px){
+  .header h1{font-size:26px}
+  .price-banner .big{font-size:32px}
+  .pricing-card.featured{transform:none}
+  .demo-links{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="wrap">
+<div class="header-badge">⚡ Proposals</div>
+<h1>Your Digital Ecosystem,<br><span>Powered by TranslaStars</span></h1>
+<p>A complete, independent digital infrastructure for your sworn and legal translation practice: terminology database, news aggregation, job board, resources, and document templates — all built for you.</p>
+</div>
+</header>
+
+<!-- PRICE BANNER -->
+<div class="price-banner">
+<div class="wrap">
+<div class="big" style="font-size:28px;font-weight:700">Everything Included: <span style="font-size:48px">€1,995</span></div>
+<div class="small">Full ecosystem setup + OpenClaw training · Optional maintenance: €200/month</div>
+</div>
+</div>
+
+<!-- WHY THIS MATTERS -->
+<div class="section">
+<div class="wrap">
+<h2>Why This Matters</h2>
+<div class="subtitle">You don't need a development team. You don't need a monthly retainer. You need the right tools and the knowledge to use them.</div>
+
+<div class="tech-grid">
+<div class="tech-card">
+<div class="icon">🔧</div>
+<h4>Full Ownership</h4>
+<p>Everything we build is yours. Hosted on your infrastructure. No vendor lock-in.</p>
+</div>
+<div class="tech-card">
+<div class="icon">📚</div>
+<h4>OpenClaw Training</h4>
+<p>You learn to manage, update, and grow your ecosystem. We teach you, not tie you.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🔗</div>
+<h4>Seamless Integration</h4>
+<p>All tools are designed for WordPress + Elementor. Drop them in, they work.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🤖</div>
+<h4>AI-Powered</h4>
+<p>Terminology extraction from TMs, smart filtering, context detection. Not just automation — intelligence.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SERVICES -->
+<div class="section" style="background:#f4f0f8">
+<div class="wrap">
+<h2>What You Get</h2>
+<div class="subtitle">Six integrated tools, one coherent ecosystem. All ready for your WordPress + Elementor site.</div>
+
+<div class="services">
+
+<div class="service-card featured">
+<span class="badge">🔥 Core</span>
+<div class="icon">📰</div>
+<h3>Legal News Aggregator</h3>
+<p>Live RSS reader pulling from top legal and translation news sources. Auto-categorised (EU, UK, Spain, Tech, Careers). Clickable headlines linking to original articles. Powered by OpenClaw AI content curation.</p>
+<span class="tag">RSS · Real-time · Curated</span>
+</div>
+
+<div class="service-card featured">
+<span class="badge">🔥 Core</span>
+<div class="icon">📖</div>
+<h3>Terminology Database</h3>
+<p>Multi-language legal terminology extracted from your translation memories. Upload TMX files → extract terms with context → exclude sensitive data automatically. Searchable by clients, managed by you. <strong>Live demo below.</strong></p>
+<span class="tag">TMX · AI · Multilingual · Searchable</span>
+<a href="http://192.168.68.53:3002/" target="_blank" class="demo-btn">▶ Live Demo</a>
+</div>
+
+<div class="service-card featured">
+<span class="badge">🔥 Core</span>
+<div class="icon">💼</div>
+<h3>Job Board for Translators</h3>
+<p>Live legal and translation job listings, searchable and filterable. Fully branded for Hisparos. Jobs updated continuously from industry sources. Show your clients you're part of an active professional community.</p>
+<span class="tag">Live · Filterable · Industry</span>
+</div>
+
+<div class="service-card">
+<span class="badge" style="background:#FF6B00">Included</span>
+<div class="icon">📚</div>
+<h3>Resources Hub</h3>
+<p>Curated directory of translation tools, software, associations, and guides for sworn and legal translators. Links to glossaries, style guides, professional bodies, and technology recommendations.</p>
+<span class="tag">Directory · Curated · Practical</span>
+</div>
+
+<div class="service-card">
+<span class="badge" style="background:#FF6B00">Included</span>
+<div class="icon">📄</div>
+<h3>Document Templates</h3>
+<p>Ready-to-use templates for sworn translations, affidavits, certificates, and legal documents. SEO-optimised pages that attract clients searching for specific sworn translation services.</p>
+<span class="tag">SEO · Downloads · Ready</span>
+</div>
+
+<div class="service-card">
+<span class="badge" style="background:#FF6B00">Included</span>
+<div class="icon">🎓</div>
+<h3>OpenClaw AI Training</h3>
+<p>Personalised training on OpenClaw, TranslaStars' AI assistant platform. Learn to manage your ecosystem, extract terminology, update your content, and scale your digital presence independently.</p>
+<span class="tag">Training · Independence · Future-proof</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- TERM DB DEMO -->
+<div class="section">
+<div class="wrap">
+<h2>🧠 Terminology Database — Live Demo</h2>
+<div class="subtitle">This is not a mockup. It is a fully functional system you can test right now.</div>
+
+<div class="demo-section">
+<h3>Try It Yourself</h3>
+<p style="font-size:14px;color:#666;margin-bottom:14px">The terminology system is running live. Search for legal terms in multiple languages. The database is seeded with 55 legal terms and their translations. Upload your own TMX files through the admin panel.</p>
+<div class="demo-links">
+<a href="http://192.168.68.53:3002/" target="_blank" class="demo-link">
+<span class="icon" style="font-size:20px">🔍</span>
+<div><strong>Public Search</strong><br><span style="font-size:12px;color:#888">Client-facing search interface</span></div>
+<span class="arrow">→</span>
+</a>
+<a href="http://192.168.68.53:3002/admin.html" target="_blank" class="demo-link">
+<span class="icon" style="font-size:20px">⚙️</span>
+<div><strong>Admin Panel</strong><br><span style="font-size:12px;color:#888">Upload TMX, manage exclusions, browse terms</span></div>
+<span class="arrow">→</span>
+</a>
+<a href="http://192.168.68.53:3002/api/stats" target="_blank" class="demo-link">
+<span class="icon" style="font-size:20px">📊</span>
+<div><strong>Live Stats</strong><br><span style="font-size:12px;color:#888">See what's in the database in real time</span></div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+
+<div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;font-size:13px;color:#555;background:#fff;border:1px solid #e8e0f0;border-radius:10px;padding:20px">
+<div><strong style="color:#3D1F52">🔗 Architecture:</strong> Frontend (HTML/CSS/JS) → calls REST API → SQLite database</div>
+<div><strong style="color:#3D1F52">📤 Import:</strong> Upload TMX → parser extracts terms + context → auto-excludes sensitive data</div>
+<div><strong style="color:#3D1F52">🔒 Exclusions:</strong> 19 built-in patterns (company names, addresses, emails, phone numbers, tax IDs)</div>
+<div><strong style="color:#3D1F52">🌐 Multilingual:</strong> Any language pair — English, Spanish, French, German, Italian, Portuguese, and more</div>
+</div>
+</div>
+</div>
+
+<!-- PRICING -->
+<div class="section" style="background:#f4f0f8">
+<div class="wrap">
+<h2>Investment</h2>
+<div class="subtitle">Transparent, one-time, no hidden costs.</div>
+
+<div class="pricing-grid">
+<div class="pricing-card">
+<h3>Setup</h3>
+<div class="price">€1,995</div>
+<div class="price-sub">One-time payment</div>
+<ul>
+<li>6 fully designed web pages (WordPress + Elementor ready)</li>
+<li>Terminology database system with TMX parser</li>
+<li>AI-powered terminology extraction engine (Python)</li>
+<li>REST API for search and integration</li>
+<li>Admin panel with TMX upload + exclusion management</li>
+<li>Job board with live listings</li>
+<li>News aggregator with RSS feeds</li>
+<li>Resources hub and document templates</li>
+<li>Source code and deployment instructions</li>
+<li><strong>🎓 OpenClaw training (4 hours)</strong></li>
+</ul>
+<a href="#" class="btn outline">Get Started</a>
+</div>
+
+<div class="pricing-card featured">
+<h3>Setup + Management</h3>
+<div class="price">€1,995 <span style="font-size:20px;opacity:.5">+</span></div>
+<div class="price-sub">€200 / month</div>
+<ul>
+<li>Everything in Setup</li>
+<li>Terminology database maintenance</li>
+<li>Regular TMX ingestion and cleanup</li>
+<li>Content updates (news sources, job sources)</li>
+<li>Technical support and troubleshooting</li>
+<li>Monthly updates and improvements</li>
+<li><strong>You stay independent</strong> — cancel anytime, keep everything</li>
+</ul>
+<a href="#" class="btn solid">Get Started</a>
+</div>
+</div>
+
+<p style="text-align:center;font-size:14px;color:#888;margin-top:20px">Both options include full source code, deployment guidance, and the knowledge to run everything yourself.</p>
+</div>
+</div>
+
+<!-- TECHNOLOGY -->
+<div class="section">
+<div class="wrap">
+<h2>Built With</h2>
+<div class="subtitle">Modern, reliable, open technologies.</div>
+
+<div class="tech-grid">
+<div class="tech-card">
+<div class="icon">⚡</div>
+<h4>OpenClaw</h4>
+<p>AI assistant platform by TranslaStars. Powers content generation, terminology extraction, and workflow automation.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🖥️</div>
+<h4>Node.js + Express</h4>
+<p>REST API server. Deploy on Vercel, Railway, or any Node.js host. The terminology backend runs on this.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🗄️</div>
+<h4>SQLite</h4>
+<p>Zero-config database included with the system. No separate DB server needed.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🐍</div>
+<h4>Python + spaCy</h4>
+<p>AI-powered terminology extraction from TMX files. NLP-based term scoring and domain classification.</p>
+</div>
+<div class="tech-card">
+<div class="icon">🎨</div>
+<h4>HTML/CSS</h4>
+<p>All pages are self-contained HTML with CSS. Ready for WordPress + Elementor. Drop in and customise.</p>
+</div>
+<div class="tech-card">
+<div class="icon">📡</div>
+<h4>REST API</h4>
+<p>Full API for the terminology database. Integrate with any tool, website, or workflow.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- INDEPENDENCE MESSAGE -->
+<div class="cta">
+<div class="wrap">
+<h2>🤝 You Own It</h2>
+<p>We build it. We teach you. You run it. No recurring fees for using your own tools. No dependence on anyone. This is the TranslaStars way.</p>
+<a href="#" class="btn">Get Your Ecosystem →</a>
+<div class="note">or reply to this email to start the conversation</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<div class="wrap">
+Proposed by <strong>TranslaStars</strong> · Powered by <strong>OpenClaw</strong><br>
+<a href="https://www.translastars.com">translastars.com</a> · 2026<br>
+<em>This proposal was generated by an AI assistant and reviewed by the TranslaStars team.</em>
+</div>
+</div>
+
+</body>
+</html>

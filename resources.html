@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hisparos — Legal Translation Resources Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:1.7}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+/* Header */
+.header{background:#1D0707;padding:28px 0;border-bottom:4px solid #FF5432}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:44px;height:44px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px}
+.logo-text{color:#fff;font-weight:700;font-size:22px;letter-spacing:1px}
+.logo-text span{color:#FF5432}
+.header-tag{color:rgba(255,255,255,.65);font-size:13px}
+/* Hero */
+.hero{background:linear-gradient(135deg,#1D0707 0%,#2a0c0c 100%);padding:60px 0;text-align:center;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#99321E,#FF5432,#99321E)}
+.hero h1{color:#fff;font-size:36px;font-weight:700;margin-bottom:8px}
+.hero p{color:rgba(255,255,255,.7);font-size:16px;max-width:640px;margin:0 auto}
+.hero-badge{display:inline-block;background:#FF5432;color:#fff;padding:4px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+/* Quick Nav */
+.quick-nav{background:#fff;padding:20px 0;border-bottom:1px solid #e0ddd4;overflow-x:auto}
+.quick-nav .wrap{display:flex;gap:12px;flex-wrap:nowrap;min-width:fit-content}
+.quick-nav a{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:500;color:#333;background:#F5F3EE;text-decoration:none;white-space:nowrap;transition:all .2s;border:1px solid transparent}
+.quick-nav a:hover,.quick-nav a.active{background:#1D0707;color:#fff}
+.quick-nav a span{font-size:16px}
+/* Sections */
+.section-group{margin-bottom:48px}
+.section-group:last-child{margin-bottom:0}
+.section-header{display:flex;align-items:center;gap:14px;margin:40px 0 20px;padding-bottom:12px;border-bottom:3px solid #99321E}
+.section-header .icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.section-header .icon.gov{background:#1D0707;color:#fff}
+.section-header .icon.db{background:#99321E;color:#fff}
+.section-header .icon.assoc{background:#FF5432;color:#fff}
+.section-header .icon.tools{background:#E1DCCB;color:#1D0707}
+.section-header .icon.train{background:#e8f5e9;color:#2e7d32}
+.section-header h2{font-size:20px;font-weight:700;color:#1D0707}
+.section-header .count{font-size:12px;color:#999;font-weight:400}
+/* Resource Grid */
+.resource-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.resource-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.resource-grid.col3{grid-template-columns:1fr 1fr 1fr}}
+.resource-card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;border:1px solid #f0ede4;display:flex;flex-direction:column}
+.resource-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.resource-card h3{font-size:16px;font-weight:600;color:#1D0707;margin-bottom:6px}
+.resource-card p{font-size:13px;color:#555;line-height:1.6;margin-bottom:12px;flex:1}
+.resource-link{color:#FF5432;font-weight:600;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+.resource-link:hover{gap:8px;color:#99321E}
+.resource-badge{display:inline-block;background:#E1DCCB;color:#1D0707;padding:2px 10px;border-radius:12px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;width:fit-content}
+/* Footer */
+.footer{background:#1D0707;color:rgba(255,255,255,.6);padding:32px 0;margin-top:48px;text-align:center;font-size:13px}
+.footer strong{color:#fff}
+.footer a{color:#FF5432;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<div class="logo">
+<div class="logo-circle">H</div>
+<div><div class="logo-text">Hisparos<span>.</span></div></div>
+</div>
+<div class="header-tag">Curated Resources for Legal Translation Professionals</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<div class="hero-badge">📚 Resources Hub</div>
+<h1>Sworn &amp; Legal Translation Resources</h1>
+<p>Your curated gateway to official bodies, legal databases, professional associations, translation tools, and training programmes — everything a sworn translator needs, all in one place.</p>
+</div>
+</section>
+
+<nav class="quick-nav">
+<div class="wrap">
+<a href="#official"><span>🏛️</span> Official Bodies</a>
+<a href="#databases"><span>🗄️</span> Legal Databases</a>
+<a href="#associations"><span>🤝</span> Associations</a>
+<a href="#tools"><span>🔧</span> Tools &amp; Glossaries</a>
+<a href="#training"><span>🎓</span> Training</a>
+</div>
+</nav>
+
+<div class="wrap">
+
+<!-- Official Bodies -->
+<section class="section-group" id="official">
+<div class="section-header">
+<div class="icon gov">🏛️</div>
+<h2>Official Bodies <span class="count">(6)</span></h2>
+</div>
+<div class="resource-grid">
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>Ministry of Foreign Affairs, EU and Cooperation</h3>
+<p>Spain's official body responsible for the appointment and regulation of sworn translators and interpreters (Traductores/as e Intérpretes Jurados/as). Maintains the official register and exam schedules.</p>
+<a href="https://www.exteriores.gob.es" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>European Commission — Directorate-General for Translation (DGT)</h3>
+<p>The largest translation service in the world, employing over 2,500 linguists. Publishes style guides, terminology resources, and quality standards for EU legal translation.</p>
+<a href="https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/translation_en" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">UK</div>
+<h3>UK Home Office — Approved Translator Register</h3>
+<p>Official register of translators and interpreters approved to provide services for UK visa and immigration applications. Mandatory registration for all sworn/legal translation work related to UK immigration.</p>
+<a href="https://www.gov.uk/government/publications/register-of-approved-translators-and-interpreters" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>Court of Justice of the European Union (CJEU) — Translation Directorate</h3>
+<p>The CJEU's in-house translation service handles legal translation for all EU judicial proceedings. Publishes a multilingual legal terminology database and style guide.</p>
+<a href="https://curia.europa.eu" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>Spanish Ministry of Justice</h3>
+<p>Government body overseeing the Spanish judicial system, including official court interpreters and translation standards for legal proceedings in Spain.</p>
+<a href="https://www.mjusticia.gob.es" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">International</div>
+<h3>World Intellectual Property Organization (WIPO) — Translation Division</h3>
+<p>WIPO's translation division handles patent and IP translations across 10+ languages. Their terminology database (WIPO Pearl) is an essential resource for patent translators.</p>
+<a href="https://www.wipo.int" target="_blank" class="resource-link">Visit Website →</a>
+</div>
+</div>
+</section>
+
+<!-- Legal Databases -->
+<section class="section-group" id="databases">
+<div class="section-header">
+<div class="icon db">🗄️</div>
+<h2>Legal Databases <span class="count">(5)</span></h2>
+</div>
+<div class="resource-grid">
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>EUR-Lex</h3>
+<p>Official online portal to EU law, providing access to the Official Journal of the EU, treaties, legislation, case law, and legislative proposals in all 24 official EU languages. Indispensable for EU legal translation.</p>
+<a href="https://eur-lex.europa.eu" target="_blank" class="resource-link">Visit EUR-Lex →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>BOE — Boletín Oficial del Estado</h3>
+<p>Spain's official state gazette publishing all legislation, royal decrees, ministerial orders, and official announcements. Essential for sworn translators requiring accurate legal references and terminology.</p>
+<a href="https://www.boe.es" target="_blank" class="resource-link">Visit BOE →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>CENDOJ — Centro de Documentación Judicial</h3>
+<p>The Spanish Judicial Documentation Centre provides free access to the complete jurisprudence of all Spanish courts, including the Supreme Court and Constitutional Court. Critical for legal translation research.</p>
+<a href="https://www.poderjudicial.es/search" target="_blank" class="resource-link">Visit CENDOJ →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">UK</div>
+<h3>BAILII — British and Irish Legal Information Institute</h3>
+<p>Free online database of UK and Irish legal materials including case law, legislation, and tribunal decisions. Key resource for EN→ES legal translation of common law terminology.</p>
+<a href="https://www.bailii.org" target="_blank" class="resource-link">Visit BAILII →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">International</div>
+<h3>World Legal Information Institute (WorldLII)</h3>
+<p>Global portal providing access to legal materials from over 120 countries. Useful for comparative legal terminology research when translating between multiple legal systems.</p>
+<a href="https://www.worldlii.org" target="_blank" class="resource-link">Visit WorldLII →</a>
+</div>
+</div>
+</section>
+
+<!-- Professional Associations -->
+<section class="section-group" id="associations">
+<div class="section-header">
+<div class="icon assoc">🤝</div>
+<h2>Professional Associations <span class="count">(5)</span></h2>
+</div>
+<div class="resource-grid">
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>APTIC — Asociación Profesional de Traductores e Intérpretes de Cataluña</h3>
+<p>Professional association representing translators and interpreters in Catalonia. Provides networking, training, and certification resources. Strong focus on sworn/legal translation standards.</p>
+<a href="https://www.aptic.cat" target="_blank" class="resource-link">Visit APTIC →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>AGTTI — Agrupación de Traductores e Intérpretes Jurados</h3>
+<p>National association of sworn translators and interpreters in Spain. Advocates for professional standards, publishes industry guidelines, and organises continuing education for sworn translators.</p>
+<a href="https://www.agtti.es" target="_blank" class="resource-link">Visit AGTTI →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>EUATC — European Union of Associations of Translation Companies</h3>
+<p>Europe-wide umbrella organisation for translation company associations. Sets quality standards (EN 15038, ISO 17100), publishes industry benchmarks, and promotes ethical business practices.</p>
+<a href="https://www.euatc.org" target="_blank" class="resource-link">Visit EUATC →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">International</div>
+<h3>FIT — International Federation of Translators</h3>
+<p>Global federation of translator associations representing over 80,000 translators in 55+ countries. Publishes the Translator's Charter and organises the World Congress of Translation Studies.</p>
+<a href="https://www.fit-ift.org" target="_blank" class="resource-link">Visit FIT →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">UK</div>
+<h3>ITI — Institute of Translation and Interpreting</h3>
+<p>UK's leading professional membership body for translators and interpreters. Offers the prestigious MITI qualification and publishes the Bulletin magazine with regular legal translation features.</p>
+<a href="https://www.iti.org.uk" target="_blank" class="resource-link">Visit ITI →</a>
+</div>
+</div>
+</section>
+
+<!-- Tools & Glossaries -->
+<section class="section-group" id="tools">
+<div class="section-header">
+<div class="icon tools">🔧</div>
+<h2>Tools &amp; Glossaries <span class="count">(6)</span></h2>
+</div>
+<div class="resource-grid">
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>IATE — Interactive Terminology for Europe</h3>
+<p>The EU's inter-institutional terminology database containing over 8 million entries in all 24 official EU languages. The gold standard for legal and institutional translation terminology.</p>
+<a href="https://iate.europa.eu" target="_blank" class="resource-link">Visit IATE →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>EURAMIS — European Advanced Multilingual Information System</h3>
+<p>EU's integrated translation environment including translation memories, terminology management, and quality assurance tools. Accessible to EU institutions and approved external contractors.</p>
+<a href="https://ec.europa.eu/info/resources-partners/translation-and-language-resources_en" target="_blank" class="resource-link">Learn More →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Multi-Language</div>
+<h3>Linguee</h3>
+<p>Web-based bilingual concordancer that searches millions of professionally translated sentences. Particularly useful for legal translation to verify terminology in real-world context.</p>
+<a href="https://www.linguee.com" target="_blank" class="resource-link">Visit Linguee →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>EU Terminology Portal</h3>
+<p>Central access point for all EU terminology resources, including glossaries, term lists, and specialised vocabularies across all policy areas. Searchable by domain and language pair.</p>
+<a href="https://terminology.europa.eu" target="_blank" class="resource-link">Visit Portal →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Spain</div>
+<h3>FundéuRAE — Legal Spanish Language Reference</h3>
+<p>Collaboration between the Royal Spanish Academy and the EFE Agency providing authoritative guidance on legal Spanish usage, terminology, and style. Essential for polishing legal translations into Spanish.</p>
+<a href="https://www.fundeu.es" target="_blank" class="resource-link">Visit Fundéu →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">CAT Tools</div>
+<h3>Trados / memoQ / Wordfast — Legal Translation Packages</h3>
+<p>Industry-standard CAT tools with specialised legal translation packages. Offer terminology management, translation memory, QA checks, and integration with legal databases and document management systems.</p>
+<a href="#" class="resource-link">Compare Tools →</a>
+</div>
+</div>
+</section>
+
+<!-- Training & Certification -->
+<section class="section-group" id="training">
+<div class="section-header">
+<div class="icon train">🎓</div>
+<h2>Training &amp; Certification <span class="count">(4)</span></h2>
+</div>
+<div class="resource-grid col3">
+<div class="resource-card">
+<div class="resource-badge">Online</div>
+<h3>Sworn Translator Exam Preparation (Spain)</h3>
+<p>Comprehensive preparation courses for the Spanish Ministry of Foreign Affairs sworn translator examination. Includes mock exams, terminology drills, and legal system overviews.</p>
+<a href="#" class="resource-link">View Courses →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Online</div>
+<h3>Master's in Legal Translation — University of Alicante</h3>
+<p>One of Spain's leading postgraduate programmes in legal and sworn translation. Combines academic theory with practical training in court interpreting and document certification.</p>
+<a href="#" class="resource-link">View Programme →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">EU</div>
+<h3>European Master's in Translation (EMT) Network</h3>
+<p>EU-funded network of 60+ high-quality translation programmes across Europe. EMT programmes meet professional standards and are recognised by EU institutions for translation recruitment.</p>
+<a href="https://ec.europa.eu/info/resources-partners/translation-and-language-resources/european-masters-translation-emt_en" target="_blank" class="resource-link">Explore EMT →</a>
+</div>
+<div class="resource-card">
+<div class="resource-badge">Online</div>
+<h3>Continuing Professional Development — Legal Translation Webinars</h3>
+<p>Ongoing webinar series covering EU legal updates, AI in legal translation, ethics for sworn translators, and advanced legal terminology. Accredited by APTIC and AGTTI.</p>
+<a href="#" class="resource-link">Browse Webinars →</a>
+</div>
+</div>
+</section>
+
+</div>
+
+<footer class="footer">
+<div class="wrap">
+<p><strong>Hisparos</strong> — Sworn &amp; Legal Translation Resources Hub. Curated for professionals.</p>
+<p style="margin-top:8px">📧 <a href="mailto:resources@hisparos.com">resources@hisparos.com</a> &nbsp;|&nbsp; <a href="#">Suggest a Resource</a> &nbsp;|&nbsp; <a href="#">Report Broken Link</a></p>
+<p style="margin-top:12px;opacity:.5">© 2026 Hisparos. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

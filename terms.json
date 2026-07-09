@@ -1,0 +1,242 @@
+[
+  {
+    "term": "power of attorney",
+    "translation": "poder notarial",
+    "domain": "legal",
+    "frequency": 45,
+    "examples": [
+      {
+        "source": "I hereby grant power of attorney to...",
+        "target": "Por la presente otorgo poder notarial a..."
+      }
+    ]
+  },
+  {
+    "term": "sworn translation",
+    "translation": "traducción jurada",
+    "domain": "legal",
+    "frequency": 89,
+    "examples": [
+      {
+        "source": "The sworn translation must be notarized.",
+        "target": "La traducción jurada debe ser notarizada."
+      }
+    ]
+  },
+  {
+    "term": "certified copy",
+    "translation": "copia compulsada",
+    "domain": "legal",
+    "frequency": 67,
+    "examples": [
+      {
+        "source": "Please submit a certified copy of the document.",
+        "target": "Por favor, presente una copia compulsada del documento."
+      }
+    ]
+  },
+  {
+    "term": "entry clearance",
+    "translation": "autorización de entrada",
+    "domain": "immigration",
+    "frequency": 34,
+    "examples": [
+      {
+        "source": "Entry clearance must be obtained prior to travel.",
+        "target": "La autorización de entrada debe obtenerse antes del viaje."
+      }
+    ]
+  },
+  {
+    "term": "residence permit",
+    "translation": "permiso de residencia",
+    "domain": "immigration",
+    "frequency": 78,
+    "examples": [
+      {
+        "source": "Application for a residence permit was submitted.",
+        "target": "Se presentó la solicitud de permiso de residencia."
+      }
+    ]
+  },
+  {
+    "term": "limited liability company",
+    "translation": "sociedad de responsabilidad limitada",
+    "domain": "corporate",
+    "frequency": 56,
+    "examples": [
+      {
+        "source": "The limited liability company was incorporated in 2020.",
+        "target": "La sociedad de responsabilidad limitada se constituyó en 2020."
+      }
+    ]
+  },
+  {
+    "term": "income tax return",
+    "translation": "declaración de la renta",
+    "domain": "financial",
+    "frequency": 43,
+    "examples": [
+      {
+        "source": "The income tax return must be filed by June 30.",
+        "target": "La declaración de la renta debe presentarse antes del 30 de junio."
+      }
+    ]
+  },
+  {
+    "term": "marriage certificate",
+    "translation": "certificado de matrimonio",
+    "domain": "legal",
+    "frequency": 92,
+    "examples": [
+      {
+        "source": "An apostilled marriage certificate is required.",
+        "target": "Se requiere un certificado de matrimonio apostillado."
+      }
+    ]
+  },
+  {
+    "term": "birth certificate",
+    "translation": "certificado de nacimiento",
+    "domain": "legal",
+    "frequency": 95,
+    "examples": [
+      {
+        "source": "Submit the original birth certificate with translation.",
+        "target": "Presente el certificado de nacimiento original con traducción."
+      }
+    ]
+  },
+  {
+    "term": "apostille",
+    "translation": "apostilla",
+    "domain": "legal",
+    "frequency": 71,
+    "examples": [
+      {
+        "source": "The document requires an apostille under the Hague Convention.",
+        "target": "El documento requiere apostilla según el Convenio de La Haya."
+      }
+    ]
+  },
+  {
+    "term": "criminal record certificate",
+    "translation": "certificado de antecedentes penales",
+    "domain": "legal",
+    "frequency": 48,
+    "examples": [
+      {
+        "source": "A criminal record certificate is required for the visa application.",
+        "target": "Se requiere un certificado de antecedentes penales para la solicitud de visado."
+      }
+    ]
+  },
+  {
+    "term": "articles of association",
+    "translation": "estatutos sociales",
+    "domain": "corporate",
+    "frequency": 38,
+    "examples": [
+      {
+        "source": "The articles of association were amended by shareholders.",
+        "target": "Los estatutos sociales fueron modificados por los accionistas."
+      }
+    ]
+  },
+  {
+    "term": "share capital",
+    "translation": "capital social",
+    "domain": "financial",
+    "frequency": 35,
+    "examples": [
+      {
+        "source": "The share capital amounts to €100,000.",
+        "target": "El capital social asciende a 100.000 euros."
+      }
+    ]
+  },
+  {
+    "term": "court ruling",
+    "translation": "sentencia judicial",
+    "domain": "legal",
+    "frequency": 42,
+    "examples": [
+      {
+        "source": "The court ruling was delivered on 15 March 2024.",
+        "target": "La sentencia judicial se dictó el 15 de marzo de 2024."
+      }
+    ]
+  },
+  {
+    "term": "student visa",
+    "translation": "visado de estudiante",
+    "domain": "immigration",
+    "frequency": 53,
+    "examples": [
+      {
+        "source": "The student visa is valid for the duration of the course.",
+        "target": "El visado de estudiante es válido durante la duración del curso."
+      }
+    ]
+  },
+  {
+    "term": "non-disclosure agreement",
+    "translation": "acuerdo de confidencialidad",
+    "domain": "corporate",
+    "frequency": 44,
+    "examples": [
+      {
+        "source": "Both parties signed a non-disclosure agreement.",
+        "target": "Ambas partes firmaron un acuerdo de confidencialidad."
+      }
+    ]
+  },
+  {
+    "term": "subject to",
+    "translation": "sujeto a",
+    "domain": "legal",
+    "frequency": 88,
+    "examples": [
+      {
+        "source": "Subject to the terms and conditions herein.",
+        "target": "Sujeto a los términos y condiciones aquí establecidos."
+      }
+    ]
+  },
+  {
+    "term": "notary public",
+    "translation": "notario público",
+    "domain": "legal",
+    "frequency": 41,
+    "examples": [
+      {
+        "source": "The document was signed before a notary public.",
+        "target": "El documento se firmó ante notario público."
+      }
+    ]
+  },
+  {
+    "term": "work permit",
+    "translation": "permiso de trabajo",
+    "domain": "immigration",
+    "frequency": 62,
+    "examples": [
+      {
+        "source": "Application for a work permit is in process.",
+        "target": "La solicitud de permiso de trabajo está en trámite."
+      }
+    ]
+  },
+  {
+    "term": "commercial register",
+    "translation": "registro mercantil",
+    "domain": "corporate",
+    "frequency": 33,
+    "examples": [
+      {
+        "source": "The company is registered in the Commercial Register.",
+        "target": "La empresa está inscrita en el Registro Mercantil."
+      }
+    ]
+  }
+]
