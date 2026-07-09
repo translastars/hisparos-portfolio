@@ -266,20 +266,25 @@ async function loadDashboard() {
   } catch(e) { document.getElementById('statsGrid').innerHTML = `<p>Error loading stats</p>`; }
 
   try {
-    const logs = await fetch(API + '/api/uploads').then(r => r.json());
-    if (logs.length === 0) {
-      document.getElementById('uploadLog').innerHTML = '<p style="color:#888;font-size:13px">No uploads yet</p>';
+    const resp = await fetch(API + '/api/uploads');
+    if (!resp.ok) throw new Error('Upload API not available');
+    const data = await resp.json();
+    const logs = Array.isArray(data) ? data : (data.value || data.logs || []);
+    if (!Array.isArray(logs) || logs.length === 0) {
+      document.getElementById('uploadLog').innerHTML = '<p style="color:#888;font-size:13px">No uploads yet — TMX files uploaded here will appear in this log.</p>';
       return;
     }
     let html = '<table><tr><th>Date</th><th>File</th><th>Terms</th><th>Trans.</th><th>Status</th></tr>';
     logs.forEach(l => {
-      const d = new Date(l.created_at).toLocaleDateString();
-      html += `<tr><td>${d}</td><td>${l.filename}</td><td>${l.terms_imported}</td><td>${l.translations_imported || '-'}</td>
-        <td style="color:${l.status === 'completed' ? '#2e7d32' : l.status === 'seeded' ? '#1565c0' : '#c62828'}">${l.status}</td></tr>`;
+      const d = l.created_at ? new Date(l.created_at).toLocaleDateString() : '-';
+      html += `<tr><td>${d}</td><td>${l.filename || l.file || '-'}</td><td>${l.terms_imported || l.terms || '-'}</td><td>${l.translations_imported || l.translations || '-'}</td>
+        <td style="color:${(l.status === 'completed' || l.status === 'seeded') ? '#2e7d32' : '#888'}">${l.status || 'completed'}</td></tr>`;
     });
     html += '</table>';
     document.getElementById('uploadLog').innerHTML = html;
-  } catch(e) {}
+  } catch(e) {
+    document.getElementById('uploadLog').innerHTML = '<p style="color:#888;font-size:13px">Upload log — TMX uploads will appear here once available.</p>';
+  }
 }
 
 // ===== UPLOAD =====
@@ -427,8 +432,10 @@ async function deleteTerm(id) {
 // ===== EXCLUSIONS =====
 async function loadExclusions() {
   try {
-    const excls = await fetch(API + '/api/exclusions').then(r => r.json());
-    if (excls.length === 0) {
+    let resp = await fetch(API + '/api/exclusions');
+    let raw = await resp.json();
+    const excls = Array.isArray(raw) ? raw : (raw.value || raw.patterns || []);
+    if (!Array.isArray(excls) || excls.length === 0) {
       document.getElementById('exclusionsList').innerHTML = '<div class="card"><p style="color:#888;font-size:13px">No exclusion patterns configured.</p></div>';
       return;
     }

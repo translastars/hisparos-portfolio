@@ -195,14 +195,14 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 
 <script>
 const templates = [
-  {title:"Power of Attorney",category:"Legal",desc:"Standard sworn translation of a general or special power of attorney. Includes notarial certifications, signature blocks, and legal capacity statements.",langs:"EN → ES, ES → EN",badges:["Sworn","Notarial"],download:"request"},
-  {title:"Marriage Certificate",category:"Personal",desc:"Sworn translation of marriage certificates from civil registries. Includes margin annotations, apostille references, and partner details sections.",langs:"EN → ES, FR → ES, DE → ES",badges:["Sworn","Civil Registry"],download:"request"},
-  {title:"Birth Certificate",category:"Personal",desc:"Full sworn translation of birth certificates including marginal notes, parent information, and registry entries. Apostille-ready format.",langs:"EN → ES, FR → ES",badges:["Sworn","Civil Registry"],download:"request"},
-  {title:"Academic Transcript",category:"Academic",desc:"Sworn translation of university transcripts and grade records. Includes GPA conversion table, credit hour equivalences, and institutional stamps.",langs:"EN → ES, ES → EN",badges:["Sworn","Education"],download:"request"},
+  {title:"Power of Attorney",category:"Legal",desc:"Standard sworn translation of a general or special power of attorney. Includes notarial certifications, signature blocks, and legal capacity statements.",langs:"EN → ES, ES → EN",badges:["Sworn","Notarial"],download:"ready"},
+  {title:"Marriage Certificate",category:"Personal",desc:"Sworn translation of marriage certificates from civil registries. Includes margin annotations, apostille references, and partner details sections.",langs:"EN → ES, FR → ES, DE → ES",badges:["Sworn","Civil Registry"],download:"ready"},
+  {title:"Birth Certificate",category:"Personal",desc:"Full sworn translation of birth certificates including marginal notes, parent information, and registry entries. Apostille-ready format.",langs:"EN → ES, FR → ES",badges:["Sworn","Civil Registry"],download:"ready"},
+  {title:"Academic Transcript",category:"Academic",desc:"Sworn translation of university transcripts and grade records. Includes GPA conversion table, credit hour equivalences, and institutional stamps.",langs:"EN → ES, ES → EN",badges:["Sworn","Education"],download:"ready"},
   {title:"University Degree",category:"Academic",desc:"Certified sworn translation of bachelor's, master's, and doctoral degrees. Includes diploma certification and degree equivalence statements.",langs:"EN → ES, FR → ES, DE → ES, IT → ES",badges:["Sworn","Education","Homologation"],download:"request"},
   {title:"Company Incorporation Deed",category:"Corporate",desc:"Sworn translation of articles of incorporation, memoranda of association, and company statutes. Corporate registry format compliant.",langs:"EN → ES, ES → EN, DE → ES",badges:["Sworn","Corporate"],download:"request"},
   {title:"Annual Financial Statements",category:"Corporate",desc:"Sworn translation of balance sheets, profit & loss accounts, and audit reports. Uses standard accounting terminology across jurisdictions.",langs:"EN → ES, ES → EN, FR → ES",badges:["Sworn","Financial","Audit"],download:"request"},
-  {title:"Visa Application Package",category:"Immigration",desc:"Comprehensive sworn translation of visa application documents including cover letter, supporting evidence, and financial guarantees. UK/US/Schengen ready.",langs:"EN → ES, ES → EN",badges:["Sworn","Immigration"],download:"request"},
+  {title:"Visa Application Package",category:"Immigration",desc:"Comprehensive sworn translation of visa application documents including cover letter, supporting evidence, and financial guarantees. UK/US/Schengen ready.",langs:"EN → ES, ES → EN",badges:["Sworn","Immigration"],download:"ready"},
   {title:"Residence Permit",category:"Immigration",desc:"Sworn translation of residence cards, foreigner identity documents, and administrative resolutions from immigration authorities.",langs:"EN → ES, FR → ES, DE → ES",badges:["Sworn","Immigration"],download:"request"},
   {title:"Employment Contract",category:"Legal",desc:"Sworn translation of employment contracts including non-compete clauses, confidentiality agreements, and termination provisions.",langs:"EN → ES, ES → EN, FR → ES",badges:["Sworn","Labor","Legal"],download:"request"},
   {title:"Court Judgment",category:"Legal",desc:"Full sworn translation of court rulings, judgments, and procedural orders. Includes header, jurisdictional references, and operative part.",langs:"EN → ES, ES → EN, FR → ES",badges:["Sworn","Judicial","Litigation"],download:"request"},
@@ -224,10 +224,10 @@ function renderTemplates(list){
       <div class="template-body">
         <p class="template-desc">${t.desc}</p>
         <div class="template-meta">${t.badges.map(b=>`<span>${b}</span>`).join('')}</div>
-        <div class="template-actions">
-          <a href="#" class="btn-download">⬇ Download Template</a>
-          <a href="#" class="btn-preview">👁 Preview</a>
-        </div>
+        <div class="template-actions">${t.download === 'ready'
+          ? '<a href="#" class="btn-download" onclick="handleDownload(event,\'' + t.title + '\',\'EN\')">\u2935 EN</a><a href="#" class="btn-download" onclick="handleDownload(event,\'' + t.title + '\',\'ES\')">\u2935 ES</a>'
+          : '<button class="btn-download" onclick="alert(\'To request this template, please email templates@hisparos.com\')">\u2935 Request</button>'
+        }<a href="#" class="btn-preview" onclick="handlePreview(\'' + encodeURIComponent(t.title) + '\')">\uD83D\uDC41 Preview</a></div>
       </div>
     </div>
   `).join('');
@@ -240,6 +240,49 @@ function filterTemplates(cat){
 }
 
 renderTemplates(templates);
+
+
+function handleDownload(e, title, lang) {
+  e.preventDefault();
+  const tList = {
+    "Power of Attorney": {EN: "POWER OF ATTORNEY\n\nKnow all men by these presents that I, [Principal Name], residing at [Address], do hereby constitute and appoint [Agent Name], residing at [Address], as my true and lawful Attorney-in-Fact...", ES: "PODER NOTARIAL\n\nPor el presente documento, yo, [Nombre del Poderdante], con domicilio en [Direccion], nombro y constituyo a [Nombre del Apoderado], con domicilio en [Direccion], como mi apoderado legitimo..."},
+    "Marriage Certificate": {EN: "MARRIAGE CERTIFICATE\n\nCERTIFIED SWORN TRANSLATION\n\nRegistry: [Civil Registry Name]\nCertificate No: [Number]\nDate of Issue: [Date]\n\nThis is to certify that [Spouse 1] and [Spouse 2] were united in marriage on [Date] at [Place].", ES: "CERTIFICADO DE MATRIMONIO\n\nTRADUCCION JURADA CERTIFICADA\n\nRegistro: [Nombre del Registro Civil]\nCertificado No: [Numero]\nFecha de Expedicion: [Fecha]\n\nSe certifica que [Conyuge 1] y [Conyuge 2] contrajeron matrimonio el [Fecha] en [Lugar]."},
+    "Birth Certificate": {EN: "BIRTH CERTIFICATE\n\nCERTIFIED SWORN TRANSLATION\n\nRegistry: [Civil Registry Name]\nEntry No: [Number]\n\nFull Name: [Name]\nDate of Birth: [Date]\nPlace of Birth: [Place]\nFather: [Father Name]\nMother: [Mother Name]", ES: "CERTIFICADO DE NACIMIENTO\n\nTRADUCCION JURADA CERTIFICADA\n\nRegistro: [Nombre del Registro Civil]\nInscripcion No: [Numero]\n\nNombre Completo: [Nombre]\nFecha de Nacimiento: [Fecha]\nLugar de Nacimiento: [Lugar]\nPadre: [Nombre del Padre]\nMadre: [Nombre de la Madre]"},
+    "Academic Transcript": {EN: "ACADEMIC TRANSCRIPT\n\nSworn Translation\n\nStudent: [Full Name]\nInstitution: [University Name]\nDegree: [Degree Name]\nPeriod: [Start Year] - [End Year]\n\nCourses and Grades...", ES: "EXPEDIENTE ACADEMICO\n\nTraduccion Jurada\n\nEstudiante: [Nombre Completo]\nInstitucion: [Nombre de la Universidad]\nTitulo: [Nombre del Titulo]\nPeriodo: [Ano Inicio] - [Ano Fin]\n\nAsignaturas y Calificaciones..."},
+    "Visa Application Package": {EN: "VISA APPLICATION PACKAGE\n\nCertified Sworn Translation\n\nApplicant: [Full Name]\nPassport: [Number]\nVisa Type: [Type]\nDestination Country: [Country]\n\n[Cover letter, financial guarantees, supporting evidence]", ES: "PAQUETE DE SOLICITUD DE VISADO\n\nTraduccion Jurada Certificada\n\nSolicitante: [Nombre Completo]\nPasaporte: [Numero]\nTipo de Visado: [Tipo]\nPais de Destino: [Pais]\n\n[Carta de presentacion, garantias financieras, documentacion de respaldo]"}
+  };
+  const entry = tList[title];
+  let text, filename;
+  if (entry && entry[lang]) { text = entry[lang]; filename = title.toLowerCase().replace(/\s+/g,"_") + "_" + lang.toLowerCase() + ".txt"; }
+  else { text = title + " (" + lang + ")\n\nSample template"; filename = "sample_" + lang.toLowerCase() + ".txt"; }
+  const blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function handlePreview(encodedTitle) {
+  const decoded = decodeURIComponent(encodedTitle);
+  const pre = {
+    "Power of Attorney": "<h1>Power of Attorney / Poder Notarial</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p><strong>POWER OF ATTORNEY</strong></p><p>Know all men by these presents that I, [Principal Name], residing at [Address], do hereby constitute and appoint [Agent Name], residing at [Address], as my true and lawful Attorney-in-Fact...</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p><strong>PODER NOTARIAL</strong></p><p>Por el presente documento, yo, [Nombre del Poderdante], con domicilio en [Direccion], nombro y constituyo a [Nombre del Apoderado], con domicilio en [Direccion], como mi apoderado legitimo...</p></div>",
+    "Marriage Certificate": "<h1>Marriage Certificate / Certificado de Matrimonio</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p><strong>MARRIAGE CERTIFICATE</strong></p><p>Registry: [Civil Registry Name]<br>Certificate No: [Number]<br>Date of Issue: [Date]</p><p>This is to certify that [Spouse 1] and [Spouse 2] were united in marriage on [Date] at [Place].</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p><strong>CERTIFICADO DE MATRIMONIO</strong></p><p>Registro: [Nombre del Registro Civil]<br>Certificado No: [Numero]<br>Fecha de Expedicion: [Fecha]</p><p>Se certifica que [Conyuge 1] y [Conyuge 2] contrajeron matrimonio el [Fecha] en [Lugar].</p></div>",
+    "Birth Certificate": "<h1>Birth Certificate / Certificado de Nacimiento</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p><strong>BIRTH CERTIFICATE</strong></p><p>Registry: [Civil Registry Name]<br>Entry No: [Number]</p><p>Full Name: [Name]<br>Date of Birth: [Date]<br>Place of Birth: [Place]<br>Father: [Father Name]<br>Mother: [Mother Name]</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p><strong>CERTIFICADO DE NACIMIENTO</strong></p><p>Registro: [Nombre del Registro Civil]<br>Inscripcion No: [Numero]</p><p>Nombre Completo: [Nombre]<br>Fecha de Nacimiento: [Fecha]<br>Lugar de Nacimiento: [Lugar]<br>Padre: [Nombre del Padre]<br>Madre: [Nombre de la Madre]</p></div>",
+    "Academic Transcript": "<h1>Academic Transcript / Expediente Academico</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p><strong>ACADEMIC TRANSCRIPT</strong></p><p>Student: [Full Name]<br>Institution: [University Name]<br>Degree: [Degree Name]<br>Period: [Start Year] - [End Year]</p><p>Courses and Grades...</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p><strong>EXPEDIENTE ACADEMICO</strong></p><p>Estudiante: [Nombre Completo]<br>Institucion: [Nombre de la Universidad]<br>Titulo: [Nombre del Titulo]<br>Periodo: [Ano Inicio] - [Ano Fin]</p><p>Asignaturas y Calificaciones...</p></div>",
+    "Visa Application Package": "<h1>Visa Application Package / Paquete de Solicitud de Visado</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p><strong>VISA APPLICATION PACKAGE</strong></p><p>Applicant: [Full Name]<br>Passport: [Number]<br>Visa Type: [Type]<br>Destination Country: [Country]</p><p>[Cover letter, financial guarantees, supporting evidence]</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p><strong>PAQUETE DE SOLICITUD DE VISADO</strong></p><p>Solicitante: [Nombre Completo]<br>Pasaporte: [Numero]<br>Tipo de Visado: [Tipo]<br>Pais de Destino: [Pais]</p><p>[Carta de presentacion, garantias financieras, documentacion de respaldo]</p></div>"
+  };
+  const content = pre[decoded] || "<h1>" + decoded + "</h1><p style=\"font-size:13px;color:#888\">Bilingual Sworn Translation Template</p><div class=\"en-block\"><div class=\"lang-label\">ENGLISH</div><p>Sample preview for <strong>" + decoded + "</strong> - full content coming soon.</p></div><div class=\"es-block\"><div class=\"lang-label\">SPANISH</div><p>Vista previa de <strong>" + decoded + "</strong> - contenido completo proximamente.</p></div>";
+  const w = window.open("", "_blank", "width=800,height=600");
+  w.document.write("<html><head><title>Preview: " + decoded + "</title>");
+  w.document.write("<style>body{font-family:Georgia,serif;padding:40px 60px;color:#222;line-height:1.8;max-width:700px;margin:0 auto}h1{font-size:22px;color:#1D0707;border-bottom:2px solid #FF5432;padding-bottom:10px}h2{font-size:16px;color:#99321E;margin-top:24px}.lang-label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1px}.en-block,.es-block{margin:16px 0;padding:14px;border-radius:6px}.en-block{background:#f5f3ee;border-left:3px solid #1D0707}.es-block{background:#fdf2ee;border-left:3px solid #FF5432}p{margin:8px 0;font-size:15px}.footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #ddd;font-size:12px;color:#888}</style></head><body>");
+  w.document.write(content);
+  w.document.write('<div class="footer"><a href="https://www.translastars.com">A TranslaStars Solution</a> &middot; Sworn and Legal Translation Templates</div>');
+  w.document.write("</body></html>");
+  w.document.close();
+}
+
 </script>
 
 </body>

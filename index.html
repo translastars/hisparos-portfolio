@@ -156,7 +156,7 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 
 <footer class="footer">
 <div class="wrap">
-Powered by <strong>OpenClaw</strong> · <a href="https://www.translastars.com">A TranslaStars Solution</a> · 2026<br>
+<a href="https://www.translastars.com">A TranslaStars Solution</a> · 2026<br>
 Sworn & Legal Translation Terminology Database
 </div>
 </footer>
@@ -173,9 +173,10 @@ async function loadFilters() {
       fetch(API + '/api/domains').then(r => r.json())
     ]);
     const lf = document.getElementById('langFilter');
-    langs.forEach(l => { lf.innerHTML += `<option value="${l.code}">${l.name} (${l.code})</option>`; });
-    const df = document.getElementById('domainFilter');
-    domains.forEach(d => { df.innerHTML += `<option value="${d.slug}">${d.name}</option>`; });
+    const langArr = (langs.value || langs);
+    if (Array.isArray(langArr)) langArr.forEach(l => { lf.innerHTML += `<option value="${l.code}">${l.name} (${l.code})</option>`; });
+    const domArr = (domains.value || domains);
+    if (Array.isArray(domArr)) domArr.forEach(d => { df.innerHTML += `<option value="${d.slug}">${d.name}</option>`; });
     loadStats();
   } catch(e) {
     document.getElementById('resultsContainer').innerHTML =

@@ -107,6 +107,11 @@ module.exports = (req, res) => {
         break;
       }
 
+      case '/uploads': {
+        res.end(JSON.stringify([]));
+        break;
+      }
+
       case '/export': {
         res.end(JSON.stringify(loadJSON('terms').terms || []));
         break;

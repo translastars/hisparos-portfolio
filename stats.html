@@ -88,11 +88,14 @@ async function loadStats() {
 
     // Languages
     const allLangs = new Set();
-    (langs.source || []).forEach(l => allLangs.add(l.lang_code));
-    (langs.target || []).forEach(l => allLangs.add(l.lang_code));
-    if (allLangs.size === 0) {
-      // Fallback if API format differs
-      if (Array.isArray(langs)) langs.forEach(l => allLangs.add(l.lang_code || l));
+    // Handle both {value: [...]} and {source: [...], target: [...]} formats
+    if (langs.value && Array.isArray(langs.value)) {
+      langs.value.forEach(l => allLangs.add(l.code));
+    } else if (langs.source) {
+      (langs.source || []).forEach(l => allLangs.add(l.lang_code));
+      (langs.target || []).forEach(l => allLangs.add(l.lang_code));
+    } else if (Array.isArray(langs)) {
+      langs.forEach(l => allLangs.add(l.lang_code || l));
     }
     document.getElementById('languagesList').innerHTML = 
       Array.from(allLangs).sort().map(l => `<span class="lang-tag"><strong>${l}</strong></span>`).join('');
@@ -104,7 +107,9 @@ async function loadStats() {
     document.getElementById('domainsTable').querySelector('tbody').innerHTML = domainRows;
 
     // Exclusions
-    const excl = Array.isArray(exclusions) ? exclusions : (exclusions.value || exclusions.patterns || []);
+    let excl = Array.isArray(exclusions) ? exclusions : [];
+    if (excl.length === 0 && exclusions.value && Array.isArray(exclusions.value)) excl = exclusions.value;
+    if (excl.length === 0 && exclusions.patterns) excl = exclusions.patterns;
     document.getElementById('exclusionsList').innerHTML = excl.length > 0
       ? excl.map(e => `<span class="exclusion-item">${e.pattern || e}</span>`).join('')
       : `<p style="color:#888;font-size:14px">No exclusion patterns configured</p>`;
