@@ -56,20 +56,60 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .job-date{font-size:12px;color:#999}
 .job-apply{background:#FF5432;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;cursor:pointer;transition:background .2s;text-decoration:none;display:inline-block}
 .job-apply:hover{background:#99321E}
-/* 
+</style>
+</head>
+<body>
 
-<section class="post-cta">
+<header class="header">
 <div class="wrap">
-<h2>📢 Hiring? Post a Job</h2>
-<p>Reach qualified sworn and legal translation professionals. Free for registered law firms and agencies.</p>
-<a href="#" class="btn">Post a Job — Free</a>
+<div class="logo">
+<div class="logo-circle">H</div>
+<div><div class="logo-text">Hisparos<span>.</span></div></div>
+</div>
+<div class="header-tag">Sworn & Legal Translation Jobs Board</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<div class="hero-badge">📋 Live Listings</div>
+<h1>Sworn & Legal Translation Jobs</h1>
+<p>Curated job listings for sworn translators, court interpreters, and legal translation professionals. Updated daily.</p>
+</div>
+</section>
+
+<section class="toolbar">
+<div class="wrap">
+<select id="catFilter" onchange="filterJobs()">
+<option value="all">All Categories</option>
+<option value="Sworn Translation">Sworn Translation</option>
+<option value="Legal">Legal</option>
+<option value="Financial">Financial</option>
+<option value="Patent">Patent</option>
+<option value="Court Interpreting">Court Interpreting</option>
+<option value="Corporate">Corporate</option>
+<option value="Immigration">Immigration</option>
+</select>
+<select id="typeFilter" onchange="filterJobs()">
+<option value="all">All Types</option>
+<option value="Full-time">Full-time</option>
+<option value="Freelance">Freelance</option>
+<option value="Hybrid">Hybrid</option>
+</select>
+<span class="count">Showing <strong id="jobCount"></strong> jobs</span>
+</div>
+</section>
+
+<section class="jobs-section">
+<div class="wrap">
+<div class="jobs-grid" id="jobsContainer"></div>
 </div>
 </section>
 
 <footer class="footer">
 <div class="wrap">
-<p><strong>Hisparos</strong> — Legal Translation Job Board. Connecting sworn translators with top employers.</p>
-<p style="margin-top:8px">📧 <a href="mailto:jobs@hisparos.com">jobs@hisparos.com</a> &nbsp;|&nbsp; <a href="#">Post a Job</a> &nbsp;|&nbsp; <a href="#">Job Alerts</a></p>
+<p><strong>Hisparos</strong> — Sworn & Legal Translation Jobs Board. Connecting sworn translators with top employers.</p>
+<p style="margin-top:8px">📧 <a href="mailto:jobs@hisparos.com">jobs@hisparos.com</a></p>
 <p style="margin-top:12px;opacity:.5">© 2026 Hisparos. All rights reserved.</p>
 </div>
 </footer>
