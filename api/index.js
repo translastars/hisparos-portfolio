@@ -35,7 +35,8 @@ module.exports = (req, res) => {
 
   try {
     switch (pathname) {
-      case '/' || '/health': {
+      case '/':
+      case '/health': {
         res.end(JSON.stringify({ status: 'ok', version: '2.0.0', multilingual: true }));
         break;
       }
