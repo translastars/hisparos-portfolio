@@ -5,3 +5,8 @@ uploads/
 .DS_Store
 *.log
 .env
+
+*.db-shm
+*.db-wal
+*.tsbak
+
