@@ -1,6 +1,7 @@
 /**
- * Hisparos News Scraper v1
- * Fetches legal/sworn/localization RSS feeds, generates news.json
+ * Hisparos News Scraper v2
+ * Fetches legal/sworn/financial translation news via Google News RSS + industry feeds
+ * Deduplicates by title, categorizes, outputs news.json
  * Usage: node scrapers/news_scraper.js
  */
 const fs = require('fs');
@@ -10,180 +11,200 @@ const http = require('http');
 
 const DATA_DIR = path.join(__dirname, '..', 'api', 'data');
 const NEWS_FILE = path.join(DATA_DIR, 'news.json');
-const MAX_ARTICLES_PER_FEED = 15;
+const MAX_PER_FEED = 20;
+const MAX_TOTAL = 150;
 
-// Working RSS feeds relevant to legal/sworn translation
-const RSS_FEEDS = [
-  { url: 'https://elia-association.org/feed/',          source: 'ELIA',              cat: 'Industry',  color: '#2a9d8f' },
-  { url: 'https://www.locworld.com/feed/',              source: 'LocWorld',          cat: 'Industry',  color: '#0d9488' },
-  { url: 'https://www.globalizationpartners.com/feed/', source: 'Glob. Partners',    cat: 'Industry',  color: '#0891b2' },
-  { url: 'https://www.welocalize.com/feed/',            source: 'Welocalize',        cat: 'Industry',  color: '#0077b6' },
-  { url: 'https://unbabel.com/feed/',                   source: 'Unbabel',           cat: 'Tech',      color: '#00a3ff' },
-  { url: 'https://translatorswithoutborders.org/feed/', source: 'TWB',               cat: 'Global',    color: '#e76f51' },
-  { url: 'https://poeditor.com/blog/feed/',             source: 'POEditor',          cat: 'Tech',      color: '#512da8' },
-  // Browser-only feeds (may 403 from serverless, included for local scraper)
-  { url: 'https://slator.com/feed/',                    source: 'Slator',            cat: 'Industry',  color: '#1a73e8' },
-  { url: 'https://www.nimdzi.com/feed/',                source: 'Nimdzi',            cat: 'Industry',  color: '#e63946' },
+const SOURCES = [
+  // ── Google News: legal/sworn translation (English) ──
+  { url: 'https://news.google.com/rss/search?q=%22legal+translation%22+OR+%22sworn+translation%22+OR+%22certified+translation%22&hl=en-US&gl=US&ceid=US:en', source: 'Google News', cat: 'Legal', max: 20 },
+  // ── Google News: traducción jurada/jurídica (Spanish) ──
+  { url: 'https://news.google.com/rss/search?q=%22traducci%C3%B3n+jurada%22+OR+%22traducci%C3%B3n+jur%C3%ADdica%22+OR+%22traductor+jurado%22&hl=es&gl=ES&ceid=ES:es', source: 'Google News', cat: 'Spain', max: 20 },
+  // ── Google News: financial translation ──
+  { url: 'https://news.google.com/rss/search?q=%22financial+translation%22+OR+%22translation+services%22+finance&hl=en-US&gl=US&ceid=US:en', source: 'Google News', cat: 'Financial', max: 15 },
+  // ── Google News: EU justice / translation ──
+  { url: 'https://news.google.com/rss/search?q=%22court+of+justice%22+EU+translation+language&hl=en-US&gl=US&ceid=US:en', source: 'Google News', cat: 'EU', max: 15 },
+  // ── Google News: legal AI certification ──
+  { url: 'https://news.google.com/rss/search?q=legal+translation+AI+certification+sworn+court&hl=en-US&gl=US&ceid=US:en', source: 'Google News', cat: 'Legal', max: 10 },
+  // ── Google News: BOE traductor jurado ──
+  { url: 'https://news.google.com/rss/search?q=BOE+traducci%C3%B3n+jurada+int%C3%A9rprete&hl=es&gl=ES&ceid=ES:es', source: 'Google News', cat: 'Spain', max: 10 },
+  // ── Industry feeds (for broader context) ──
+  { url: 'https://slator.com/feed/', source: 'Slator', cat: 'Industry', max: 10 },
+  { url: 'https://elia-association.org/feed/', source: 'ELIA', cat: 'Industry', max: 8 },
+  { url: 'https://www.locworld.com/feed/', source: 'LocWorld', cat: 'Industry', max: 8 },
+  { url: 'https://www.welocalize.com/feed/', source: 'Welocalize', cat: 'Industry', max: 8 },
+  { url: 'https://unbabel.com/feed/', source: 'Unbabel', cat: 'Tech', max: 8 },
+  { url: 'https://translatorswithoutborders.org/feed/', source: 'TWB', cat: 'Global', max: 8 },
+  { url: 'https://poeditor.com/blog/feed/', source: 'POEditor', cat: 'Tech', max: 5 },
+  { url: 'https://www.nimdzi.com/feed/', source: 'Nimdzi', cat: 'Industry', max: 5 },
 ];
 
-function fetchURL(url, timeoutMs = 8000) {
-  return new Promise((resolve, reject) => {
+const SOURCE_COLORS = {
+  'Google News': '#4285F4',
+  'Slator': '#1a73e8',
+  'ELIA': '#2a9d8f',
+  'LocWorld': '#0d9488',
+  'Welocalize': '#0077b6',
+  'Unbabel': '#00a3ff',
+  'TWB': '#e76f51',
+  'POEditor': '#512da8',
+  'Nimdzi': '#e63946',
+  'default': '#FF5432'
+};
+
+// ── RSS XML Parser ──
+function parseRSS(xml, sourceName) {
+  const articles = [];
+  // Remove CDATA
+  xml = xml.replace(/<!\[CDATA\[([^\]]*)\]\]>/g, '$1');
+  
+  // Find all <item> or <entry> blocks
+  const items = xml.match(/<(?:item|entry)[^>]*>[\s\S]*?<\/(?:item|entry)>/g) || [];
+  
+  for (const item of items) {
+    const extract = (tag) => {
+      const m = item.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'));
+      return m ? m[1].trim() : '';
+    };
+    const extractAttr = (tag, attr) => {
+      const m = item.match(new RegExp(`<${tag}[^>]*${attr}=["']([^"']*)["']`, 'i'));
+      return m ? m[1].trim() : '';
+    };
+
+    let title = extract('title');
+    let link = extract('link');
+    // Atom feeds have link as <link href="..."/>
+    if (!link || link === '') link = extractAttr('link', 'href');
+    // Google News has <link> with text content
+    if (!link || link.startsWith('http') === false) link = extractAttr('link', 'href');
+    // For Google News, the actual URL is in <link> or <guid>
+    if (!link || link === '') link = extract('guid');
+    
+    // Google News format has link in <feed><entry><link href="..."/>
+    if (!link || link.startsWith('http') === false) {
+      const l2 = item.match(/<link[^>]*href=["']([^"']*)["']/i);
+      if (l2) link = l2[1];
+    }
+
+    let desc = extract('description') || extract('summary') || extract('content:encoded') || '';
+    // Strip HTML tags from description
+    desc = desc.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
+    let date = extract('pubDate') || extract('published') || extract('updated') || extract('dc:date') || '';
+    // Normalize date to ISO
+    if (date) {
+      try { date = new Date(date).toISOString(); } catch(e) { date = ''; }
+    }
+
+    // Get image from media:content or enclosure
+    let image = extractAttr('media:content', 'url') || extractAttr('enclosure', 'url') || '';
+
+    // For Google News articles, clean up the link and get better data
+    if (sourceName === 'Google News' && link) {
+      // Google News wraps URLs: extract the real URL
+      const realUrl = link.match(/[\?&]url=([^&]+)/);
+      if (realUrl) link = decodeURIComponent(realUrl[1]);
+      // Get image from media:content
+      if (!image) image = extractAttr('media:content', 'url');
+    }
+
+    if (title && title.length > 10 && !title.startsWith('Google News')) {
+      articles.push({ title, link, description: desc, date, image, cat: '' });
+    }
+  }
+  return articles;
+}
+
+// ── Fetch URL ──
+function fetchURL(url) {
+  return new Promise((resolve) => {
     const mod = url.startsWith('https') ? https : http;
-    const req = mod.get(url, {
-      timeout: timeoutMs,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-        'Accept': 'application/rss+xml,application/xml,text/xml,*/*',
-      }
-    }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        res.resume();
-        return fetchURL(new URL(res.headers.location, url).href, timeoutMs).then(resolve).catch(reject);
-      }
-      const chunks = [];
-      res.on('data', c => chunks.push(c));
-      res.on('end', () => resolve({ status: res.statusCode, body: Buffer.concat(chunks).toString('utf-8') }));
+    const req = mod.get(url, { timeout: 12000, rejectUnauthorized: false }, (res) => {
+      let data = '';
+      res.on('data', (c) => { data += c; });
+      res.on('end', () => resolve(data));
     });
-    req.on('error', reject);
-    req.on('timeout', () => { req.destroy(); reject(new Error('Timeout')); });
+    req.on('error', () => resolve(''));
+    req.on('timeout', () => { req.destroy(); resolve(''); });
   });
 }
 
-function parseRSS(xml) {
-  const items = [];
-  // Try <item> (RSS 2.0) or <entry> (Atom)
-  const pattern = /<(?:item|entry)>[\s\S]*?<\/(?:item|entry)>/gi;
-  let m;
-  while ((m = pattern.exec(xml)) !== null) {
-    const block = m[0];
-    const title = (block.match(/<title[^>]*>([^<]*)<\/title>/i) || [])[1];
-    if (!title) continue;
-    const link = (block.match(/<link[^>]*href="([^"]+)"[^>]*\/?>/i) || block.match(/<link[^>]*>([^<]*)<\/link>/i) || [])[1] || '';
-    const desc_raw = (block.match(/<description[^>]*>([^<]*)<\/description>/i) || [])[1] || '';
-    const content_raw = (block.match(/<content:encoded[^>]*>([^<]*)<\/content:encoded>/i) || [])[1] || '';
-    const excerpt = stripHTML(desc_raw || content_raw).substring(0, 200);
-    
-    // Image
-    let img = (block.match(/<media:content[^>]*url="([^"]+)"/i) || [])[1] || '';
-    if (!img) img = (block.match(/<enclosure[^>]*url="([^"]+)"/i) || [])[1] || '';
-    if (!img) img = (block.match(/<img[^>]+src="([^"]+)"/i) || [])[1] || '';
-    
-    const pubDate = (block.match(/<(?:pubDate|published|updated)[^>]*>([^<]*)<\/\1>/i) || [])[1] || '';
-    items.push({ title, link, excerpt, image: img, pubDate });
-  }
-  return items;
-}
-
-function stripHTML(html) {
-  return html.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#?\w+;/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-function timeAgo(d) {
-  const s = Math.floor((Date.now() - d.getTime()) / 1000);
-  if (s < 60) return 'Just now';
-  const m = Math.floor(s / 60);
-  if (m < 60) return m + 'm ago';
-  const h = Math.floor(m / 60);
-  if (h < 24) return h + 'h ago';
-  const da = Math.floor(h / 24);
-  if (da < 7) return da + 'd ago';
-  if (da < 30) return Math.floor(da / 7) + 'w ago';
-  return Math.floor(da / 30) + 'mo ago';
-}
-
-function formatDate(d) {
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-}
-
+// ── Main ──
 async function main() {
-  console.log('📰 Hisparos News Scraper v1');
-  console.log(`🔍 Fetching ${RSS_FEEDS.length} feeds...\n`);
+  console.log('📰 Hisparos News Scraper v2 — Legal/Sworn/Financial focus');
+  console.log(`🔍 Fetching ${SOURCES.length} feeds...\n`);
 
-  const all = [];
-  for (const feed of RSS_FEEDS) {
-    try {
-      const { status, body } = await fetchURL(feed.url);
-      if (status !== 200) { console.log(`  ✗ ${feed.source}: HTTP ${status}`); continue; }
-      const items = parseRSS(body);
-      if (!items.length) { console.log(`  ~ ${feed.source}: 0 items`); continue; }
-      
-      const articles = items.slice(0, MAX_ARTICLES_PER_FEED).map(item => {
-        let img = item.image;
-        if (!img || !img.startsWith('http')) {
-          // Use OG image or exclude
-          img = '';
-        }
-        let date = '', ago = '';
-        if (item.pubDate) {
-          try {
-            const d = new Date(item.pubDate);
-            if (!isNaN(d.getTime())) {
-              date = formatDate(d);
-              ago = timeAgo(d);
-            }
-          } catch(e) {}
-        }
-        return {
-          title: item.title,
-          link: item.link,
-          description: item.excerpt,
-          image: img,
-          source: feed.source,
-          sourceColor: feed.color,
-          category: feed.cat,
-          date,
-          ago,
-        };
-      });
-      console.log(`  ✓ ${feed.source}: ${articles.length} articles`);
-      all.push(...articles);
-    } catch (e) {
-      console.log(`  ✗ ${feed.source}: ${e.message.substring(0, 50)}`);
+  const allArticles = [];
+
+  for (let idx = 0; idx < SOURCES.length; idx++) {
+    const feed = SOURCES[idx];
+    let currentSource = feed.source; // Track source for parseRSS
+    const source = feed.source;
+    
+    process.stdout.write(`  ${idx+1}. ${source} (${feed.cat})... `);
+    
+    const xml = await fetchURL(feed.url);
+    if (!xml || xml.length < 100) {
+      console.log('❌ (empty/error)');
+      continue;
     }
+
+    const articles = parseRSS(xml, source);
+    
+    // Assign category + source to each
+    articles.forEach(a => {
+      a.cat = feed.cat;
+      a.source = source;
+    });
+
+    const limited = articles.slice(0, feed.max);
+    console.log(`✅ ${limited.length} articles`);
+    allArticles.push(...limited);
   }
 
   // Sort by date (newest first)
-  all.sort((a, b) => {
-    if (!a.date && !b.date) return 0;
-    if (!a.date) return 1;
-    if (!b.date) return -1;
-    return new Date(b.date) - new Date(a.date);
+  allArticles.sort((a, b) => {
+    if (a.date && b.date) return new Date(b.date) - new Date(a.date);
+    if (a.date) return -1;
+    if (b.date) return 1;
+    return 0;
   });
 
-  // Deduplicate by title
+  // Deduplicate by title (fuzzy: normalize and compare)
   const seen = new Set();
   const unique = [];
-  for (const a of all) {
+  for (const a of allArticles) {
     const key = a.title.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 40);
-    if (!seen.has(key)) { seen.add(key); unique.push(a); }
+    if (!seen.has(key)) {
+      seen.add(key);
+      unique.push(a);
+    }
   }
 
-  // Group by category
-  const categories = {};
-  for (const a of unique) {
-    if (!categories[a.category]) categories[a.category] = [];
-    categories[a.category].push(a);
-  }
+  // Trim to max
+  const final = unique.slice(0, MAX_TOTAL);
+
+  // Group counts
+  const counts = {};
+  final.forEach(a => { counts[a.cat] = (counts[a.cat] || 0) + 1; });
+
+  // Add source display names
+  final.forEach(a => {
+    a.source_display = a.source;
+    a.color = SOURCE_COLORS[a.source] || SOURCE_COLORS['default'];
+  });
 
   const output = {
+    count: final.length,
+    articles: final,
     generated: new Date().toISOString(),
-    total: unique.length,
-    feeds: RSS_FEEDS.length,
-    feedsWorking: RSS_FEEDS.filter(f => true).length, // simplified
-    categories: Object.keys(categories),
-    categoryCounts: Object.fromEntries(Object.entries(categories).map(([k,v]) => [k, v.length])),
-    articles: unique,
+    sources: [...new Set(final.map(a => a.source))],
+    categories: counts
   };
 
-  // Write to file
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-  fs.writeFileSync(NEWS_FILE, JSON.stringify(output, null, 2), 'utf-8');
-  
+  fs.writeFileSync(NEWS_FILE, JSON.stringify(output, null, 2));
   console.log(`\n✅ Saved to ${NEWS_FILE}`);
-  console.log(`📊 ${unique.length} unique articles across ${Object.keys(categories).length} categories:`);
-  for (const [k, v] of Object.entries(categories)) {
-    console.log(`   ${k}: ${v.length}`);
-  }
+  console.log(`📊 ${final.length} unique articles across ${Object.keys(counts).length} categories:`);
+  Object.entries(counts).sort((a,b) => b[1]-a[1]).forEach(([cat, n]) => console.log(`   ${cat}: ${n}`));
 }
 
-main().catch(e => { console.error('\n❌', e.message); process.exit(1); });
+main().catch(e => { console.error('FATAL:', e.message); process.exit(1); });
