@@ -131,7 +131,8 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 </footer>
 
 <script>
-const jobs = [
+// Fallback data in case API fails
+const FALLBACK_JOBS = [
   {title:"Sworn Translator EN→ES (Full-Time)",company:"Garrigues",country:"Spain",location:"Madrid, Spain",type:"on-site",categories:["Sworn Translation","Legal"],desc:"Full-time sworn translator for one of Spain's largest law firms. Handling corporate contracts, litigation documents, and notarial deeds. Official sworn translator appointment required.",date:"3 days ago",source:"LinkedIn",sourceClass:"linkedin",link:"https://www.garrigues.com/en/careers#opportunities",featured:true},
   {title:"Legal Translation Specialist (Freelance)",company:"TransPerfect Legal",country:"Remote",location:"Remote",type:"remote",categories:["Legal","Financial"],desc:"Freelance legal translator for EN→ES and ES→EN work. Specialising in mergers & acquisitions, financial disclosures, and regulatory filings. CAT tools experience essential.",date:"5 days ago",source:"LinkedIn",sourceClass:"linkedin",link:"https://careers.transperfect.com/",featured:false},
   {title:"Court Interpreter — Spanish Criminal Courts",company:"Ministry of Justice (Spain)",country:"Spain",location:"Barcelona, Spain",type:"hybrid",categories:["Court Interpreting","Sworn Translation"],desc:"Sworn interpreter for criminal proceedings in Catalonia. Requires certification from the Spanish Ministry of Justice. Catalan language skills highly valued.",date:"1 week ago",source:"Indeed",sourceClass:"indeed",link:"https://www.mjusticia.gob.es/es/areas-tematicas/traduccion-interpretacion-jurada",featured:true},
@@ -245,8 +246,25 @@ function filterJobs() {
   renderJobs(filtered);
 }
 
-populateFilters();
-renderJobs(jobs);
+let jobs = [];
+
+async function fetchJobs() {
+  try {
+    const res = await fetch('/api/jobs');
+    const data = await res.json();
+    if (data.jobs && data.jobs.length > 0) {
+      jobs = data.jobs;
+    } else {
+      jobs = FALLBACK_JOBS;
+    }
+  } catch (e) {
+    jobs = FALLBACK_JOBS;
+  }
+  populateFilters();
+  renderJobs(jobs);
+}
+
+fetchJobs();
 </script>
 
 </body>
