@@ -12,18 +12,18 @@ function loadJSON(name) {
   return cache[name];
 }
 
-// ===== Native RSS Parser (no deps) =====
+// ===== Native RSS Parser (zero npm dependencies) =====
 const RSS_FEEDS = [
   { url: 'https://slator.com/feed/', source: 'Slator', cat: 'Tech' },
   { url: 'https://multilingual.com/feed/', source: 'MultiLingual', cat: 'Tech' },
-  { url: 'https://www.traduccionjurada.com/feed/', source: 'Traducción Jurada', cat: 'Spain' },
+  { url: 'https://www.traduccionjurada.com/feed/', source: 'Traducci\u00f3n Jurada', cat: 'Spain' },
   { url: 'https://www.lexology.com/rss.ashx', source: 'Lexology', cat: 'EU' },
   { url: 'https://www.gala-global.org/news/feed', source: 'GALA', cat: 'Tech' },
   { url: 'https://europa.eu/newsroom/rss.xml', source: 'EU Official', cat: 'EU' },
   { url: 'https://www.proz.com/feed/', source: 'ProZ.com', cat: 'Careers' },
   { url: 'https://curia.europa.eu/jcms/jcms/p1_3717879/rss', source: 'CJEU', cat: 'EU' },
   { url: 'https://www.poderjudicial.es/cgpj/es/Servicios/RSS/', source: 'Poder Judicial', cat: 'Spain' },
-  { url: 'https://noticias.juridicas.com/feed/', source: 'Noticias Jurídicas', cat: 'Spain' },
+  { url: 'https://noticias.juridicas.com/feed/', source: 'Noticias Jur\u00eddicas', cat: 'Spain' },
 ];
 
 const CAT_IMGS = {
@@ -34,16 +34,15 @@ const CAT_IMGS = {
   Careers: ['https://images.unsplash.com/photo-1521791055366-0d553872125f', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85', 'https://images.unsplash.com/photo-1559827291-baf8ed1d95e4'],
 };
 
-const SRC_IDX = { Slator:0, MultiLingual:3, 'Traducción Jurada':4, Lexology:0, GALA:2, 'EU Official':5, 'ProZ.com':5, CJEU:0, 'Poder Judicial':4, 'Noticias Jurídicas':4 };
+const SRC_IDX = { Slator:0, MultiLingual:3, 'Traducci\u00f3n Jurada':4, Lexology:0, GALA:2, 'EU Official':5, 'ProZ.com':5, CJEU:0, 'Poder Judicial':4, 'Noticias Jur\u00eddicas':4 };
 
 function xmlGet(text, tag) {
-  const m = text.match(new RegExp('<' + tag + '>([^<]*)<\\\\/' + tag + '>', 'i'));
+  const m = text.match(new RegExp('<' + tag + '>([^<]*)</' + tag + '>', 'i'));
   return m ? m[1].trim() : '';
 }
 
 function parseRSS(xml) {
   const items = [];
-  // Split into <item>...</item>
   const itemRe = /<item>[\s\S]*?<\/item>/gi;
   let m;
   while ((m = itemRe.exec(xml)) !== null) {
@@ -52,12 +51,11 @@ function parseRSS(xml) {
     if (!title) continue;
     const link = xmlGet(block, 'link');
     const rawDesc = xmlGet(block, 'description');
-    // Extract image from media:content or enclosure
     let img = '';
-    const mc = block.match(/<media:content[^>]*url="([^"]+)"/i);
+    const mc = (/<media:content[^>]*url="([^"]+)"/i).exec(block);
     if (mc) img = mc[1];
-    if (!img) { const enc = block.match(/<enclosure[^>]*url="([^"]+)"/i); if (enc) img = enc[1]; }
-    if (!img) { const imgtag = block.match(/<img[^>]+src="([^"]+)"/i); if (imgtag) img = imgtag[1]; }
+    if (!img) { const enc = (/<enclosure[^>]*url="([^"]+)"/i).exec(block); if (enc) img = enc[1]; }
+    if (!img) { const imgtag = (/<img[^>]+src="([^"]+)"/i).exec(block); if (imgtag) img = imgtag[1]; }
     const pubDate = xmlGet(block, 'pubDate') || xmlGet(block, 'dc:date');
     items.push({ title, link, desc: rawDesc.replace(/<[^>]*>/g, '').substring(0, 200), image: img, pubDate });
   }
@@ -89,7 +87,9 @@ async function fetchNewsRSS() {
         }
         all.push({ title: item.title, link: item.link || '#', description: item.desc, image: img, source: feed.source, category: feed.cat, date, ago });
       });
-    } catch(e) { /* feed failed */ }
+    } catch(e) {
+      // Feed failed, silently skip
+    }
   }
   all.sort((a, b) => (b.date ? new Date(b.date) : 0) - (a.date ? new Date(a.date) : 0));
   return all;
@@ -184,15 +184,10 @@ module.exports = async (req, res) => {
         const qType = params.get('type');
         const qCountry = params.get('country');
         const qSource = params.get('source');
-        const qSearch = params.get('search');
         if (qCat) filtered = filtered.filter(j => j.categories.some(c => c.toLowerCase() === qCat.toLowerCase()));
         if (qType) filtered = filtered.filter(j => j.type === qType);
         if (qCountry) filtered = filtered.filter(j => j.country.toLowerCase() === qCountry.toLowerCase());
         if (qSource) filtered = filtered.filter(j => j.source.toLowerCase() === qSource.toLowerCase());
-        if (qSearch) {
-          const s = qSearch.toLowerCase();
-          filtered = filtered.filter(j => (j.title||'').toLowerCase().includes(s) || (j.company||'').toLowerCase().includes(s) || (j.desc||'').toLowerCase().includes(s) || (j.location||'').toLowerCase().includes(s));
-        }
         res.setHeader('Cache-Control', 'public, max-age=1800, s-maxage=1800');
         res.end(JSON.stringify({ jobs: filtered, count: filtered.length, total: jobs.length }));
         break;
