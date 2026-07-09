@@ -51,7 +51,7 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .job-card .job-source.eucareers{background:#003399;color:#fff}
 .job-card .job-source.company{background:#99321E;color:#fff}
 .job-card h3{font-size:18px;font-weight:700;color:#1D0707;margin:10px 0 6px;line-height:1.3}
-.job-card .company{font-size:14px;color:#99321E;font-weight:500;margin-bottom:6px}
+.job-card .job-company{font-size:14px;color:#99321E;font-weight:500;margin-bottom:6px}
 .job-meta{font-size:13px;color:#666;display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}
 .job-meta span{display:flex;align-items:center;gap:4px}
 .job-desc{font-size:13px;color:#555;line-height:1.6;margin-bottom:14px}
@@ -190,7 +190,7 @@ function renderJobs(list) {
       '<span class="job-source ' + sc + '">' + j.source + '</span>' +
       '</div>' +
       '<h3>' + esc(j.title) + '</h3>' +
-      '<div class="company">' + esc(j.company) + '</div>' +
+      '<div class="job-company">' + esc(j.company) + '</div>' +
       '<div class="job-meta">' +
       '<span>📍 ' + esc(j.location) + '</span>' +
       '<span>📅 ' + j.date + '</span>' +
