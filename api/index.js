@@ -12,101 +12,7 @@ function loadJSON(name) {
   return cache[name];
 }
 
-// ===== Native RSS Parser (zero npm dependencies) =====
-const RSS_FEEDS = [
-  { url: 'https://slator.com/feed/', source: 'Slator', cat: 'Tech' },
-  { url: 'https://multilingual.com/feed/', source: 'MultiLingual', cat: 'Tech' },
-  { url: 'https://www.traduccionjurada.com/feed/', source: 'Traducci\u00f3n Jurada', cat: 'Spain' },
-  { url: 'https://www.lexology.com/rss.ashx', source: 'Lexology', cat: 'EU' },
-  { url: 'https://www.gala-global.org/news/feed', source: 'GALA', cat: 'Tech' },
-  { url: 'https://europa.eu/newsroom/rss.xml', source: 'EU Official', cat: 'EU' },
-  { url: 'https://www.proz.com/feed/', source: 'ProZ.com', cat: 'Careers' },
-  { url: 'https://curia.europa.eu/jcms/jcms/p1_3717879/rss', source: 'CJEU', cat: 'EU' },
-  { url: 'https://www.poderjudicial.es/cgpj/es/Servicios/RSS/', source: 'Poder Judicial', cat: 'Spain' },
-  { url: 'https://noticias.juridicas.com/feed/', source: 'Noticias Jur\u00eddicas', cat: 'Spain' },
-];
 
-const CAT_IMGS = {
-  EU: ['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0', 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b', 'https://images.unsplash.com/photo-1516307365426-bea591f05011'],
-  Spain: ['https://images.unsplash.com/photo-1450101499163-c8848c66ca85', 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f', 'https://images.unsplash.com/photo-1516307365426-bea591f05011'],
-  UK: ['https://images.unsplash.com/photo-1486299267070-83823f5448dd', 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb', 'https://images.unsplash.com/photo-1532375810709-75b1da00537c'],
-  Tech: ['https://images.unsplash.com/photo-1526379879527-8559ecfcaec0', 'https://images.unsplash.com/photo-1519389950473-47ba0277781c', 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b'],
-  Careers: ['https://images.unsplash.com/photo-1521791055366-0d553872125f', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85', 'https://images.unsplash.com/photo-1559827291-baf8ed1d95e4'],
-};
-
-const SRC_IDX = { Slator:0, MultiLingual:3, 'Traducci\u00f3n Jurada':4, Lexology:0, GALA:2, 'EU Official':5, 'ProZ.com':5, CJEU:0, 'Poder Judicial':4, 'Noticias Jur\u00eddicas':4 };
-
-function xmlGet(text, tag) {
-  const m = text.match(new RegExp('<' + tag + '>([^<]*)</' + tag + '>', 'i'));
-  return m ? m[1].trim() : '';
-}
-
-function parseRSS(xml) {
-  const items = [];
-  const itemRe = /<item>[\s\S]*?<\/item>/gi;
-  let m;
-  while ((m = itemRe.exec(xml)) !== null) {
-    const block = m[0];
-    const title = xmlGet(block, 'title');
-    if (!title) continue;
-    const link = xmlGet(block, 'link');
-    const rawDesc = xmlGet(block, 'description');
-    let img = '';
-    const mc = (/<media:content[^>]*url="([^"]+)"/i).exec(block);
-    if (mc) img = mc[1];
-    if (!img) { const enc = (/<enclosure[^>]*url="([^"]+)"/i).exec(block); if (enc) img = enc[1]; }
-    if (!img) { const imgtag = (/<img[^>]+src="([^"]+)"/i).exec(block); if (imgtag) img = imgtag[1]; }
-    const pubDate = xmlGet(block, 'pubDate') || xmlGet(block, 'dc:date');
-    items.push({ title, link, desc: rawDesc.replace(/<[^>]*>/g, '').substring(0, 200), image: img, pubDate });
-  }
-  return items;
-}
-
-async function fetchNewsRSS() {
-  const all = [];
-  for (const feed of RSS_FEEDS) {
-    try {
-      const resp = await fetch(feed.url, { signal: AbortSignal.timeout(6000) });
-      const xml = await resp.text();
-      const items = parseRSS(xml);
-      items.slice(0, 15).forEach(item => {
-        let img = item.image;
-        if (!img || !img.startsWith('http')) {
-          const idx = SRC_IDX[feed.source];
-          const imgs = CAT_IMGS[feed.cat];
-          if (idx != null && imgs) img = imgs[idx % imgs.length];
-          else if (imgs) img = imgs[0];
-        }
-        let date = '', ago = '';
-        if (item.pubDate) {
-          try {
-            const d = new Date(item.pubDate);
-            date = d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
-            ago = timeAgo(d);
-          } catch(e) {}
-        }
-        all.push({ title: item.title, link: item.link || '#', description: item.desc, image: img, source: feed.source, category: feed.cat, date, ago });
-      });
-    } catch(e) {
-      // Feed failed, silently skip
-    }
-  }
-  all.sort((a, b) => (b.date ? new Date(b.date) : 0) - (a.date ? new Date(a.date) : 0));
-  return all;
-}
-
-function timeAgo(d) {
-  const s = Math.floor((Date.now() - d) / 1000);
-  if (s < 60) return 'Just now';
-  const m = Math.floor(s / 60);
-  if (m < 60) return m + 'm ago';
-  const h = Math.floor(m / 60);
-  if (h < 24) return h + 'h ago';
-  const da = Math.floor(h / 24);
-  if (da < 7) return da + 'd ago';
-  if (da < 30) return Math.floor(da / 7) + 'w ago';
-  return Math.floor(da / 30) + 'mo ago';
-}
 
 // ===== Main handler =====
 module.exports = async (req, res) => {
@@ -171,9 +77,35 @@ module.exports = async (req, res) => {
         break;
 
       case '/news': {
-        const articles = await fetchNewsRSS();
-        res.setHeader('Cache-Control', 'public, max-age=1800, s-maxage=1800');
-        res.end(JSON.stringify({ articles, count: articles.length }));
+        let data = loadJSON('news');
+        if (!data || !data.articles || !data.articles.length) {
+          data = { articles: [], total: 0, generated: null };
+        }
+        res.setHeader('Cache-Control', 'public, max-age=600, s-maxage=600');
+        res.end(JSON.stringify({ articles: data.articles, count: data.articles.length, generated: data.generated }));
+        break;
+      }
+
+      case '/news/upload': {
+        if (req.method !== 'POST') {
+          res.statusCode = 405;
+          res.end(JSON.stringify({ error: 'POST required' }));
+          break;
+        }
+        let body = '';
+        req.on('data', c => { body += c; });
+        req.on('end', () => {
+          try {
+            const data = JSON.parse(body);
+            const fp = path.join(DATA_DIR, 'news.json');
+            fs.writeFileSync(fp, JSON.stringify(data, null, 2), 'utf-8');
+            cache['news'] = data;
+            res.end(JSON.stringify({ success: true, total: (data.articles || []).length }));
+          } catch(e) {
+            res.statusCode = 400;
+            res.end(JSON.stringify({ error: 'Invalid JSON: ' + e.message }));
+          }
+        });
         break;
       }
 
