@@ -115,6 +115,9 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 <span class="source-tag">BOE</span>
 <span class="source-tag">Traducción Jurada</span>
 </div>
+<div class="hero-right">
+<div class="hero-last-upd"><strong>Last updated</strong><span id="lastUpdated">—</span></div>
+</div>
 </div>
 </section>
 
@@ -281,6 +284,13 @@ function populateSources() {
 
 async function fetchNews() {
   try {
+    var now = new Date();
+    var h = String(now.getHours()).padStart(2,'0');
+    var m = String(now.getMinutes()).padStart(2,'0');
+    var d = String(now.getDate()).padStart(2,'0');
+    var mn = String(now.getMonth()+1).padStart(2,'0');
+    var y = now.getFullYear();
+    document.getElementById('lastUpdated').textContent = d + '/' + mn + '/' + y + ' ' + h + ':' + m;
     var res = await fetch('/api/news');
     var data = await res.json();
     if (data.articles && data.articles.length >= 6) {
