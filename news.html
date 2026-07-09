@@ -10,7 +10,7 @@
 body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:1.7}
 
 .header{background:#1D0707;padding:18px 0;border-bottom:4px solid #FF5432}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-circle{width:36px;height:36px;border-radius:50%;background:#FF5432;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:16px}
@@ -173,7 +173,8 @@ const FALLBACK_ARTICLES = [
 
 let allArticles = [];
 let displayedCount = 0;
-const PAGE_SIZE = 8;
+ // articles per category
+const PAGE_SIZE = 3;
 
 // Categories and sources for fallback
 const CATEGORY_ORDER = ['EU', 'Spain', 'UK', 'Tech', 'Careers'];
