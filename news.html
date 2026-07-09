@@ -23,42 +23,56 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .hero p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:16px}
 .sources{display:flex;flex-wrap:wrap;gap:6px}
 .source-tag{background:rgba(255,255,255,.12);padding:4px 12px;border-radius:50px;font-size:11px;font-weight:600;color:rgba(255,255,255,.8)}
-.source-tag a{color:#FF5432;text-decoration:none}
-.source-tag a{pointer-events:none;cursor:default}
-.source-tag a:hover{text-decoration:none}
 
 /* Controls */
 .controls{background:#fff;padding:12px 0;border-bottom:1px solid #E1DCCB}
 .controls .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .controls select{padding:7px 12px;border:1px solid #ddd;border-radius:6px;font-size:12px;font-family:'Poppins',sans-serif;background:#fff;cursor:pointer;min-width:120px}
-.controls .count{font-size:13px;color:#777}
+.controls .count{font-size:13px;color:#777;margin-left:auto}
 
-/* News grid */
+/* ===== NEWS GRID — CATEGORY SECTIONS ===== */
 .news-grid{padding:20px 0 50px}
-.article{background:#fff;border-radius:12px;margin-bottom:16px;border:1px solid #e8e0d8;overflow:hidden;transition:all .25s ease}
-.article:hover{box-shadow:0 6px 24px rgba(29,7,7,.12);transform:translateY(-2px);border-color:#d0c8be}
-.article-inner{display:flex;padding:16px 20px;gap:16px;text-decoration:none;color:inherit;align-items:flex-start}
-.article-img{width:140px;height:120px;border-radius:10px;background:#f0ebf5;flex-shrink:0;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.article-img img{width:100%;height:100%;object-fit:cover}
-.article-body{flex:1;min-width:0}
-.article-meta{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;align-items:center}
-.article-source{font-size:10px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.8px;background:rgba(255,84,50,.08);padding:2px 10px;border-radius:4px;display:inline-block}
-.article-date{font-size:11px;color:#999}
-.article-category{font-size:10px;background:#f0ebf5;color:#1D0707;padding:2px 10px;border-radius:4px;font-weight:600;border:1px solid #e0d0c8}
-.article-title{font-size:16px;font-weight:600;color:#1D0707;margin-bottom:4px;line-height:1.4}
-.article-desc{font-size:13px;color:#666;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.article:hover .article-title{color:#FF5432}
 
-/* Show More */
-.show-more{text-align:center;padding:8px 0 30px}
-.show-more button{background:#1D0707;color:#fff;border:none;padding:12px 36px;border-radius:50px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;transition:all .2s}
-.show-more button:hover{background:#99321E}
-.show-more button:disabled{opacity:.5;cursor:default}
+/* Category section heading */
+.cat-section{margin-bottom:44px}
+.cat-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #e8e0d8}
+.cat-header h2{font-size:17px;font-weight:700;color:#1D0707;text-transform:uppercase;letter-spacing:1px;margin:0;white-space:nowrap}
+.cat-count{font-size:12px;color:#999;font-weight:500;white-space:nowrap}
+.cat-line{flex:1;height:1px;background:linear-gradient(to right,#e8e0d8,transparent)}
+
+/* Article grid — 3 columns by default */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+/* Article card — VERTICAL layout */
+.art-card{background:#fff;border-radius:12px;border:1px solid #e8e0d8;overflow:hidden;transition:all .3s ease;display:flex;flex-direction:column}
+.art-card:hover{box-shadow:0 8px 28px rgba(29,7,7,.12);transform:translateY(-3px);border-color:#d0c8be}
+.art-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%}
+
+.art-img{width:100%;height:165px;overflow:hidden;background:#f0ebf5;flex-shrink:0;position:relative}
+.art-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.art-card:hover .art-img img{transform:scale(1.06)}
+
+.art-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.art-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
+.art-source{font-size:10px;color:#FF5432;font-weight:700;text-transform:uppercase;letter-spacing:.7px;background:rgba(255,84,50,.08);padding:3px 9px;border-radius:4px}
+.art-date{font-size:10px;color:#aaa}
+.art-cat{font-size:9px;background:#f0ebf5;color:#1D0707;padding:2px 9px;border-radius:4px;font-weight:600;border:1px solid #e0d0c8}
+
+.art-title{font-size:15px;font-weight:600;color:#1D0707;margin-bottom:8px;line-height:1.4;flex-shrink:0}
+.art-card:hover .art-title{color:#FF5432}
+
+.art-desc{font-size:12.5px;color:#777;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:auto}
 
 /* No image placeholder */
-.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:36px;background:linear-gradient(135deg,#f5f3ee,#ebe5d8)}
+.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;font-size:34px;background:linear-gradient(135deg,#f5f3ee,#ebe5d8)}
 
-/* Loading */
+/* Show More */
+.show-more-wrap{text-align:center;padding:10px 0 40px}
+.show-more-wrap button{background:#1D0707;color:#fff;border:none;padding:13px 40px;border-radius:50px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;transition:all .2s}
+.show-more-wrap button:hover{background:#99321E}
+.show-more-wrap button:disabled{background:#888;cursor:default;opacity:.5}
+
+/* Loading state */
 .loading{text-align:center;padding:60px 0;color:#888}
 .loading .spinner{width:36px;height:36px;border:3px solid #e1dccb;border-top-color:#FF5432;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 14px}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -68,10 +82,13 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 .footer strong{color:#fff}
 .footer a{color:#FF5432;text-decoration:none}
 
-@media(max-width:600px){
-  .article-inner{flex-direction:column}
-  .article-img{width:100%;height:160px}
-  .hero h1{font-size:20px}
+/* Responsive */
+@media(max-width:1024px){.art-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){
+  .art-grid{grid-template-columns:1fr}
+  .art-img{height:200px}
+  .cat-header h2{font-size:15px}
+  .wrap{padding:0 16px}
 }
 </style>
 </head>
@@ -103,7 +120,7 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 
 <section class="controls">
 <div class="wrap">
-<select id="categoryFilter" onchange="applyFilters()">
+<select id="catFilter" onchange="applyFilters()">
 <option value="">All Categories</option>
 <option value="EU">EU</option>
 <option value="UK">UK</option>
@@ -111,20 +128,20 @@ body{font-family:'Poppins',sans-serif;color:#333;background:#F5F3EE;line-height:
 <option value="Tech">Tech/AI</option>
 <option value="Careers">Careers</option>
 </select>
-<select id="sourceFilter" onchange="applyFilters()">
+<select id="srcFilter" onchange="applyFilters()">
 <option value="">All Sources</option>
 </select>
-<div class="count" id="articleCount">0 articles</div>
+<div class="count" id="artCount">0 articles</div>
 </div>
 </section>
 
 <section class="news-grid">
 <div class="wrap">
-<div id="articlesContainer">
+<div id="artContainer">
 <div class="loading"><div class="spinner"></div>Loading news...</div>
 </div>
-<div class="show-more" id="showMoreContainer">
-<button id="showMoreBtn" onclick="showMore()">Show More Articles →</button>
+<div class="show-more-wrap" id="moreWrap">
+<button id="moreBtn" onclick="showMore()">Show More Articles →</button>
 </div>
 </div>
 </section>
@@ -136,219 +153,176 @@ Aggregated from public RSS feeds
 </div>
 </footer>
 
-<!-- RSS Feed Configuration -->
 <script>
+// ===== RSS Feed Configuration =====
 const RSS_FEEDS = [
   { url: 'https://slator.com/feed/', source: 'Slator', category: 'Tech' },
   { url: 'https://multilingual.com/feed/', source: 'MultiLingual', category: 'Tech' },
   { url: 'https://europa.eu/newsroom/rss.xml', source: 'EU Official', category: 'EU' },
   { url: 'https://www.boe.es/rss/boe.php', source: 'BOE', category: 'Spain' },
-  { url: 'https://www.traduccionjurada.com/feed/', source: 'Traducción Jurada', category: 'Spain' },
-  { url: 'https://www.elconfidencial.com/espana/', source: 'El Confidencial (Spain)', category: 'Spain' },
+  { url: 'https://www.traduccionjurada.com/feed/', source: 'Traducci\u00f3n Jurada', category: 'Spain' },
   { url: 'https://www.proz.com/feed/', source: 'ProZ.com', category: 'Careers' },
   { url: 'https://www.gala-global.org/news/feed', source: 'GALA', category: 'Tech' },
-  { url: 'https://www.lexology.com/rss.ashx', source: 'Lexology (Legal)', category: 'EU' },
-  { url: 'https://www.tcworld.info/feed', source: 'tcworld', category: 'Tech' }
+  { url: 'https://www.lexology.com/rss.ashx', source: 'Lexology (Legal)', category: 'EU' }
 ];
 
-// Fallback articles when RSS feeds can't be fetched
-const FALLBACK_ARTICLES = [
-  { title: 'EU Adopts New AI Act Requirements for Translation and Localisation', source: 'EU Official', category: 'EU', date: new Date(Date.now() - 86400000*1).toISOString(), link: 'https://europa.eu', description: 'The European Union has adopted new requirements under the AI Act that will affect AI-powered translation and localisation tools used across member states.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Spain Updates Sworn Translation Requirements for Digital Documents', source: 'Traducción Jurada', category: 'Spain', date: new Date(Date.now() - 86400000*2).toISOString(), link: 'https://www.traduccionjurada.com', description: 'The Spanish Ministry of Foreign Affairs has published updated requirements for sworn translations of digital documents, including new formatting standards.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Slator 2026 Language Industry Market Report: Legal Translation Grows 12%', source: 'Slator', category: 'Tech', date: new Date(Date.now() - 86400000*3).toISOString(), link: 'https://slator.com', description: 'Legal translation remains the fastest-growing segment in the language services industry, driven by international litigation and regulatory compliance demands.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'New UK Visa Rules: Certified Translation Requirements Updated', source: 'MultiLingual', category: 'UK', date: new Date(Date.now() - 86400000*4).toISOString(), link: 'https://multilingual.com', description: 'The UK Home Office has published updated guidance on certified translation requirements for visa applications, affecting Spanish applicants.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'BOE: New Law on Digital Justice Platforms Published', source: 'BOE', category: 'Spain', date: new Date(Date.now() - 86400000*5).toISOString(), link: 'https://www.boe.es', description: 'The Official State Gazette publishes the new Law on Digital Justice Platforms, which will affect how legal documents are submitted and translated.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'GALA Webinar: AI-Assisted Legal Translation — Best Practices 2026', source: 'GALA', category: 'Tech', date: new Date(Date.now() - 86400000*6).toISOString(), link: 'https://www.gala-global.org', description: 'GALA hosts a webinar on best practices for AI-assisted legal translation, covering quality assurance, ethics, and workflow integration.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'ProZ.com Legal Translation Jobs Up 40% Year Over Year', source: 'ProZ.com', category: 'Careers', date: new Date(Date.now() - 86400000*7).toISOString(), link: 'https://www.proz.com', description: 'Demand for sworn and certified legal translators continues to surge, with ProZ.com reporting a 40% increase in legal translation job postings.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Court of Justice of the EU: New Translation Guidelines for Preliminary Rulings', source: 'EU Official', category: 'EU', date: new Date(Date.now() - 86400000*8).toISOString(), link: 'https://europa.eu', description: 'The CJEU publishes new guidelines on translation quality and turnaround times for preliminary ruling requests across all EU languages.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Spain: New Data Protection Law Affects Legal Document Translation', source: 'Lexology (Legal)', category: 'Spain', date: new Date(Date.now() - 86400000*9).toISOString(), link: 'https://www.lexology.com', description: 'Legal translators must comply with new data protection requirements when handling personal data in sworn translations under the updated LOPDGDD.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'NMT for Legal Translation: Breakthrough or Hype? New Study Released', source: 'tcworld', category: 'Tech', date: new Date(Date.now() - 86400000*10).toISOString(), link: 'https://www.tcworld.info', description: 'A comprehensive study on neural machine translation for legal texts finds that NMT achieves 92% adequacy but still requires human post-editing for sworn accuracy.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Spanish Notaries Association: New Standards for Multilingual Documents', source: 'Traducción Jurada', category: 'Spain', date: new Date(Date.now() - 86400000*12).toISOString(), link: 'https://www.traduccionjurada.com', description: 'The Spanish General Council of Notaries has issued new standards for multilingual notarial documents, affecting sworn translation formatting.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Brexit Aftermath: UK-EU Legal Translation Demand Continues to Rise', source: 'Slator', category: 'UK', date: new Date(Date.now() - 86400000*14).toISOString(), link: 'https://slator.com', description: 'Five years after Brexit, demand for UK-EU legal translation services continues to grow as cross-border regulatory complexity increases.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'AI-Powered Terminology Extraction: OpenClaw Launches New Feature', source: 'MultiLingual', category: 'Tech', date: new Date(Date.now() - 86400000*16).toISOString(), link: 'https://multilingual.com', description: 'TranslaStars releases AI-powered terminology extraction for OpenClaw, enabling automatic term extraction from translation memories with context detection.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'Job Alert: Senior Legal Translator (EN/ES) — EU Institutions', source: 'ProZ.com', category: 'Careers', date: new Date(Date.now() - 86400000*18).toISOString(), link: 'https://www.proz.com', description: 'EU institutions are hiring senior legal translators for English-Spanish. Permanent contract based in Brussels or Luxembourg. Deadline: next month.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'New Spanish Apostille Regulations: Impact on Sworn Translation', source: 'Lexology (Legal)', category: 'Spain', date: new Date(Date.now() - 86400000*20).toISOString(), link: 'https://www.lexology.com', description: 'Updated Spanish apostille regulations simplify the certification process for sworn translations of public documents. Full analysis from legal experts.', image: '/api/placeholder/news-1.jpg' },
-  { title: 'GALA Reports: Language Services Market Exceeds $60 Billion in 2025', source: 'GALA', category: 'Tech', date: new Date(Date.now() - 86400000*25).toISOString(), link: 'https://www.gala-global.org', description: 'The global language services market has exceeded $60 billion, with legal translation representing 18% of total market value.', image: '/api/placeholder/news-1.jpg' }
+// ===== Fallback articles =====
+const FALLBACK = [
+  { title:'EU Adopts New AI Act Requirements for Translation and Localisation', source:'EU Official', cat:'EU', date: new Date(Date.now()-864e5*1).toISOString(), link:'https://europa.eu', desc:'The European Union has adopted new requirements under the AI Act that will affect AI-powered translation and localisation tools used across member states.' },
+  { title:'Slator 2026 Language Industry Market Report: Legal Translation Grows 12%', source:'Slator', cat:'Tech', date: new Date(Date.now()-864e5*2).toISOString(), link:'https://slator.com', desc:'Legal translation remains the fastest-growing segment in the language services industry, driven by international litigation and regulatory compliance demands.' },
+  { title:'Spain Updates Sworn Translation Requirements for Digital Documents', source:'Traducci\u00f3n Jurada', cat:'Spain', date: new Date(Date.now()-864e5*3).toISOString(), link:'https://www.traduccionjurada.com', desc:'The Spanish Ministry of Foreign Affairs has published updated requirements for sworn translations of digital documents, including new formatting standards.' },
+  { title:'New UK Visa Rules: Certified Translation Requirements Updated', source:'MultiLingual', cat:'UK', date: new Date(Date.now()-864e5*4).toISOString(), link:'https://multilingual.com', desc:'The UK Home Office has published updated guidance on certified translation requirements for visa applications, affecting Spanish applicants.' },
+  { title:'BOE: New Law on Digital Justice Platforms Published', source:'BOE', cat:'Spain', date: new Date(Date.now()-864e5*5).toISOString(), link:'https://www.boe.es', desc:'The Official State Gazette publishes the new Law on Digital Justice Platforms, which will affect how legal documents are submitted and translated.' },
+  { title:'GALA Webinar: AI-Assisted Legal Translation — Best Practices 2026', source:'GALA', cat:'Tech', date: new Date(Date.now()-864e5*6).toISOString(), link:'https://www.gala-global.org', desc:'GALA hosts a webinar on best practices for AI-assisted legal translation, covering quality assurance, ethics, and workflow integration.' },
+  { title:'ProZ.com Legal Translation Jobs Up 40% Year Over Year', source:'ProZ.com', cat:'Careers', date: new Date(Date.now()-864e5*7).toISOString(), link:'https://www.proz.com', desc:'Demand for sworn and certified legal translators continues to surge, with ProZ.com reporting a 40% increase in legal translation job postings.' },
+  { title:'Spain: New Data Protection Law Affects Legal Document Translation', source:'Lexology (Legal)', cat:'Spain', date: new Date(Date.now()-864e5*8).toISOString(), link:'https://www.lexology.com', desc:'Legal translators must comply with new data protection requirements when handling personal data in sworn translations under the updated LOPDGDD.' },
+  { title:'Court of Justice of the EU: New Translation Guidelines for Preliminary Rulings', source:'EU Official', cat:'EU', date: new Date(Date.now()-864e5*9).toISOString(), link:'https://europa.eu', desc:'The CJEU publishes new guidelines on translation quality and turnaround times for preliminary ruling requests across all EU languages.' },
+  { title:'NMT for Legal Translation: Breakthrough or Hype? New Study Released', source:'tcworld', cat:'Tech', date: new Date(Date.now()-864e5*10).toISOString(), link:'https://www.tcworld.info', desc:'A comprehensive study on neural machine translation for legal texts finds that NMT achieves 92% adequacy but still requires human post-editing for sworn accuracy.' },
+  { title:'Spanish Notaries Association: New Standards for Multilingual Documents', source:'Traducci\u00f3n Jurada', cat:'Spain', date: new Date(Date.now()-864e5*12).toISOString(), link:'https://www.traduccionjurada.com', desc:'The Spanish General Council of Notaries has issued new standards for multilingual notarial documents, affecting sworn translation formatting.' },
+  { title:'Brexit Aftermath: UK-EU Legal Translation Demand Continues to Rise', source:'Slator', cat:'UK', date: new Date(Date.now()-864e5*14).toISOString(), link:'https://slator.com', desc:'Five years after Brexit, demand for UK-EU legal translation services continues to grow as cross-border regulatory complexity increases.' },
+  { title:'AI-Powered Terminology Extraction: OpenClaw Launches New Feature', source:'MultiLingual', cat:'Tech', date: new Date(Date.now()-864e5*16).toISOString(), link:'https://multilingual.com', desc:'TranslaStars releases AI-powered terminology extraction for OpenClaw, enabling automatic term extraction from translation memories with context detection.' },
+  { title:'Job Alert: Senior Legal Translator (EN/ES) — EU Institutions', source:'ProZ.com', cat:'Careers', date: new Date(Date.now()-864e5*18).toISOString(), link:'https://www.proz.com', desc:'EU institutions are hiring senior legal translators for English-Spanish. Permanent contract based in Brussels or Luxembourg. Deadline: next month.' },
+  { title:'New Spanish Apostille Regulations: Impact on Sworn Translation', source:'Lexology (Legal)', cat:'Spain', date: new Date(Date.now()-864e5*20).toISOString(), link:'https://www.lexology.com', desc:'Updated Spanish apostille regulations simplify the certification process for sworn translations of public documents. Full analysis from legal experts.' },
+  { title:'GALA Reports: Language Services Market Exceeds $60 Billion in 2025', source:'GALA', cat:'Tech', date: new Date(Date.now()-864e5*25).toISOString(), link:'https://www.gala-global.org', desc:'The global language services market has exceeded $60 billion, with legal translation representing 18% of total market value.' }
 ];
+
+// ===== Image Pools =====
+const IMG_SRC = {
+  'Slator': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop',
+  'MultiLingual': 'https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=300&fit=crop',
+  'EU Official': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop',
+  'BOE': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=400&h=300&fit=crop',
+  'Traducci\u00f3n Jurada': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop',
+  'ProZ.com': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=400&h=300&fit=crop',
+  'GALA': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop',
+  'Lexology (Legal)': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop',
+  'tcworld': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop'
+};
+const IMG_CAT = {
+  'EU': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop',
+  'Spain': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=400&h=300&fit=crop',
+  'UK': 'https://images.unsplash.com/photo-1559827291-baf8ed1d95e4?w=400&h=300&fit=crop',
+  'Tech': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop',
+  'Careers': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=400&h=300&fit=crop'
+};
 
 let allArticles = [];
-let displayedCount = 0;
- // articles per category
-const PAGE_SIZE = 3;
+let perCat = 3; // articles per category
 
-// Categories and sources for fallback
-const CATEGORY_ORDER = ['EU', 'Spain', 'UK', 'Tech', 'Careers'];
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function getImg(src, cat) {
+  return IMG_SRC[src] || IMG_CAT[cat] || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop';
+}
 
 async function fetchNews() {
-  const container = document.getElementById('articlesContainer');
-  const showMore = document.getElementById('showMoreContainer');
-
-  // Source image pool (high-quality legal/justice themed Unsplash)
-  const FI = {
-    'Slator': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop',
-    'MultiLingual': 'https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=200&h=200&fit=crop',
-    'EU Official': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
-    'BOE': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=200&h=200&fit=crop',
-    'Traducción Jurada': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop',
-    'El Confidencial (Spain)': 'https://images.unsplash.com/photo-1504711434969-e33886168d1c?w=200&h=200&fit=crop',
-    'ProZ.com': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=200&h=200&fit=crop',
-    'GALA': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=200&fit=crop',
-    'Lexology (Legal)': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
-    'tcworld': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop'
-  };
-  const CI = {
-    'EU': 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=200&fit=crop',
-    'Spain': 'https://images.unsplash.com/photo-1589578228447-e1a4e4810088?w=200&h=200&fit=crop',
-    'UK': 'https://images.unsplash.com/photo-1559827291-baf8ed1d95e4?w=200&h=200&fit=crop',
-    'Tech': 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop',
-    'Careers': 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=200&h=200&fit=crop'
-  };
-
-  // Try fetching from RSS feeds
-  const rssPromises = RSS_FEEDS.map(async (feed) => {
+  const promises = RSS_FEEDS.map(async function(feed) {
     try {
-      const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feed.url);
-      const res = await fetch(rssUrl);
-      const data = await res.json();
+      var url = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feed.url);
+      var res = await fetch(url);
+      var data = await res.json();
       if (data.status === 'ok' && data.items) {
         return data.items.slice(0, 5).map(function(item) {
-          var imgUrl = '';
-          if (item.enclosure && item.enclosure.link && item.enclosure.link.indexOf('placeholder') < 0) {
-            imgUrl = item.enclosure.link;
-          } else if (item.thumbnail && item.thumbnail.indexOf('placeholder') < 0) {
-            imgUrl = item.thumbnail;
-          } else {
-            var contentMatch = (item.content || item.description || '').match(/<img[^>]+src=["']([^"'\s]+)["']/i);
-            if (contentMatch) imgUrl = contentMatch[1];
+          var img = '';
+          if (item.enclosure && item.enclosure.link && item.enclosure.link.indexOf('placeholder') < 0) img = item.enclosure.link;
+          else if (item.thumbnail && item.thumbnail.indexOf('placeholder') < 0) img = item.thumbnail;
+          else {
+            var m = (item.content || item.description || '').match(/<img[^>]+src=["']([^"'\s]+)["']/i);
+            if (m) img = m[1];
           }
-          if (!imgUrl || imgUrl.indexOf('placeholder') >= 0 || imgUrl.indexOf('1x1') >= 0) {
-            imgUrl = FI[feed.source] || CI[feed.category] || '';
-          }
-          return {
-            title: item.title,
-            source: feed.source,
-            category: feed.category,
-            date: item.pubDate,
-            link: item.link,
-            description: (item.description || '').replace(/<[^>]*>/g, '').substring(0, 300),
-            image: imgUrl
-          };
+          if (!img || img.indexOf('placeholder') >= 0 || img.indexOf('1x1') >= 0) img = '';
+          return { title: item.title, source: feed.source, cat: feed.category, date: item.pubDate, link: item.link, desc: (item.description||'').replace(/<[^>]*>/g,'').substring(0,280), image: img || getImg(feed.source, feed.category) };
         });
       }
-    } catch(e) { /* silent */ }
+    } catch(e) {}
     return [];
   });
-
-  const results = await Promise.all(rssPromises);
+  var results = await Promise.all(promises);
   var fetched = results.flat().filter(function(a) { return a && a.title; });
-
-  if (fetched.length < 10) {
-    fetched = FALLBACK_ARTICLES.map(function(a) {
-      return {
-        title: a.title,
-        source: a.source,
-        category: a.category,
-        date: a.date,
-        link: a.link,
-        description: a.description,
-        image: FI[a.source] || CI[a.category] || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop'
-      };
-    });
+  if (fetched.length < 6) {
+    fetched = FALLBACK.map(function(a) { return { title:a.title, source:a.source, cat:a.cat, date:a.date, link:a.link, desc:a.desc, image:getImg(a.source,a.cat) }; });
   }
-
-  // Assign source-level images to any article still without one
   fetched = fetched.map(function(a) {
-    if (!a.image || a.image.indexOf('placeholder') >= 0 || a.image.indexOf('1x1') >= 0) {
-      return { title: a.title, source: a.source, category: a.category, date: a.date, link: a.link, description: a.description, image: FI[a.source] || CI[a.category] || 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop' };
-    }
+    if (!a.image || a.image.indexOf('placeholder') >= 0 || a.image.indexOf('1x1') >= 0) a.image = getImg(a.source, a.cat);
     return a;
   });
-
-  // Sort by date (newest first)
-  fetched.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-
+  fetched.sort(function(a,b) { return new Date(b.date) - new Date(a.date); });
   allArticles = fetched;
-  populateSourceFilter();
+  populateSources();
   applyFilters();
 }
 
-function populateSourceFilter() {
-  const sources = [...new Set(allArticles.map(a => a.source))].sort();
-  const sel = document.getElementById('sourceFilter');
-  sources.forEach(s => { sel.innerHTML += `<option value="${s}">${s}</option>`; });
+function populateSources() {
+  var sources = [...new Set(allArticles.map(function(a){return a.source;}))].sort();
+  var sel = document.getElementById('srcFilter');
+  sources.forEach(function(s) { sel.innerHTML += '<option value="' + esc(s) + '">' + esc(s) + '</option>'; });
 }
 
 function applyFilters() {
-  const cat = document.getElementById('categoryFilter').value;
-  const src = document.getElementById('sourceFilter').value;
-  
-  let filtered = [...allArticles];
-  if (cat) filtered = filtered.filter(a => a.category === cat);
-  if (src) filtered = filtered.filter(a => a.source === src);
-  
-  document.getElementById('articleCount').textContent = `${filtered.length} articles`;
-  displayedCount = 0;
-  renderArticles(filtered, true);
+  var cat = document.getElementById('catFilter').value;
+  var src = document.getElementById('srcFilter').value;
+  var filtered = [...allArticles];
+  if (cat) filtered = filtered.filter(function(a) { return a.cat === cat; });
+  if (src) filtered = filtered.filter(function(a) { return a.source === src; });
+  renderArticles(filtered);
 }
 
-function renderArticles(articles, reset) {
-  if (reset) {
-    document.getElementById('articlesContainer').innerHTML = '';
-    displayedCount = 0;
-  }
-  
-  const container = document.getElementById('articlesContainer');
-  const toShow = articles.slice(0, displayedCount + PAGE_SIZE);
-  
-  // Only render new ones
-  for (let i = displayedCount; i < toShow.length; i++) {
-    const a = toShow[i];
-    const date = new Date(a.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    const hasImage = a.image && a.image.length > 5;
-    
-    const div = document.createElement('div');
-    div.className = 'article';
-    div.innerHTML = `
-      <a class="article-inner" href="${a.link}" target="_blank" rel="noopener">
-        <div class="article-img">
-          ${hasImage ? `<img src="${a.image}" alt="" onerror="this.parentElement.innerHTML='<div class=\\'no-img\\'>📰</div>'">` : `<div class="no-img">📰</div>`}
-        </div>
-        <div class="article-body">
-          <div class="article-meta">
-            <span class="article-source">${a.source}</span>
-            <span class="article-date">${date}</span>
-            <span class="article-category">${a.category}</span>
-          </div>
-          <div class="article-title">${a.title}</div>
-          <div class="article-desc">${a.description}</div>
-        </div>
-      </a>`;
-    container.appendChild(div);
-  }
-  
-  displayedCount = toShow.length;
-  
-  // Show more button
-  const btn = document.getElementById('showMoreBtn');
-  if (displayedCount >= articles.length) {
+function renderArticles(articles) {
+  var groups = {};
+  articles.forEach(function(a) {
+    if (!groups[a.cat]) groups[a.cat] = [];
+    groups[a.cat].push(a);
+  });
+  var order = ['EU','Spain','UK','Tech','Careers'];
+  var sortedCats = Object.keys(groups).sort(function(a,b) {
+    return (order.indexOf(a)>=0?order.indexOf(a):99) - (order.indexOf(b)>=0?order.indexOf(b):99);
+  });
+  var html = '';
+  var total = 0;
+  var anyMore = false;
+  sortedCats.forEach(function(cat) {
+    var items = groups[cat];
+    var show = Math.min(items.length, perCat);
+    total += show;
+    if (items.length > perCat) anyMore = true;
+    html += '<div class="cat-section">';
+    html += '<div class="cat-header"><h2>' + esc(cat) + '</h2><span class="cat-count">' + items.length + ' articles</span><div class="cat-line"></div></div>';
+    html += '<div class="art-grid">';
+    for (var i = 0; i < show; i++) {
+      var a = items[i];
+      var d = new Date(a.date).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+      html += '<div class="art-card"><a class="art-link" href="' + esc(a.link) + '" target="_blank" rel="noopener">';
+      html += '<div class="art-img">';
+      if (a.image && a.image.length > 5) {
+        html += '<img src="' + esc(a.image) + '" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div class=\\\\\'no-img\\\\\'>📰</div>\'">';
+      } else {
+        html += '<div class="no-img">📰</div>';
+      }
+      html += '</div><div class="art-body">';
+      html += '<div class="art-meta"><span class="art-source">' + esc(a.source) + '</span><span class="art-date">' + d + '</span></div>';
+      html += '<div class="art-title">' + esc(a.title) + '</div>';
+      html += '<div class="art-desc">' + esc(a.desc) + '</div>';
+      html += '</div></a></div>';
+    }
+    html += '</div></div>';
+  });
+  document.getElementById('artContainer').innerHTML = html;
+  document.getElementById('artCount').textContent = total + ' articles';
+  var btn = document.getElementById('moreBtn');
+  if (!anyMore) {
     btn.disabled = true;
-    btn.textContent = 'All articles loaded ✓';
+    btn.textContent = 'All articles loaded \u2713';
   } else {
     btn.disabled = false;
-    btn.textContent = `Show More Articles (${articles.length - displayedCount} remaining) →`;
+    btn.textContent = 'Show More (\u221e)';
   }
 }
 
 function showMore() {
-  const cat = document.getElementById('categoryFilter').value;
-  const src = document.getElementById('sourceFilter').value;
-  let filtered = [...allArticles];
-  if (cat) filtered = filtered.filter(a => a.category === cat);
-  if (src) filtered = filtered.filter(a => a.source === src);
-  renderArticles(filtered, false);
+  perCat += 3;
+  applyFilters();
 }
 
-// Init
 fetchNews();
 </script>
 </body>
