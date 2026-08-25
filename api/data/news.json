@@ -2,6 +2,17 @@
   "count": 115,
   "articles": [
     {
+      "title": "WE ARE VERY Launches Multilingual Editor: Where Freestyle Content Creation Meets Brand-Aware AI",
+      "link": "https://slator.com/we-are-very-launches-multilingual-editor/",
+      "description": "WE ARE VERY launches the WE ARE VERY Editor – a radically simple multilingual editor that finally brings brand-aware AI to creative and localization teams complete with integrated glossaries, style guides, and multilingual translation memories. The post WE ARE VERY Launches Multilingual Editor: Where Freestyle Content Creation Meets Brand-Aware AI appeared first on Slator .",
+      "date": "2026-08-25T14:20:11.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
       "title": "Equipping LSPs for the Age of AI: Yaraku Translate Partnership Program",
       "link": "https://slator.com/yaraku-translation-partnership-program-for-lsps/",
       "description": "Yaraku is looking for translation companies to offer its AI translation platform to their clients in a revenue-share partnership that helps strengthen customer relationships. The post Equipping LSPs for the Age of AI: Yaraku Translate Partnership Program appeared first on Slator .",
@@ -28,17 +39,6 @@
       "link": "https://slator.com/inside-nord-securitys-localization-strategy/",
       "description": "Mantas Baraišis, Head of Localization at Nord Security, explains Nord Security's localization strategy and how they use Crowdin Enterprise The post Inside Nord Security&#8217;s Localization Strategy: Automation for the Pipeline, Not the Words appeared first on Slator .",
       "date": "2026-08-25T05:00:00.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "Murf AI Tries to Stand Out in Voice Market with Falcon 2 Model",
-      "link": "https://slator.com/murf-ai-falcon-2-real-time-text-to-speech/",
-      "description": "Murf AI releases Falcon 2, a low-latency TTS model with 150+ voices, 35+ languages and code-switching, targeting enterprise voice agents amid fierce voice AI competition worldwide. The post Murf AI Tries to Stand Out in Voice Market with Falcon 2 Model appeared first on Slator .",
-      "date": "2026-08-24T16:10:00.000Z",
       "image": "",
       "cat": "Industry",
       "source": "Slator",
@@ -209,6 +209,17 @@
       "source": "POEditor",
       "source_display": "POEditor",
       "color": "#512da8"
+    },
+    {
+      "title": "Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales - Diario de Huelva",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5\" target=\"_blank\"&gt;Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Diario de Huelva&lt;/font&gt;",
+      "date": "2026-08-07T08:24:09.000Z",
+      "image": "",
+      "cat": "Spain",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
     },
     {
       "title": "+16 Points Closer: What ChrF Means for Your Workflow",
@@ -552,6 +563,17 @@
       "color": "#4285F4"
     },
     {
+      "title": "Tanzania to write ruling in Kiswahili after AG completes legal translation - dailynews.co.tz",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHAyUFJfWnhsTHZ2cTF3M1NvRk5GclJBYmNnY04xRGdzMHdJcXE5a05zLVgxY3kzTDlieW1qOVhqblVPOW9LbDlGaGNuWFBPdlhybUY1MWZlNW5Kc05uNzBxZDgwSmlMQlBHdlB2LTl6eHI0WHhyRTY5MWZRV3BnQ2xtOEJjZll4NGhON3d1dEhqelBWcENpUlFBTGZ4VnBL?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHAyUFJfWnhsTHZ2cTF3M1NvRk5GclJBYmNnY04xRGdzMHdJcXE5a05zLVgxY3kzTDlieW1qOVhqblVPOW9LbDlGaGNuWFBPdlhybUY1MWZlNW5Kc05uNzBxZDgwSmlMQlBHdlB2LTl6eHI0WHhyRTY5MWZRV3BnQ2xtOEJjZll4NGhON3d1dEhqelBWcENpUlFBTGZ4VnBL?oc=5\" target=\"_blank\"&gt;Tanzania to write ruling in Kiswahili after AG completes legal translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;dailynews.co.tz&lt;/font&gt;",
+      "date": "2026-01-13T08:00:00.000Z",
+      "image": "",
+      "cat": "Legal",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
       "title": "Traducciones juradas y audiovisuales para ciudadanos particulares y empresas que buscan profesionales acreditados por el Ministerio - la marina plaza",
       "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOaS13V0ZoZE5QaWhWaG5TelRIMldBRGh3WEUtb3lTWFJhVHRJNTM3dXlkU2dibFcxbk9LZl9FMTdiNVJ1bkFhWW4zME14Mnd0bmpjc2xXTXMwX25DdWJTbE1TdnZ1WWVwd3owaW95ejNXbncxQTdrampRbkpGZzlPLVlia2lCZlhabU9DenZXSlROTFVxbUtmS2ZxS1d5d0VueGZucTV3akRSU1d6RkN4QWdWVDFLYmw3aVVTZEkwWjdPQVdMeGJxLVV4eHdiVXhNQmh6N09RYk9kNHliSzFsTmhrRGN6Zi03aGl5cDh4ampwYUExTVFfeW9HNm9iUHZ2NFE?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiggJBVV95cUxOaS13V0ZoZE5QaWhWaG5TelRIMldBRGh3WEUtb3lTWFJhVHRJNTM3dXlkU2dibFcxbk9LZl9FMTdiNVJ1bkFhWW4zME14Mnd0bmpjc2xXTXMwX25DdWJTbE1TdnZ1WWVwd3owaW95ejNXbncxQTdrampRbkpGZzlPLVlia2lCZlhabU9DenZXSlROTFVxbUtmS2ZxS1d5d0VueGZucTV3akRSU1d6RkN4QWdWVDFLYmw3aVVTZEkwWjdPQVdMeGJxLVV4eHdiVXhNQmh6N09RYk9kNHliSzFsTmhrRGN6Zi03aGl5cDh4ampwYUExTVFfeW9HNm9iUHZ2NFE?oc=5\" target=\"_blank\"&gt;Traducciones juradas y audiovisuales para ciudadanos particulares y empresas que buscan profesionales acreditados por el Ministerio&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;la marina plaza&lt;/font&gt;",
@@ -858,17 +880,6 @@
       "source": "Unbabel",
       "source_display": "Unbabel",
       "color": "#00a3ff"
-    },
-    {
-      "title": "Herramientas de traducción jurídica: la clave para la comunicación global en el ámbito legal - Economist &amp; Jurist",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUGg1ZmUteGVBUE9wdjFrTnJIVHRvZ2ZRQ1ZTQXEwakNWQzR5a1lJY09fd0ZhWUVhbDhvQ1lnLWFBZDgyRXB5R2tla2didXZudGdES3BoN05falFXUmt0bmtqV1pJRDNmQm50ZjVMRnF0WWZXRXBXQnpHTnZYcjFHaWRqUGx5YmVnd1prN0VFT3FQVTJqR3l5N1FTUlpsT2c0STB1TWRjUFZ6RzhtTkhFbUhwYURIQXFoTXFFNXdwbDFLa3EzMW5sZk9IUHVVNHhOSUZVdWtNTEZUdw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUGg1ZmUteGVBUE9wdjFrTnJIVHRvZ2ZRQ1ZTQXEwakNWQzR5a1lJY09fd0ZhWUVhbDhvQ1lnLWFBZDgyRXB5R2tla2didXZudGdES3BoN05falFXUmt0bmtqV1pJRDNmQm50ZjVMRnF0WWZXRXBXQnpHTnZYcjFHaWRqUGx5YmVnd1prN0VFT3FQVTJqR3l5N1FTUlpsT2c0STB1TWRjUFZ6RzhtTkhFbUhwYURIQXFoTXFFNXdwbDFLa3EzMW5sZk9IUHVVNHhOSUZVdWtNTEZUdw?oc=5\" target=\"_blank\"&gt;Herramientas de traducción jurídica: la clave para la comunicación global en el ámbito legal&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Economist &amp; Jurist&lt;/font&gt;",
-      "date": "2024-08-23T07:00:00.000Z",
-      "image": "",
-      "cat": "Spain",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
     },
     {
       "title": "Committee testimony begins for Michigan Voting Rights Act bills - WDET 101.9 FM",
@@ -1201,17 +1212,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "Experts Defend ISO Standard for Legal Translation - Slator",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5\" target=\"_blank\"&gt;Experts Defend ISO Standard for Legal Translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
-      "date": "2020-05-25T07:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "Becas de gratuidad para el MTIJ (Máster en Traducción Jurídica e Interpretación Judicial): solicitudes del 8 al 24 de junio - Universitat Autònoma de Barcelona",
       "link": "https://news.google.com/rss/articles/CBMirANBVV95cUxPMjkyd1NSazRRRFdYSVdwZ1lFMDNGek5aSzg5UDAwV3A0d1N2Vlp1ZTRtUHVaYXluTEVjWWFhZWdVM3FFRWdnLVVNUHY3WURSOVhielV1T1VZZ1Z5Z2tURzhNSTczOXNtbXFYdDJYZlROMUhIS0tCYWNFS2E1ZlVRSGRScktWSXgzdURzVTdxZ29IY3NCbE9IMk1FcXMxMjdkSzBFcGdaYTBWdFdOMzBjTGlkRm9Za2ROdzFFYWVZVDNpUHNROGY1Zld5WFQ2SnJUeG4xTXFpVlM4TGlZSnBXUGhDX2FIUnNsajZNRzlaRXVrbGgtVnotRnFORlRaYXV5NWtBcFdOV2s3RGNLLVlMNzQwbFNBWWZiSGY2TkpHRnNRb3ZXNG5FV3E3ajRwcVNkdWFsQmhWS1hJdl9ORTNLVE1KLS13b29rQm15SGxPSE5wZDI5dlZKeno3ajJGWm9hSUV0NU4wRE0xU0RaTmtuTUVSSjNtOW1YQnhZbk96Q1o0ektrMzFiMjdXc3JJUmZCV0NvYW4zZXl6UjN2ak5VMGdWSEhfNm1uTzVfSg?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMirANBVV95cUxPMjkyd1NSazRRRFdYSVdwZ1lFMDNGek5aSzg5UDAwV3A0d1N2Vlp1ZTRtUHVaYXluTEVjWWFhZWdVM3FFRWdnLVVNUHY3WURSOVhielV1T1VZZ1Z5Z2tURzhNSTczOXNtbXFYdDJYZlROMUhIS0tCYWNFS2E1ZlVRSGRScktWSXgzdURzVTdxZ29IY3NCbE9IMk1FcXMxMjdkSzBFcGdaYTBWdFdOMzBjTGlkRm9Za2ROdzFFYWVZVDNpUHNROGY1Zld5WFQ2SnJUeG4xTXFpVlM4TGlZSnBXUGhDX2FIUnNsajZNRzlaRXVrbGgtVnotRnFORlRaYXV5NWtBcFdOV2s3RGNLLVlMNzQwbFNBWWZiSGY2TkpHRnNRb3ZXNG5FV3E3ajRwcVNkdWFsQmhWS1hJdl9ORTNLVE1KLS13b29rQm15SGxPSE5wZDI5dlZKeno3ajJGWm9hSUV0NU4wRE0xU0RaTmtuTUVSSjNtOW1YQnhZbk96Q1o0ektrMzFiMjdXc3JJUmZCV0NvYW4zZXl6UjN2ak5VMGdWSEhfNm1uTzVfSg?oc=5\" target=\"_blank\"&gt;Becas de gratuidad para el MTIJ (Máster en Traducción Jurídica e Interpretación Judicial): solicitudes del 8 al 24 de junio&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Universitat Autònoma de Barcelona&lt;/font&gt;",
@@ -1267,7 +1267,7 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-08-25T12:30:50.839Z",
+  "generated": "2026-08-25T18:30:54.353Z",
   "sources": [
     "Slator",
     "POEditor",
