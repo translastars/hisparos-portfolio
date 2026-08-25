@@ -1,6 +1,28 @@
 {
-  "count": 116,
+  "count": 115,
   "articles": [
+    {
+      "title": "Equipping LSPs for the Age of AI: Yaraku Translate Partnership Program",
+      "link": "https://slator.com/yaraku-translation-partnership-program-for-lsps/",
+      "description": "Yaraku is looking for translation companies to offer its AI translation platform to their clients in a revenue-share partnership that helps strengthen customer relationships. The post Equipping LSPs for the Age of AI: Yaraku Translate Partnership Program appeared first on Slator .",
+      "date": "2026-08-25T09:00:17.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "LILT Puts Coding Agents to the Multilingual Test",
+      "link": "https://slator.com/lilt-coding-agents-multilingual-test/",
+      "description": "LILT introduces a multilingual benchmark testing whether coding agents can handle language-, region-, and culture-specific software requirements. The post LILT Puts Coding Agents to the Multilingual Test appeared first on Slator .",
+      "date": "2026-08-25T08:30:00.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
     {
       "title": "Inside Nord Security&#8217;s Localization Strategy: Automation for the Pipeline, Not the Words",
       "link": "https://slator.com/inside-nord-securitys-localization-strategy/",
@@ -17,28 +39,6 @@
       "link": "https://slator.com/murf-ai-falcon-2-real-time-text-to-speech/",
       "description": "Murf AI releases Falcon 2, a low-latency TTS model with 150+ voices, 35+ languages and code-switching, targeting enterprise voice agents amid fierce voice AI competition worldwide. The post Murf AI Tries to Stand Out in Voice Market with Falcon 2 Model appeared first on Slator .",
       "date": "2026-08-24T16:10:00.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "MENA-focused HeyBreez Raises Seed Capital for Multilingual Voice AI Platform",
-      "link": "https://slator.com/heybreez-raises-voice-ai-seed-round/",
-      "description": "HeyBreez has raised USD 2.5m to scale its voice AI infrastructure platform across MENA and global markets. The post MENA-focused HeyBreez Raises Seed Capital for Multilingual Voice AI Platform appeared first on Slator .",
-      "date": "2026-08-24T09:05:00.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "Italy Opens EUR 28.6m Linguistic and Cultural Mediation Tender",
-      "link": "https://slator.com/italy-opens-linguistic-cultural-mediation-tender/",
-      "description": "Italy has opened a EUR 28.6m tender for linguistic and cultural mediation, covering 286 permanent mediators and nationwide on-demand services. The post Italy Opens EUR 28.6m Linguistic and Cultural Mediation Tender appeared first on Slator .",
-      "date": "2026-08-24T08:25:00.000Z",
       "image": "",
       "cat": "Industry",
       "source": "Slator",
@@ -211,17 +211,6 @@
       "color": "#512da8"
     },
     {
-      "title": "Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales - Diario de Huelva",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5\" target=\"_blank\"&gt;Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Diario de Huelva&lt;/font&gt;",
-      "date": "2026-08-07T08:24:09.000Z",
-      "image": "",
-      "cat": "Spain",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "+16 Points Closer: What ChrF Means for Your Workflow",
       "link": "https://www.welocalize.com/insights/16-points-closer-what-chrf-means-for-your-workflow/",
       "description": "Why translation quality metrics can reveal hidden efficiency gains long before they appear in production workflows. The post +16 Points Closer: What ChrF Means for Your Workflow appeared first on Welocalize .",
@@ -277,9 +266,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "LingoPlus Expands Nationwide: Certified Translation Services Now Available Across Germany - The Manila Times",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPWHhWV0ZsUjNUcmhIWklpWGw3NzZldlEyRFF3N3dmdVhWNFZ3N1NCbFN6Y01mLWRVTnoxajRORFEzV3A4UnhIb2Rnb2g5cTk3bkc4VmxiQnpiR0czQWVtNDRKc1QzcHY1NXdTaHFWVEJ4SGpXSW55Qm1jQzlEaW5adDlzSnhkdHhmcmItOXdOQ1pYUDB1UnZLQm1Mbm9SQUc3RXFhR1J6eTFmTHhRTEVjdmNYSzM1bmQ1eFE1Y0t2ZzZZZEpGb05PUnYxUF95cG1zdm1ka3FmOEZsNkllSUVmdGZ2ZUszb2lTc2JnTUlXV29Ta3lE0gH6AUFVX3lxTE9rOVVSUEpLckc2Y0o4RFNzcTlyUnBVRDh3SlVkaEo3LXFraDF3VkdQTUxKbHB0Wmg1dEkzUjNxdDMzdkl4MUtVSTdEYVU0cTBuOU1hZWFLRWEyTzEtQ2g5NncxeE1DX09pa2NPdmdKNWdwUnVPempaUmFQOGUzNkMxeVhKVS1ydmVhalNQSkZqZ2VqN1otdGtwdjBZNGFoeFBVTUhFVW1WOS1SbGpCYnZqd2ZMbXBJVHQ1U3RWc0thQThkLUt6V2s1WWVRM3NHRnp2SFNGd2lSeklmSkJESG5YZzBLOGNPdFZIZ1VyUFJMZGEtaG50cEhDdVE?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxPWHhWV0ZsUjNUcmhIWklpWGw3NzZldlEyRFF3N3dmdVhWNFZ3N1NCbFN6Y01mLWRVTnoxajRORFEzV3A4UnhIb2Rnb2g5cTk3bkc4VmxiQnpiR0czQWVtNDRKc1QzcHY1NXdTaHFWVEJ4SGpXSW55Qm1jQzlEaW5adDlzSnhkdHhmcmItOXdOQ1pYUDB1UnZLQm1Mbm9SQUc3RXFhR1J6eTFmTHhRTEVjdmNYSzM1bmQ1eFE1Y0t2ZzZZZEpGb05PUnYxUF95cG1zdm1ka3FmOEZsNkllSUVmdGZ2ZUszb2lTc2JnTUlXV29Ta3lE0gH6AUFVX3lxTE9rOVVSUEpLckc2Y0o4RFNzcTlyUnBVRDh3SlVkaEo3LXFraDF3VkdQTUxKbHB0Wmg1dEkzUjNxdDMzdkl4MUtVSTdEYVU0cTBuOU1hZWFLRWEyTzEtQ2g5NncxeE1DX09pa2NPdmdKNWdwUnVPempaUmFQOGUzNkMxeVhKVS1ydmVhalNQSkZqZ2VqN1otdGtwdjBZNGFoeFBVTUhFVW1WOS1SbGpCYnZqd2ZMbXBJVHQ1U3RWc0thQThkLUt6V2s1WWVRM3NHRnp2SFNGd2lSeklmSkJESG5YZzBLOGNPdFZIZ1VyUFJMZGEtaG50cEhDdVE?oc=5\" target=\"_blank\"&gt;LingoPlus Expands Nationwide: Certified Translation Services Now Available Across Germany&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Manila Times&lt;/font&gt;",
+      "title": "LingoPlus Expands Nationwide: Certified Translation Services Now Available Across Germany - The Norfolk Daily News",
+      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPQlBpSE5sS3YxQkJrTmIya1owQS1xUFNzQm16LS1sY1R2V2xLamhiVm1JeGdRbVpHNG5LSXRjc0pOa0VuaDJnSG9vNU1JTGMwdFFSTGpEWVU2X0V4OFAxNUl5WjNPZ294QlRpaFhzaFFXV2h5Y19rUzltNXc5ckpLN28xc0RzREhUZ0V0TUQtRUFmWDVsRGpWdmxLdUFpX0VKVE01RVgyU0xGeDAzUXFsTUJsYmpiVW54Z19xdnlqcDMwYU1pSFpzeHg2VTdWaTRZN1pEN0RIOV9IUC1mellIQjlodFM2ejcwYVJkdlJqZFdidVdINnk0WkpzOWlBbWZOYTZ1UlZqWVBNckZKcmZSVElGbXNWT1h3dC10UTVtM3F2MWhr?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMipAJBVV95cUxPQlBpSE5sS3YxQkJrTmIya1owQS1xUFNzQm16LS1sY1R2V2xLamhiVm1JeGdRbVpHNG5LSXRjc0pOa0VuaDJnSG9vNU1JTGMwdFFSTGpEWVU2X0V4OFAxNUl5WjNPZ294QlRpaFhzaFFXV2h5Y19rUzltNXc5ckpLN28xc0RzREhUZ0V0TUQtRUFmWDVsRGpWdmxLdUFpX0VKVE01RVgyU0xGeDAzUXFsTUJsYmpiVW54Z19xdnlqcDMwYU1pSFpzeHg2VTdWaTRZN1pEN0RIOV9IUC1mellIQjlodFM2ejcwYVJkdlJqZFdidVdINnk0WkpzOWlBbWZOYTZ1UlZqWVBNckZKcmZSVElGbXNWT1h3dC10UTVtM3F2MWhr?oc=5\" target=\"_blank\"&gt;LingoPlus Expands Nationwide: Certified Translation Services Now Available Across Germany&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Norfolk Daily News&lt;/font&gt;",
       "date": "2026-07-18T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
@@ -508,17 +497,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "*Press Release* In the Age of AI, Interpreters Unlimited Doubles Down on Human Accuracy for Translation - Slator",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9fcUotbWFTdWlKUF9fZGNLVzZ6dFZITXV3VHQ1VmtzR3FMeFZOS2NaNEJxLVJZSHJYaHMxUDNubkdiOUVMTGFsczgxTUF2TTNLMTY5QlFIZ0tYYTdDaGZiRzVHeDhrRzlZc25zazZubkNZdw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE9fcUotbWFTdWlKUF9fZGNLVzZ6dFZITXV3VHQ1VmtzR3FMeFZOS2NaNEJxLVJZSHJYaHMxUDNubkdiOUVMTGFsczgxTUF2TTNLMTY5QlFIZ0tYYTdDaGZiRzVHeDhrRzlZc25zazZubkNZdw?oc=5\" target=\"_blank\"&gt;*Press Release* In the Age of AI, Interpreters Unlimited Doubles Down on Human Accuracy for Translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
-      "date": "2026-02-19T08:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "KPMG Bahrain signs agreement with Cork Information Technology to support bilingual legal translation needs - News of Bahrain",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mSVVNUHFSWk4yZ00teWtEOENCX2Y0a1BGY21femxsWVRUVXp6cktUU3BKTDJjRzBQbWQ0WjdUVFU3aTltNlB3UldxT1hvYXEwV0s2bFYxanFXbkhpNkp3?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mSVVNUHFSWk4yZ00teWtEOENCX2Y0a1BGY21femxsWVRUVXp6cktUU3BKTDJjRzBQbWQ0WjdUVFU3aTltNlB3UldxT1hvYXEwV0s2bFYxanFXbkhpNkp3?oc=5\" target=\"_blank\"&gt;KPMG Bahrain signs agreement with Cork Information Technology to support bilingual legal translation needs&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;News of Bahrain&lt;/font&gt;",
@@ -569,17 +547,6 @@
       "date": "2026-01-15T08:00:00.000Z",
       "image": "",
       "cat": "Spain",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
-      "title": "Tanzania to write ruling in Kiswahili after AG completes legal translation - dailynews.co.tz",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHAyUFJfWnhsTHZ2cTF3M1NvRk5GclJBYmNnY04xRGdzMHdJcXE5a05zLVgxY3kzTDlieW1qOVhqblVPOW9LbDlGaGNuWFBPdlhybUY1MWZlNW5Kc05uNzBxZDgwSmlMQlBHdlB2LTl6eHI0WHhyRTY5MWZRV3BnQ2xtOEJjZll4NGhON3d1dEhqelBWcENpUlFBTGZ4VnBL?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHAyUFJfWnhsTHZ2cTF3M1NvRk5GclJBYmNnY04xRGdzMHdJcXE5a05zLVgxY3kzTDlieW1qOVhqblVPOW9LbDlGaGNuWFBPdlhybUY1MWZlNW5Kc05uNzBxZDgwSmlMQlBHdlB2LTl6eHI0WHhyRTY5MWZRV3BnQ2xtOEJjZll4NGhON3d1dEhqelBWcENpUlFBTGZ4VnBL?oc=5\" target=\"_blank\"&gt;Tanzania to write ruling in Kiswahili after AG completes legal translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;dailynews.co.tz&lt;/font&gt;",
-      "date": "2026-01-13T08:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
@@ -767,6 +734,17 @@
       "date": "2025-03-27T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
+      "title": "El TS anula el traspaso a Euskadi de competencias en homologación de títulos universitarios extranjeros - Crónica Vasca",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbXNtOXJEYU9oSWgzOVYzemR1elNqakZUVV9PTWJZejdkMmRydXpEdjBKSURJZVVHZHQwNGRaUWtyb0h3dmJRMk1wV1diMU5Mam1CcFdTV3FuTjc0VVdRR09CU2EzMUdsaVNwd0tmTGxSeDNxRDE0WmZDaExiaG03MDZBdmlOMjNNU29ZTmlwek9PZXlBM2RRTkt2Z1RuNE9sVUF5YzdhdkN1d1d2N2dQUnpQdWpERHE0LUJpM1BYNEUzZDRqV0HSAcsBQVVfeXFMUFAxUEV6cjh0Q3I0WGRZRU50SDRjZkNyNFBhQW1OUnM1ZDFaOTVnd1JqQTVubnVQNW90UndRUjVjVnJLOWxJZlRjOVc0b2ZpU1FxTnlKa2kzcnhLZWhjeDNlN1lwMTAyazRoNFRJaFJqei1EQ09YZm1JUm9CS3BWSERTazVlNWhMaUlkTUJHYkRLOFBLOVdUS2pmVmtIRFF4ZGpOMFFzNUlKdEhYTTZVdEV6MjY0NnlOSWVjWXBLNnB4Z0t0SnVWbm5VejA?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPbXNtOXJEYU9oSWgzOVYzemR1elNqakZUVV9PTWJZejdkMmRydXpEdjBKSURJZVVHZHQwNGRaUWtyb0h3dmJRMk1wV1diMU5Mam1CcFdTV3FuTjc0VVdRR09CU2EzMUdsaVNwd0tmTGxSeDNxRDE0WmZDaExiaG03MDZBdmlOMjNNU29ZTmlwek9PZXlBM2RRTkt2Z1RuNE9sVUF5YzdhdkN1d1d2N2dQUnpQdWpERHE0LUJpM1BYNEUzZDRqV0HSAcsBQVVfeXFMUFAxUEV6cjh0Q3I0WGRZRU50SDRjZkNyNFBhQW1OUnM1ZDFaOTVnd1JqQTVubnVQNW90UndRUjVjVnJLOWxJZlRjOVc0b2ZpU1FxTnlKa2kzcnhLZWhjeDNlN1lwMTAyazRoNFRJaFJqei1EQ09YZm1JUm9CS3BWSERTazVlNWhMaUlkTUJHYkRLOFBLOVdUS2pmVmtIRFF4ZGpOMFFzNUlKdEhYTTZVdEV6MjY0NnlOSWVjWXBLNnB4Z0t0SnVWbm5VejA?oc=5\" target=\"_blank\"&gt;El TS anula el traspaso a Euskadi de competencias en homologación de títulos universitarios extranjeros&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Crónica Vasca&lt;/font&gt;",
+      "date": "2025-03-21T07:00:00.000Z",
+      "image": "",
+      "cat": "Spain",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
@@ -1069,6 +1047,17 @@
       "color": "#e76f51"
     },
     {
+      "title": "Translating justice: Interpreters keep international courts running - Courthouse News",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcERzb2dlTThsZ0ZIQXdJMkl3QzluZXFYVURTMUdxclpZalh1V2k5aGpKcXI3d3JhNjNpZW1IZWJ6VEZUTFRQYnlSMmxGWTdtVUlnb1NOQ25TaU5GeHRpekptTm1zWmxzckljT3Qwak15WmRWa01pdEktd1BmWEpUUDNfa1I1dmpwak5VRXBfd3JZaFRmUVFuMXZXdnZTZGM?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPcERzb2dlTThsZ0ZIQXdJMkl3QzluZXFYVURTMUdxclpZalh1V2k5aGpKcXI3d3JhNjNpZW1IZWJ6VEZUTFRQYnlSMmxGWTdtVUlnb1NOQ25TaU5GeHRpekptTm1zWmxzckljT3Qwak15WmRWa01pdEktd1BmWEpUUDNfa1I1dmpwak5VRXBfd3JZaFRmUVFuMXZXdnZTZGM?oc=5\" target=\"_blank\"&gt;Translating justice: Interpreters keep international courts running&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Courthouse News&lt;/font&gt;",
+      "date": "2022-09-03T07:00:00.000Z",
+      "image": "",
+      "cat": "EU",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
       "title": "Celebrating 100,000 TWB community members",
       "link": "https://translatorswithoutborders.org/celebrating-100000-twb-community-members/",
       "description": "We&#8217;ve recently hit a record milestone &#8211; 100,000 community members! To acknowledge our key moments, and thank everyone for their support and dedication to our mission, we prepared this story map. Enjoy the journey! The post Celebrating 100,000 TWB community members appeared first on Translators without Borders .",
@@ -1124,9 +1113,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "ECJ rules Hungary can't punish judge for seeking EU guidance - dw.com",
+      "title": "ECJ rules Hungary can't punish judge for seeking EU guidance - DW.com",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5\" target=\"_blank\"&gt;ECJ rules Hungary can't punish judge for seeking EU guidance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;dw.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5\" target=\"_blank\"&gt;ECJ rules Hungary can't punish judge for seeking EU guidance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;DW.com&lt;/font&gt;",
       "date": "2021-11-23T08:00:00.000Z",
       "image": "",
       "cat": "EU",
@@ -1155,17 +1144,6 @@
       "source": "TWB",
       "source_display": "TWB",
       "color": "#e76f51"
-    },
-    {
-      "title": "Language technology – threats and opportunities - Nordic Labour Journal",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaGNJWG1EVFpwSHk3V3pnLVBvVkxEOGJ5NmlJX3NJczUtazBZZ1I1ODJjMlhHR01YUUNkRXF4VVFZZnIwdHdZTEQzU19MQW1USVlzNnVwalJkSnJ6THJJT09OQ3o3b04ycko0dlpkTmNPWDBTWks0SS1YZFJNNUxlbVRtdWIyOTRpYlE?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxQaGNJWG1EVFpwSHk3V3pnLVBvVkxEOGJ5NmlJX3NJczUtazBZZ1I1ODJjMlhHR01YUUNkRXF4VVFZZnIwdHdZTEQzU19MQW1USVlzNnVwalJkSnJ6THJJT09OQ3o3b04ycko0dlpkTmNPWDBTWks0SS1YZFJNNUxlbVRtdWIyOTRpYlE?oc=5\" target=\"_blank\"&gt;Language technology – threats and opportunities&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Nordic Labour Journal&lt;/font&gt;",
-      "date": "2021-10-13T07:00:00.000Z",
-      "image": "",
-      "cat": "EU",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
     },
     {
       "title": "TIP SHEET Interpretation and Sensitive Topics – EN",
@@ -1218,6 +1196,17 @@
       "date": "2020-06-24T07:00:00.000Z",
       "image": "",
       "cat": "Spain",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
+      "title": "Experts Defend ISO Standard for Legal Translation - Slator",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5\" target=\"_blank\"&gt;Experts Defend ISO Standard for Legal Translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
+      "date": "2020-05-25T07:00:00.000Z",
+      "image": "",
+      "cat": "Legal",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
@@ -1278,7 +1267,7 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-08-25T06:30:51.002Z",
+  "generated": "2026-08-25T12:30:50.839Z",
   "sources": [
     "Slator",
     "POEditor",
@@ -1291,7 +1280,7 @@
   "categories": {
     "Industry": 20,
     "Tech": 12,
-    "Legal": 26,
+    "Legal": 25,
     "Spain": 23,
     "EU": 15,
     "Financial": 14,
