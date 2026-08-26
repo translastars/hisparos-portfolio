@@ -2,6 +2,28 @@
   "count": 116,
   "articles": [
     {
+      "title": "Superwhisper Launches Cloud and On-Device Dictation Models",
+      "link": "https://slator.com/superwhisper-launches-dictation-models/",
+      "description": "Superwhisper releases its S1 model family, including an on-device text normalizer that cleans speech recognition output on consumer devices. The post Superwhisper Launches Cloud and On-Device Dictation Models appeared first on Slator .",
+      "date": "2026-08-26T10:03:12.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "Researchers Crowdsource Hard Cases for AI Translation Benchmark",
+      "link": "https://slator.com/last-translation-benchmark-machine-translation/",
+      "description": "Language professionals can submit difficult translation cases and verification rules to help test where state-of-the-art AI translation systems still fall short. The post Researchers Crowdsource Hard Cases for AI Translation Benchmark appeared first on Slator .",
+      "date": "2026-08-26T09:21:48.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
       "title": "WE ARE VERY Launches Multilingual Editor: Where Freestyle Content Creation Meets Brand-Aware AI",
       "link": "https://slator.com/we-are-very-launches-multilingual-editor/",
       "description": "WE ARE VERY launches the WE ARE VERY Editor – a radically simple multilingual editor that finally brings brand-aware AI to creative and localization teams complete with integrated glossaries, style guides, and multilingual translation memories. The post WE ARE VERY Launches Multilingual Editor: Where Freestyle Content Creation Meets Brand-Aware AI appeared first on Slator .",
@@ -17,28 +39,6 @@
       "link": "https://slator.com/yaraku-translation-partnership-program-for-lsps/",
       "description": "Yaraku is looking for translation companies to offer its AI translation platform to their clients in a revenue-share partnership that helps strengthen customer relationships. The post Equipping LSPs for the Age of AI: Yaraku Translate Partnership Program appeared first on Slator .",
       "date": "2026-08-25T09:00:17.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "LILT Puts Coding Agents to the Multilingual Test",
-      "link": "https://slator.com/lilt-coding-agents-multilingual-test/",
-      "description": "LILT introduces a multilingual benchmark testing whether coding agents can handle language-, region-, and culture-specific software requirements. The post LILT Puts Coding Agents to the Multilingual Test appeared first on Slator .",
-      "date": "2026-08-25T08:30:00.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "Inside Nord Security&#8217;s Localization Strategy: Automation for the Pipeline, Not the Words",
-      "link": "https://slator.com/inside-nord-securitys-localization-strategy/",
-      "description": "Mantas Baraišis, Head of Localization at Nord Security, explains Nord Security's localization strategy and how they use Crowdin Enterprise The post Inside Nord Security&#8217;s Localization Strategy: Automation for the Pipeline, Not the Words appeared first on Slator .",
-      "date": "2026-08-25T05:00:00.000Z",
       "image": "",
       "cat": "Industry",
       "source": "Slator",
@@ -783,9 +783,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance - the University of South Florida",
+      "title": "Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance - University of South Florida",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5\" target=\"_blank\"&gt;Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;the University of South Florida&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5\" target=\"_blank\"&gt;Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;University of South Florida&lt;/font&gt;",
       "date": "2025-02-18T08:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -1278,7 +1278,7 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-08-26T06:30:50.978Z",
+  "generated": "2026-08-26T12:30:53.371Z",
   "sources": [
     "Slator",
     "POEditor",
