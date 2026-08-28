@@ -2,6 +2,28 @@
   "count": 117,
   "articles": [
     {
+      "title": "Ringg Raises USD 15m for Voice AI Orchestration Layer",
+      "link": "https://slator.com/ringg-raises-15m-funding-voice-ai-orchestration/",
+      "description": "Indian startup Ringg raises USD 15M in Series A funding to push enterprise voice AI beyond conversation, focusing on contextual task execution and global expansion. The post Ringg Raises USD 15m for Voice AI Orchestration Layer appeared first on Slator .",
+      "date": "2026-08-28T09:28:41.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "Google Launches First Gemini-Based Transcription Model",
+      "link": "https://slator.com/google-launches-gemini-transcribe-model/",
+      "description": "Google launches Gemini 3.5 Transcribe, expanding its speech AI portfolio with multilingual transcription models for live and pre-recorded audio across more than 85 languages. The post Google Launches First Gemini-Based Transcription Model appeared first on Slator .",
+      "date": "2026-08-28T08:58:13.000Z",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/GoogleDemoLab_Transcribo.mp4",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
       "title": "RWS’s TrainAI Launches Benchmark Comparing 70 AI Models Across 30 Languages",
       "link": "https://slator.com/rws-launches-ai-model-benchmark/",
       "description": "RWS's Train AI team releases a new benchmark that tests 70 AI models on grammar, translation, and speed across 30 languages, finding no single model leads across all languages. The post RWS’s TrainAI Launches Benchmark Comparing 70 AI Models Across 30 Languages appeared first on Slator .",
@@ -44,28 +66,6 @@
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
-    },
-    {
-      "title": "Superwhisper Launches Cloud and On-Device Dictation Models",
-      "link": "https://slator.com/superwhisper-launches-dictation-models/",
-      "description": "Superwhisper releases its S1 model family, including an on-device text normalizer that cleans speech recognition output on consumer devices. The post Superwhisper Launches Cloud and On-Device Dictation Models appeared first on Slator .",
-      "date": "2026-08-26T10:03:12.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "Researchers Crowdsource Hard Cases for AI Translation Benchmark",
-      "link": "https://slator.com/last-translation-benchmark-machine-translation/",
-      "description": "Language professionals can submit difficult translation cases and verification rules to help test where state-of-the-art AI translation systems still fall short. The post Researchers Crowdsource Hard Cases for AI Translation Benchmark appeared first on Slator .",
-      "date": "2026-08-26T09:21:48.000Z",
-      "image": "",
-      "cat": "Industry",
-      "source": "Slator",
-      "source_display": "Slator",
-      "color": "#1a73e8"
     },
     {
       "title": "About the localization associate role",
@@ -607,6 +607,17 @@
       "color": "#4285F4"
     },
     {
+      "title": "Conferencia ¿La traducción y la interpretación juradas en Francia¿ - Universidad Pablo de Olavide",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ25jN0l2SHczQjJmUDZ4bElldmlRbE1mcDdyblRtWm5veU5BN1lXTWhHQV9HdGRvNlduTkZ2Z19ibVNubDFTZkttNWZ5VmZ1YVRMWmRCQ281dnlaRjlqMTlLNFA4NmlRTkJZTzlaUDhEYU1tdjBCcDFwSm9VRUtUbzV4MWFsNlpvV1ptTXZQak5yRzFLaVNGMnU3eFI5dHlJd0Fsak1DTnJDblNsTlRKazhWb2Z0WjUzOXRIZ0EwMDNYdEN1Y0E?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ25jN0l2SHczQjJmUDZ4bElldmlRbE1mcDdyblRtWm5veU5BN1lXTWhHQV9HdGRvNlduTkZ2Z19ibVNubDFTZkttNWZ5VmZ1YVRMWmRCQ281dnlaRjlqMTlLNFA4NmlRTkJZTzlaUDhEYU1tdjBCcDFwSm9VRUtUbzV4MWFsNlpvV1ptTXZQak5yRzFLaVNGMnU3eFI5dHlJd0Fsak1DTnJDblNsTlRKazhWb2Z0WjUzOXRIZ0EwMDNYdEN1Y0E?oc=5\" target=\"_blank\"&gt;Conferencia ¿La traducción y la interpretación juradas en Francia¿&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Universidad Pablo de Olavide&lt;/font&gt;",
+      "date": "2025-11-26T08:00:00.000Z",
+      "image": "",
+      "cat": "Spain",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
       "title": "Best Translation Services for Official Documents in 2025 (Expert-Verified) - HackerNoon",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQnZVX2R3RG9PUEFyTlBoQWo1LUZzNl9XQmowejdtZjJOaFlaZ2RSWHNYVnhQZGZaVm9IemFWRm90aE9jVDBJbklHX3Qxb1lQamQwLUg1Zlk2TExzR0FmbS1fMkluM1MxRW5kVFh2TnM3WC1OSEtObjlpbUc3QjJfZEFqalJqZ2tiaU45WWJrY1ZqaG40Q0QwRnc3NA?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOQnZVX2R3RG9PUEFyTlBoQWo1LUZzNl9XQmowejdtZjJOaFlaZ2RSWHNYVnhQZGZaVm9IemFWRm90aE9jVDBJbklHX3Qxb1lQamQwLUg1Zlk2TExzR0FmbS1fMkluM1MxRW5kVFh2TnM3WC1OSEtObjlpbUc3QjJfZEFqalJqZ2tiaU45WWJrY1ZqaG40Q0QwRnc3NA?oc=5\" target=\"_blank\"&gt;Best Translation Services for Official Documents in 2025 (Expert-Verified)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;HackerNoon&lt;/font&gt;",
@@ -778,17 +789,6 @@
       "date": "2025-03-27T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
-      "title": "El TS anula el traspaso a Euskadi de competencias en homologación de títulos universitarios extranjeros - Crónica Vasca",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbXNtOXJEYU9oSWgzOVYzemR1elNqakZUVV9PTWJZejdkMmRydXpEdjBKSURJZVVHZHQwNGRaUWtyb0h3dmJRMk1wV1diMU5Mam1CcFdTV3FuTjc0VVdRR09CU2EzMUdsaVNwd0tmTGxSeDNxRDE0WmZDaExiaG03MDZBdmlOMjNNU29ZTmlwek9PZXlBM2RRTkt2Z1RuNE9sVUF5YzdhdkN1d1d2N2dQUnpQdWpERHE0LUJpM1BYNEUzZDRqV0HSAcsBQVVfeXFMUFAxUEV6cjh0Q3I0WGRZRU50SDRjZkNyNFBhQW1OUnM1ZDFaOTVnd1JqQTVubnVQNW90UndRUjVjVnJLOWxJZlRjOVc0b2ZpU1FxTnlKa2kzcnhLZWhjeDNlN1lwMTAyazRoNFRJaFJqei1EQ09YZm1JUm9CS3BWSERTazVlNWhMaUlkTUJHYkRLOFBLOVdUS2pmVmtIRFF4ZGpOMFFzNUlKdEhYTTZVdEV6MjY0NnlOSWVjWXBLNnB4Z0t0SnVWbm5VejA?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPbXNtOXJEYU9oSWgzOVYzemR1elNqakZUVV9PTWJZejdkMmRydXpEdjBKSURJZVVHZHQwNGRaUWtyb0h3dmJRMk1wV1diMU5Mam1CcFdTV3FuTjc0VVdRR09CU2EzMUdsaVNwd0tmTGxSeDNxRDE0WmZDaExiaG03MDZBdmlOMjNNU29ZTmlwek9PZXlBM2RRTkt2Z1RuNE9sVUF5YzdhdkN1d1d2N2dQUnpQdWpERHE0LUJpM1BYNEUzZDRqV0HSAcsBQVVfeXFMUFAxUEV6cjh0Q3I0WGRZRU50SDRjZkNyNFBhQW1OUnM1ZDFaOTVnd1JqQTVubnVQNW90UndRUjVjVnJLOWxJZlRjOVc0b2ZpU1FxTnlKa2kzcnhLZWhjeDNlN1lwMTAyazRoNFRJaFJqei1EQ09YZm1JUm9CS3BWSERTazVlNWhMaUlkTUJHYkRLOFBLOVdUS2pmVmtIRFF4ZGpOMFFzNUlKdEhYTTZVdEV6MjY0NnlOSWVjWXBLNnB4Z0t0SnVWbm5VejA?oc=5\" target=\"_blank\"&gt;El TS anula el traspaso a Euskadi de competencias en homologación de títulos universitarios extranjeros&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Crónica Vasca&lt;/font&gt;",
-      "date": "2025-03-21T07:00:00.000Z",
-      "image": "",
-      "cat": "Spain",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
@@ -998,6 +998,17 @@
       "date": "2024-02-13T08:00:00.000Z",
       "image": "",
       "cat": "EU",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
+      "title": "The State of Legal Translation in Canada: Bridging the Gap - McGill University",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPc2lxZkhOZkZ4ZElpQ0I3SHc3LTktYUZIY0QtbjV3dnctZkd2Tkd0RnByOGIzMmVDWXVpdUJxLVBlaEZVNzZHdTM5RHRwM1g0eDQ2NWd2Vy13NmFmYnMxNmd2V1dZNkIyeUpoQWxHUHEybVFhNFFjck5ieGpOYWltU0JLVWdoRjZNNGhCdGlMTWRnUUtFOVE?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPc2lxZkhOZkZ4ZElpQ0I3SHc3LTktYUZIY0QtbjV3dnctZkd2Tkd0RnByOGIzMmVDWXVpdUJxLVBlaEZVNzZHdTM5RHRwM1g0eDQ2NWd2Vy13NmFmYnMxNmd2V1dZNkIyeUpoQWxHUHEybVFhNFFjck5ieGpOYWltU0JLVWdoRjZNNGhCdGlMTWRnUUtFOVE?oc=5\" target=\"_blank\"&gt;The State of Legal Translation in Canada: Bridging the Gap&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;McGill University&lt;/font&gt;",
+      "date": "2024-01-16T08:00:00.000Z",
+      "image": "",
+      "cat": "Legal",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
@@ -1223,17 +1234,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "Experts Defend ISO Standard for Legal Translation - Slator",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE45ckx2clZEdEF3blZ4cl9aOEI5bW5pcHROYlo0SUZ0YjJhQUpDQ01MZFJjVXhvSWVGX05VZENWS2N2c21HcGUtSXdhWEd2eU5RcVBBZ003QVlGdFUwSmNnbG1WelFZT1M3T1ZSdks5cl9MMWtGT2RnYQ?oc=5\" target=\"_blank\"&gt;Experts Defend ISO Standard for Legal Translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
-      "date": "2020-05-25T07:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "Becas de gratuidad para el MTIJ (Máster en Traducción Jurídica e Interpretación Judicial): solicitudes del 8 al 24 de junio - Universitat Autònoma de Barcelona",
       "link": "https://news.google.com/rss/articles/CBMirANBVV95cUxPMjkyd1NSazRRRFdYSVdwZ1lFMDNGek5aSzg5UDAwV3A0d1N2Vlp1ZTRtUHVaYXluTEVjWWFhZWdVM3FFRWdnLVVNUHY3WURSOVhielV1T1VZZ1Z5Z2tURzhNSTczOXNtbXFYdDJYZlROMUhIS0tCYWNFS2E1ZlVRSGRScktWSXgzdURzVTdxZ29IY3NCbE9IMk1FcXMxMjdkSzBFcGdaYTBWdFdOMzBjTGlkRm9Za2ROdzFFYWVZVDNpUHNROGY1Zld5WFQ2SnJUeG4xTXFpVlM4TGlZSnBXUGhDX2FIUnNsajZNRzlaRXVrbGgtVnotRnFORlRaYXV5NWtBcFdOV2s3RGNLLVlMNzQwbFNBWWZiSGY2TkpHRnNRb3ZXNG5FV3E3ajRwcVNkdWFsQmhWS1hJdl9ORTNLVE1KLS13b29rQm15SGxPSE5wZDI5dlZKeno3ajJGWm9hSUV0NU4wRE0xU0RaTmtuTUVSSjNtOW1YQnhZbk96Q1o0ektrMzFiMjdXc3JJUmZCV0NvYW4zZXl6UjN2ak5VMGdWSEhfNm1uTzVfSg?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMirANBVV95cUxPMjkyd1NSazRRRFdYSVdwZ1lFMDNGek5aSzg5UDAwV3A0d1N2Vlp1ZTRtUHVaYXluTEVjWWFhZWdVM3FFRWdnLVVNUHY3WURSOVhielV1T1VZZ1Z5Z2tURzhNSTczOXNtbXFYdDJYZlROMUhIS0tCYWNFS2E1ZlVRSGRScktWSXgzdURzVTdxZ29IY3NCbE9IMk1FcXMxMjdkSzBFcGdaYTBWdFdOMzBjTGlkRm9Za2ROdzFFYWVZVDNpUHNROGY1Zld5WFQ2SnJUeG4xTXFpVlM4TGlZSnBXUGhDX2FIUnNsajZNRzlaRXVrbGgtVnotRnFORlRaYXV5NWtBcFdOV2s3RGNLLVlMNzQwbFNBWWZiSGY2TkpHRnNRb3ZXNG5FV3E3ajRwcVNkdWFsQmhWS1hJdl9ORTNLVE1KLS13b29rQm15SGxPSE5wZDI5dlZKeno3ajJGWm9hSUV0NU4wRE0xU0RaTmtuTUVSSjNtOW1YQnhZbk96Q1o0ektrMzFiMjdXc3JJUmZCV0NvYW4zZXl6UjN2ak5VMGdWSEhfNm1uTzVfSg?oc=5\" target=\"_blank\"&gt;Becas de gratuidad para el MTIJ (Máster en Traducción Jurídica e Interpretación Judicial): solicitudes del 8 al 24 de junio&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Universitat Autònoma de Barcelona&lt;/font&gt;",
@@ -1289,7 +1289,7 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-08-28T06:30:53.264Z",
+  "generated": "2026-08-28T12:30:54.094Z",
   "sources": [
     "Slator",
     "POEditor",
