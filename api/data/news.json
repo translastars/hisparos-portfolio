@@ -1,6 +1,50 @@
 {
-  "count": 113,
+  "count": 117,
   "articles": [
+    {
+      "title": "Ringg Raises USD 15m for Voice AI Orchestration Layer",
+      "link": "https://slator.com/ringg-raises-15m-funding-voice-ai-orchestration/",
+      "description": "Indian startup Ringg raises USD 15M in Series A funding to push enterprise voice AI beyond conversation, focusing on contextual task execution and global expansion. The post Ringg Raises USD 15m for Voice AI Orchestration Layer appeared first on Slator .",
+      "date": "2026-08-28T09:28:41.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "Google Launches First Gemini-Based Transcription Model",
+      "link": "https://slator.com/google-launches-gemini-transcribe-model/",
+      "description": "Google launches Gemini 3.5 Transcribe, expanding its speech AI portfolio with multilingual transcription models for live and pre-recorded audio across more than 85 languages. The post Google Launches First Gemini-Based Transcription Model appeared first on Slator .",
+      "date": "2026-08-28T08:58:13.000Z",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/GoogleDemoLab_Transcribo.mp4",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "RWS’s TrainAI Launches Benchmark Comparing 70 AI Models Across 30 Languages",
+      "link": "https://slator.com/rws-launches-ai-model-benchmark/",
+      "description": "RWS's Train AI team releases a new benchmark that tests 70 AI models on grammar, translation, and speed across 30 languages, finding no single model leads across all languages. The post RWS’s TrainAI Launches Benchmark Comparing 70 AI Models Across 30 Languages appeared first on Slator .",
+      "date": "2026-08-27T13:34:18.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
+    {
+      "title": "Appen Shares Fall on Continued Losses as China Business Booms",
+      "link": "https://slator.com/appen-h1-2026-earnings-china-growth/",
+      "description": "Data-for-AI provider Appen narrowed its net loss to USD 4.5m, with China driving its 17.5% revenue growth. The post Appen Shares Fall on Continued Losses as China Business Booms appeared first on Slator .",
+      "date": "2026-08-27T11:31:57.000Z",
+      "image": "",
+      "cat": "Industry",
+      "source": "Slator",
+      "source_display": "Slator",
+      "color": "#1a73e8"
+    },
     {
       "title": "SEO translation vs. SEO localization",
       "link": "https://poeditor.com/blog/seo-translation-vs-seo-localization/",
@@ -310,17 +354,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "CJI Surya Kant Signs India-Russia Supreme Court MoU for Court Technology and Judicial Training - Indianmasterminds",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR3pFY0JtM1MzQ2lYSFFFTXZWZ3phZnM5Z251N2NyRDJvMHBaaVBlQXRyeVdvT2lnQmFWY2FZUGxhbzlUNXpLNDFTb0tPMnJNaVIzbmdFb2RwUXdEb01FOERTSFhJWjhSUHFKMDVlbFRMaExEX1Zhek9KVXFXMWo0RzQtN1N2VmFORXB2bnhFQnNyNXJsaDQxa0I0Z2NqazVjbklzUUlBV1BuTldwYzlQRzRpamJWZENxSUpr?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR3pFY0JtM1MzQ2lYSFFFTXZWZ3phZnM5Z251N2NyRDJvMHBaaVBlQXRyeVdvT2lnQmFWY2FZUGxhbzlUNXpLNDFTb0tPMnJNaVIzbmdFb2RwUXdEb01FOERTSFhJWjhSUHFKMDVlbFRMaExEX1Zhek9KVXFXMWo0RzQtN1N2VmFORXB2bnhFQnNyNXJsaDQxa0I0Z2NqazVjbklzUUlBV1BuTldwYzlQRzRpamJWZENxSUpr?oc=5\" target=\"_blank\"&gt;CJI Surya Kant Signs India-Russia Supreme Court MoU for Court Technology and Judicial Training&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Indianmasterminds&lt;/font&gt;",
-      "date": "2026-06-24T07:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "2026 Board Election Results:ELIA Welcomes Alp Dilgen, Diego Cresceri andNuria Castro Gay to the Board",
       "link": "https://elia-association.org/2026/06/2026-board-election-results-elia-welcomes-alp-dilgen-diego-cresceri-and-nuria-castro-gay-to-the-board/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=2026-board-election-results-elia-welcomes-alp-dilgen-diego-cresceri-and-nuria-castro-gay-to-the-board",
       "description": "",
@@ -618,21 +651,21 @@
       "color": "#4285F4"
     },
     {
-      "title": "Samsung Securities updates mPOP overseas stock screens and adds AI translation services - CHOSUNBIZ - Chosunbiz",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdVlna21zRFNldmVKYWc1cGV2NDFBSXBwcGFrc2dnYjRLbHAzLVNMSFZHOE81eUpXSUwxUUk4TkhsSUk2UFpfTVJ6Sl9oYXpaNS0wd1ViQlIyd1lvZ1dZVHQydlg4eVg5SF9pLWhLSmM3aFVEckk0Sm16ejBhRVI1dtIBlAFBVV95cUxQcFcyYkZZbmxEYmo1dGRpVW1GZng3Z05MOEdTNVppMTdvNjljUVZMS3pQTFJTWlZMRWsyc3g5TFo5V2lXUXBNMEd6YzVfZHpMZ3hxN2ZEeF9uWFJFSkdacXJ6TVJiUXpmNmtMS25EMkYwWk5uRm1zbHBZdUd4WTR4NVlYODRBQ0lGb1UtLU5fOTZvSGpm?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNdVlna21zRFNldmVKYWc1cGV2NDFBSXBwcGFrc2dnYjRLbHAzLVNMSFZHOE81eUpXSUwxUUk4TkhsSUk2UFpfTVJ6Sl9oYXpaNS0wd1ViQlIyd1lvZ1dZVHQydlg4eVg5SF9pLWhLSmM3aFVEckk0Sm16ejBhRVI1dtIBlAFBVV95cUxQcFcyYkZZbmxEYmo1dGRpVW1GZng3Z05MOEdTNVppMTdvNjljUVZMS3pQTFJTWlZMRWsyc3g5TFo5V2lXUXBNMEd6YzVfZHpMZ3hxN2ZEeF9uWFJFSkdacXJ6TVJiUXpmNmtMS25EMkYwWk5uRm1zbHBZdUd4WTR4NVlYODRBQ0lGb1UtLU5fOTZvSGpm?oc=5\" target=\"_blank\"&gt;Samsung Securities updates mPOP overseas stock screens and adds AI translation services - CHOSUNBIZ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Chosunbiz&lt;/font&gt;",
-      "date": "2025-09-29T07:00:00.000Z",
+      "title": "AI Killed My Job: Translators - bloodinthemachine.com",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5falZqNmdvcF83bU8wRUtrMTVHb0lWa1R3YzhwUy1tbXVwdnFfWUxsdjNSTkk5VEZSVkhfc3JZNy1fcHMwQjFrMW9QaE1vQVBPU2JaTGhDTW9Ub0dPX1pSTGFpVENBRnI0WDkyVlN3SXRBQQ?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5falZqNmdvcF83bU8wRUtrMTVHb0lWa1R3YzhwUy1tbXVwdnFfWUxsdjNSTkk5VEZSVkhfc3JZNy1fcHMwQjFrMW9QaE1vQVBPU2JaTGhDTW9Ub0dPX1pSTGFpVENBRnI0WDkyVlN3SXRBQQ?oc=5\" target=\"_blank\"&gt;AI Killed My Job: Translators&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;bloodinthemachine.com&lt;/font&gt;",
+      "date": "2025-08-21T07:00:00.000Z",
       "image": "",
-      "cat": "Financial",
+      "cat": "Legal",
       "source": "Google News",
       "source_display": "Google News",
       "color": "#4285F4"
     },
     {
-      "title": "AI Killed My Job: Translators - bloodinthemachine.com",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5falZqNmdvcF83bU8wRUtrMTVHb0lWa1R3YzhwUy1tbXVwdnFfWUxsdjNSTkk5VEZSVkhfc3JZNy1fcHMwQjFrMW9QaE1vQVBPU2JaTGhDTW9Ub0dPX1pSTGFpVENBRnI0WDkyVlN3SXRBQQ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5falZqNmdvcF83bU8wRUtrMTVHb0lWa1R3YzhwUy1tbXVwdnFfWUxsdjNSTkk5VEZSVkhfc3JZNy1fcHMwQjFrMW9QaE1vQVBPU2JaTGhDTW9Ub0dPX1pSTGFpVENBRnI0WDkyVlN3SXRBQQ?oc=5\" target=\"_blank\"&gt;AI Killed My Job: Translators&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;bloodinthemachine.com&lt;/font&gt;",
-      "date": "2025-08-21T07:00:00.000Z",
+      "title": "Top 4 Italian Translation Services In 2025 (Reviews) - AWISEE.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWYWtiTVJBZWNBOHl4Y19CdXBzcXRXRVdGSERnTkd3SktMb1lRZDNldG1McGRmdk52MWZFUjc3TzNIRldLLTQxTThSc0hvMWIyNjdFdmExR1FNV2l0Q1c5eEVjcw?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWYWtiTVJBZWNBOHl4Y19CdXBzcXRXRVdGSERnTkd3SktMb1lRZDNldG1McGRmdk52MWZFUjc3TzNIRldLLTQxTThSc0hvMWIyNjdFdmExR1FNV2l0Q1c5eEVjcw?oc=5\" target=\"_blank\"&gt;Top 4 Italian Translation Services In 2025 (Reviews)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;AWISEE.com&lt;/font&gt;",
+      "date": "2025-08-18T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
       "source": "Google News",
@@ -708,7 +741,7 @@
     {
       "title": "¿Quieres trabajar como traductor jurado en España? Todo lo que debes saber en 2025 - Law&amp;Trends",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemh0d18yZkd4Y2pyNTd2a3JiNV8tblJaOG9qcXVYQjZSalNmaURSMlotRnpuMHRZV01MSXdiODhJRTFwYUpWNG9KcG5KWE5iNXRJQ2FpZXVGRHZMd2Q4ZE5hMDBKZ2p0VlhkY25BOWxDR3RsMjl1elFQbzlpUDNCR2w4ek1UbE5zQ1puTXpYbFBuY1pMWUltOFp5TXlFUlV0YXhUb05jZWlEYU5ZaFFKZzVDb0UxNW9HeHBvUkRKbFBscWJsbXN0clZULUhjdVN1WHp2ZndoTWJIdw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemh0d18yZkd4Y2pyNTd2a3JiNV8tblJaOG9qcXVYQjZSalNmaURSMlotRnpuMHRZV01MSXdiODhJRTFwYUpWNG9KcG5KWE5iNXRJQ2FpZXVGRHZMd2Q4ZE5hMDBKZ2p0VlhkY25BOWxDR3RsMjl1elFQbzlpUDNCR2w4ek1UbE5zQ1puTXpYbFBuY1pMWUltOFp5TXlFUlV0YXhUb05jZWlEYU5ZaFFKZzVDb0UxNW9HeHBvUkRKbFBscWJsbXN0clZULUhjdVN1WHp2ZndoTWJIdw?oc=5\" target=\"_blank\"&gt;¿Quieres trabajar como traductor jurado en Espa��a? Todo lo que debes saber en 2025&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Law&amp;Trends&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemh0d18yZkd4Y2pyNTd2a3JiNV8tblJaOG9qcXVYQjZSalNmaURSMlotRnpuMHRZV01MSXdiODhJRTFwYUpWNG9KcG5KWE5iNXRJQ2FpZXVGRHZMd2Q4ZE5hMDBKZ2p0VlhkY25BOWxDR3RsMjl1elFQbzlpUDNCR2w4ek1UbE5zQ1puTXpYbFBuY1pMWUltOFp5TXlFUlV0YXhUb05jZWlEYU5ZaFFKZzVDb0UxNW9HeHBvUkRKbFBscWJsbXN0clZULUhjdVN1WHp2ZndoTWJIdw?oc=5\" target=\"_blank\"&gt;¿Quieres trabajar como traductor jurado en España? Todo lo que debes saber en 2025&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Law&amp;Trends&lt;/font&gt;",
       "date": "2025-05-07T07:00:00.000Z",
       "image": "",
       "cat": "Spain",
@@ -761,9 +794,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance - the University of South Florida",
+      "title": "Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance - University of South Florida",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5\" target=\"_blank\"&gt;Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;the University of South Florida&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBjMll3bE1BZzBnUG5BZ3BYVDQ0aE82bjZGNmowRFJrLU9SUlFZWVNXUktCd3pkUHl4RUZrVHE0emlRd0pVbUpnS1Z0WTVUaHlxRjJBRW16QUlGSGdrb2tNSzZjLTB6dE9UZS05Q3ZMYmZ6aUdqX3JZ?oc=5\" target=\"_blank\"&gt;Living a dream: Recent USF alum Nicolas Castillo recalls how his time at USF has prepared him for a career in finance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;University of South Florida&lt;/font&gt;",
       "date": "2025-02-18T08:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -858,6 +891,17 @@
       "source": "Unbabel",
       "source_display": "Unbabel",
       "color": "#00a3ff"
+    },
+    {
+      "title": "Election Commission to provide translation services for future elections| The week in politics - The Commercial Appeal",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOXzBYTm9JMmkwNnNJZFhWNDdyTi1lbi1vLV8tY3RCVTBFNG1ReDdfbVFCRzI0a3BhV1UyY0tGd0Zpa09qZzlST3VoclpXcTdzbzJRdEk5MmZyVE5uZE10d0NrMWROdzZISzNuc1g5V0dHY0hYOFJ6bmRvZWF6aV81RFFxTjl2ektDaUxCdEFBaUQ1djkzclpGdUMwQnJGNUpSZ2Y2dXhadWVIUDdva0RXd1FYMVNIdE9jY2dDdU40NFFXWWJZZ1JDVU1iTmptU2EzWVBzYmdtOVJwS3hXYjZhY29QMnhTSWI0?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxOXzBYTm9JMmkwNnNJZFhWNDdyTi1lbi1vLV8tY3RCVTBFNG1ReDdfbVFCRzI0a3BhV1UyY0tGd0Zpa09qZzlST3VoclpXcTdzbzJRdEk5MmZyVE5uZE10d0NrMWROdzZISzNuc1g5V0dHY0hYOFJ6bmRvZWF6aV81RFFxTjl2ektDaUxCdEFBaUQ1djkzclpGdUMwQnJGNUpSZ2Y2dXhadWVIUDdva0RXd1FYMVNIdE9jY2dDdU40NFFXWWJZZ1JDVU1iTmptU2EzWVBzYmdtOVJwS3hXYjZhY29QMnhTSWI0?oc=5\" target=\"_blank\"&gt;Election Commission to provide translation services for future elections| The week in politics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Commercial Appeal&lt;/font&gt;",
+      "date": "2024-10-21T07:00:00.000Z",
+      "image": "",
+      "cat": "Financial",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
     },
     {
       "title": "Herramientas de traducción jurídica: la clave para la comunicación global en el ámbito legal - Economist &amp; Jurist",
@@ -1113,9 +1157,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "ECJ rules Hungary can't punish judge for seeking EU guidance - dw.com",
+      "title": "ECJ rules Hungary can't punish judge for seeking EU guidance - DW.com",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5\" target=\"_blank\"&gt;ECJ rules Hungary can't punish judge for seeking EU guidance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;dw.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPRllBRTJKbzNzYjNXQ1hUZlJ0eVI4S1Z4SFl5RU9mWTM3dGxSaFZsSUJDUGFfWlFGNk4tVVJPdTBkTGllRzM2LWs0UTVaLUQ2WFoxYWRDaUlfOVRGakZvaFFEa1JPNnZIRDRFSmZ6MjlzNmprUXlKcGtGYUNTN3hsM0hMN04yTUhUOGFBMThqNE0wT2ZFZnRXaVh4Y1pOTU3SAZ8BQVVfeXFMTUxuc293UExrcUY1ci1lb1FUV3pXdVVlVW9vUXk5eWxnbXFfMVNVTjc2TkR1WENNMDdRajFLelZESkIyaDduSlRiV0FkLUwzZlU2dFN5cjBGV1ZTdUJUTVJEMnJjcF8yaUdYVXk0WC1BWDdSdW5nMi1nLXJOZWxBY3BvbmJ5cm5yeVE5VE1UUWd0Qm5JU3hQWDRCN0k2Z2xV?oc=5\" target=\"_blank\"&gt;ECJ rules Hungary can't punish judge for seeking EU guidance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;DW.com&lt;/font&gt;",
       "date": "2021-11-23T08:00:00.000Z",
       "image": "",
       "cat": "EU",
@@ -1245,8 +1289,9 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-08-28T18:30:52.848Z",
+  "generated": "2026-08-29T06:30:53.015Z",
   "sources": [
+    "Slator",
     "POEditor",
     "Google News",
     "Welocalize",
@@ -1255,9 +1300,9 @@
     "TWB"
   ],
   "categories": {
+    "Industry": 20,
     "Tech": 12,
     "Legal": 27,
-    "Industry": 16,
     "Spain": 23,
     "EU": 15,
     "Financial": 14,
