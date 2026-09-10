@@ -1,6 +1,17 @@
 {
-  "count": 117,
+  "count": 116,
   "articles": [
+    {
+      "title": "How to localize customer experience (CX)",
+      "link": "https://poeditor.com/blog/how-to-localize-customer-experience-cx/",
+      "description": "Customer experience (CX) is what dictates whether you brand takes root in a new region. CX is the sum of every perception and interaction a person has with your brand across their entire journey. Don&#8217;t think it&#8217;s just your user interface or marketing copy. Trust is deeply cultural, so when you localize, you&#8217;ll want to [&#8230;] The post How to localize customer experience (CX) appeared first on POEditor Blog . ]]>",
+      "date": "2026-09-10T06:00:00.000Z",
+      "image": "",
+      "cat": "Tech",
+      "source": "POEditor",
+      "source_display": "POEditor",
+      "color": "#512da8"
+    },
     {
       "title": "Boostlingo Names Barnaby Dorfman Chief Product and Technology Officer, Promotes Merrie Wallace to President",
       "link": "https://slator.com/boostlingo-promotes-barnaby-dorfman-and-merrie-wallace/",
@@ -134,32 +145,10 @@
       "color": "#512da8"
     },
     {
-      "title": "About the localization associate role",
-      "link": "https://poeditor.com/blog/localization-associate-role/",
-      "description": "If you enjoy working with languages, a career as a localization associate could be a good fit for you. More and more companies are going global, so there will always be a demand for professionals who can support localization. As a localization associate, you would play an important role in making sure products, websites, apps, [&#8230;] The post About the localization associate role appeared first on POEditor Blog . ]]>",
-      "date": "2026-08-24T06:00:00.000Z",
-      "image": "",
-      "cat": "Tech",
-      "source": "POEditor",
-      "source_display": "POEditor",
-      "color": "#512da8"
-    },
-    {
-      "title": "AI Takes the Easy Translation Jobs, but Certified Translation Proves Harder to Replace - newsblaze.com",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeWRtQVdhRlN0MTRabTk4RmJzXy1NRWtFeDJyZ29sb2NiMVZFbDFaMGVFM19mVll0ME1vUXFValg1WU1XZjRKaWVYZElBUjBEMkZsN0FjRnhEOVgwVlh3TGlab00yZWQ0MklKQUNtNWNqOGZVZTN1YWRxTmJFWVhTX2s1NHd2TDRhXzlKMF9HUmcwOWhOUGFrb1FR?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNeWRtQVdhRlN0MTRabTk4RmJzXy1NRWtFeDJyZ29sb2NiMVZFbDFaMGVFM19mVll0ME1vUXFValg1WU1XZjRKaWVYZElBUjBEMkZsN0FjRnhEOVgwVlh3TGlab00yZWQ0MklKQUNtNWNqOGZVZTN1YWRxTmJFWVhTX2s1NHd2TDRhXzlKMF9HUmcwOWhOUGFrb1FR?oc=5\" target=\"_blank\"&gt;AI Takes the Easy Translation Jobs, but Certified Translation Proves Harder to Replace&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;newsblaze.com&lt;/font&gt;",
-      "date": "2026-08-22T13:21:28.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
-      "title": "Kantor Penerjemah Tersumpah Expands Multilingual Certified Translation and Legalization Services - TMX Newsfile",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSEFRRUZibTRsYlJ5TUhnZjYzS0l5Mnoybml5d2hnUVYzMzBtbFdsT0s0aTV2RnZYdUFHc3A2YVAtV2R0N041NkdQOHdNYU9odVh4bHpOM2dseG96RGtwOXBiSmsyWmtXQXBqb0Z5WE9KclJ5dW4yZ2tac1puV09NTk5YdG1TZ09VQXUybE1FSERUbFMwNEhsQXBFNzNqVjRQeHBZUXpha0s5akNiZjlabjhRbVhhVGozYlZ5UC10MzhKOG5GOW04UUFEMzc0ZWtTc0t0cXlyMA?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSEFRRUZibTRsYlJ5TUhnZjYzS0l5Mnoybml5d2hnUVYzMzBtbFdsT0s0aTV2RnZYdUFHc3A2YVAtV2R0N041NkdQOHdNYU9odVh4bHpOM2dseG96RGtwOXBiSmsyWmtXQXBqb0Z5WE9KclJ5dW4yZ2tac1puV09NTk5YdG1TZ09VQXUybE1FSERUbFMwNEhsQXBFNzNqVjRQeHBZUXpha0s5akNiZjlabjhRbVhhVGozYlZ5UC10MzhKOG5GOW04UUFEMzc0ZWtTc0t0cXlyMA?oc=5\" target=\"_blank\"&gt;Kantor Penerjemah Tersumpah Expands Multilingual Certified Translation and Legalization Services&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;TMX Newsfile&lt;/font&gt;",
-      "date": "2026-08-21T07:00:00.000Z",
+      "title": "Kantor Penerjemah Tersumpah Expands Multilingual Certified Translation and Legalization Services - Macau Business",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObmdNdDhqVlJxamFadlRXSXVmcVE1Nk8xSWgzbUhZampKLUR6UGZmQjhUTzFxTXVCNmNPU0VwOUV1TVR6U2tibm0wcGRKbTVLMHpKbTlDTmdZX0dCNFMwMG5wSVJRaENaSk1nSkZkX3l2OXFWZWJBRjI3ZTlOQ0QzaktnTmNraGpPR3E4S3JjbnkzZndPamEyeG1DOE9JTU02RlNUSFZEMlF6NDNpSXBHWTdFZDYwZHlKNTR2dkljZzc?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxObmdNdDhqVlJxamFadlRXSXVmcVE1Nk8xSWgzbUhZampKLUR6UGZmQjhUTzFxTXVCNmNPU0VwOUV1TVR6U2tibm0wcGRKbTVLMHpKbTlDTmdZX0dCNFMwMG5wSVJRaENaSk1nSkZkX3l2OXFWZWJBRjI3ZTlOQ0QzaktnTmNraGpPR3E4S3JjbnkzZndPamEyeG1DOE9JTU02RlNUSFZEMlF6NDNpSXBHWTdFZDYwZHlKNTR2dkljZzc?oc=5\" target=\"_blank\"&gt;Kantor Penerjemah Tersumpah Expands Multilingual Certified Translation and Legalization Services&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Macau Business&lt;/font&gt;",
+      "date": "2026-08-22T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
       "source": "Google News",
@@ -209,17 +198,6 @@
       "source": "Welocalize",
       "source_display": "Welocalize",
       "color": "#0077b6"
-    },
-    {
-      "title": "Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales - Diario de Huelva",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd2dlZ2JnLVRsb3ZoWVM5UHZKZnBmY2FQc2ItM3RfVjdjbDFWWURoOFp2YlBESEllYkdpcEJFNjV4SWhoQ2pNQVM4Y2xWcjRLMlRIT1JnLUotMHlGZW1sa3BYdGFuYmdYYTdwOVlCUHlOUzZfbU1CNi04S3JzNUR0aE1UbmdtUm9ZY1FFSkJXTEtoUE1NS1lPNVNmbGNBUHVVcFhld2ZQNkU2VkUxVVAwZlRodkZmQXhfN2hQOHY2SlZCWTVua1JPZ1RGVHVzMjFIbFVaaVFVbnFEZThxSnZhVTlVTTJmaGxfN1NVbnZSbV9pMXNWUU4tOHI5VnZaRVXSAYQCQVVfeXFMTU93c3kzc1BFbUtNaGd5bTJpTmRXTjBSMi1lY0xiRm13S2ZHaE1rN2ZQU0J5SlZselNTMGh4Z0k5MDBVMUZBUERXMEp4anlFS2Zick9xVVFxeVN6NWxjUGtwWndmTGxtUExEU1BKb2RpZUlVMlNYTXBXcEJmYTNLaGJac1ZPUVYwci1pWENta0FwcEZPam84cE56Z0JMdkZ3WTBtNjMzTVg5ZHZwNGJ4VkRUTkZYWktpUFpjN3E4UVNPVUhHMG4tTk1wRFBFVzQ3UFQ2MVlScU92N0k0bjdnZnFBS0dYdW80Zm9RcWgwM1hRMjYweGdhNHFMTmVQU0FlczNrd1E?oc=5\" target=\"_blank\"&gt;Hacer negocios en otro idioma: por qué las empresas siguen contratando intérpretes y traductores profesionales&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Diario de Huelva&lt;/font&gt;",
-      "date": "2026-08-07T08:24:09.000Z",
-      "image": "",
-      "cat": "Spain",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
     },
     {
       "title": "+16 Points Closer: What ChrF Means for Your Workflow",
@@ -310,10 +288,10 @@
       "color": "#2a9d8f"
     },
     {
-      "title": "Espresso Translations Cements Position as the Best Translation Agency in UK with Expanded Certified Translation Services in London - Pressat.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOa2pYV3FsWGNWU0hlRkxrSjhfVFBjTWFIM0xqWmxtcDZXRldEa0F6dlR5U2xXMUs2bUN2LW5ld2ZRN3A5YWVOVVcyYTlPYzR1M0dPU3I3Z1NPbGpqRjdYVjk5OEVEU2w2N2ZnUG5nVnJBV285ei0zOUZmTnlRVW1hS3dpMWpSVloyeE9pd0FqdTU3bVlTa09uS3ZLWE9ITlB0eUp1Q2hwdDBhc2hyZEJDTG5kS2ozMTI5UnFVaGJ2NGgxMi1IREdLVHo5aElzbi12U3BuN0ZXVUZ3bl9TdC1VcVZ5NXcwbXFobGh5bWliN2VxM1dBcmFTTjVHVDRKZnI3ZHp1SWJfYklTU194WjhzaU9OUmdXUEozVXlZYklPME8?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAJBVV95cUxOa2pYV3FsWGNWU0hlRkxrSjhfVFBjTWFIM0xqWmxtcDZXRldEa0F6dlR5U2xXMUs2bUN2LW5ld2ZRN3A5YWVOVVcyYTlPYzR1M0dPU3I3Z1NPbGpqRjdYVjk5OEVEU2w2N2ZnUG5nVnJBV285ei0zOUZmTnlRVW1hS3dpMWpSVloyeE9pd0FqdTU3bVlTa09uS3ZLWE9ITlB0eUp1Q2hwdDBhc2hyZEJDTG5kS2ozMTI5UnFVaGJ2NGgxMi1IREdLVHo5aElzbi12U3BuN0ZXVUZ3bl9TdC1VcVZ5NXcwbXFobGh5bWliN2VxM1dBcmFTTjVHVDRKZnI3ZHp1SWJfYklTU194WjhzaU9OUmdXUEozVXlZYklPME8?oc=5\" target=\"_blank\"&gt;Espresso Translations Cements Position as the Best Translation Agency in UK with Expanded Certified Translation Services in London&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Pressat.co.uk&lt;/font&gt;",
-      "date": "2026-06-25T07:00:00.000Z",
+      "title": "CJI Surya Kant Signs India-Russia Supreme Court MoU for Court Technology and Judicial Training - Indianmasterminds",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR3pFY0JtM1MzQ2lYSFFFTXZWZ3phZnM5Z251N2NyRDJvMHBaaVBlQXRyeVdvT2lnQmFWY2FZUGxhbzlUNXpLNDFTb0tPMnJNaVIzbmdFb2RwUXdEb01FOERTSFhJWjhSUHFKMDVlbFRMaExEX1Zhek9KVXFXMWo0RzQtN1N2VmFORXB2bnhFQnNyNXJsaDQxa0I0Z2NqazVjbklzUUlBV1BuTldwYzlQRzRpamJWZENxSUpr?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR3pFY0JtM1MzQ2lYSFFFTXZWZ3phZnM5Z251N2NyRDJvMHBaaVBlQXRyeVdvT2lnQmFWY2FZUGxhbzlUNXpLNDFTb0tPMnJNaVIzbmdFb2RwUXdEb01FOERTSFhJWjhSUHFKMDVlbFRMaExEX1Zhek9KVXFXMWo0RzQtN1N2VmFORXB2bnhFQnNyNXJsaDQxa0I0Z2NqazVjbklzUUlBV1BuTldwYzlQRzRpamJWZENxSUpr?oc=5\" target=\"_blank\"&gt;CJI Surya Kant Signs India-Russia Supreme Court MoU for Court Technology and Judicial Training&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Indianmasterminds&lt;/font&gt;",
+      "date": "2026-06-24T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
       "source": "Google News",
@@ -343,21 +321,10 @@
       "color": "#4285F4"
     },
     {
-      "title": "NEPSE sees double-digit decline for 3 consecutive days - ekantipur.com",
+      "title": "NEPSE sees double-digit decline for 3 consecutive days - Ekantipur",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkd6NFZ2S0xmVnBNY0h4b3hmMjZEUkZjRzlpVG1ETjNuZlhEZ2N4dUNRWTdkZ3BsOEQyb3Q3T0Z3eGJ3YTJ3SjU2YUgtb0NKb3MwbGIzdTJfVE00TDk0OTV6U3J1U0tTa0pnWHZ5NHNyOWw5VllSSmx0cmo3LXVSQVJyem53bHQ5VERadzdSai1pTFhyS1RKaEpvaGlpMGJsQXVHVTRaTm1TYlpXZkRV?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkd6NFZ2S0xmVnBNY0h4b3hmMjZEUkZjRzlpVG1ETjNuZlhEZ2N4dUNRWTdkZ3BsOEQyb3Q3T0Z3eGJ3YTJ3SjU2YUgtb0NKb3MwbGIzdTJfVE00TDk0OTV6U3J1U0tTa0pnWHZ5NHNyOWw5VllSSmx0cmo3LXVSQVJyem53bHQ5VERadzdSai1pTFhyS1RKaEpvaGlpMGJsQXVHVTRaTm1TYlpXZkRV?oc=5\" target=\"_blank\"&gt;NEPSE sees double-digit decline for 3 consecutive days&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ekantipur.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkd6NFZ2S0xmVnBNY0h4b3hmMjZEUkZjRzlpVG1ETjNuZlhEZ2N4dUNRWTdkZ3BsOEQyb3Q3T0Z3eGJ3YTJ3SjU2YUgtb0NKb3MwbGIzdTJfVE00TDk0OTV6U3J1U0tTa0pnWHZ5NHNyOWw5VllSSmx0cmo3LXVSQVJyem53bHQ5VERadzdSai1pTFhyS1RKaEpvaGlpMGJsQXVHVTRaTm1TYlpXZkRV?oc=5\" target=\"_blank\"&gt;NEPSE sees double-digit decline for 3 consecutive days&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Ekantipur&lt;/font&gt;",
       "date": "2026-06-08T07:00:00.000Z",
-      "image": "",
-      "cat": "Financial",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
-      "title": "बजेट ०८३/८४: Residential school to be started in Chitwan for Chepang community - ekantipur.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNXBpdk5MMEZlUVg3blRlcFpXLS1yYWlmeFU0UXBPVF9EdUpURG1Hek83U0czU0pkU1paeUlwOURWcDdDLUVFSUNfUkxzSzZOcnA2WHVyS08ydzdmekl1Q0Q0czd6aVF6eGRIaWVCazJta25LajBuemRYYkFjTXlHeEcta2NGWDZLSGY5dkk0YkU0cHVycUhZQWx6azBNMFhzNFBCV2hLVTlKMm82THdNRkQ5STV1c0FpbWU0?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNXBpdk5MMEZlUVg3blRlcFpXLS1yYWlmeFU0UXBPVF9EdUpURG1Hek83U0czU0pkU1paeUlwOURWcDdDLUVFSUNfUkxzSzZOcnA2WHVyS08ydzdmekl1Q0Q0czd6aVF6eGRIaWVCazJta25LajBuemRYYkFjTXlHeEcta2NGWDZLSGY5dkk0YkU0cHVycUhZQWx6azBNMFhzNFBCV2hLVTlKMm82THdNRkQ5STV1c0FpbWU0?oc=5\" target=\"_blank\"&gt;बजेट ०८३/८४: Residential school to be started in Chitwan for Chepang community&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ekantipur.com&lt;/font&gt;",
-      "date": "2026-05-29T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
       "source": "Google News",
@@ -387,9 +354,9 @@
       "color": "#2a9d8f"
     },
     {
-      "title": "Government has not prepared a list of industrialists and businessmen to be detained: Finance Minister Wagle - ekantipur.com",
+      "title": "Government has not prepared a list of industrialists and businessmen to be detained: Finance Minister Wagle - Ekantipur",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNalMzWHp3ZjdpOWpOUU54OUV2ZTNwbWYxN2ZCam9IZkhZOEhPc2U5a192anBqSElzeXA2ZFB3MHcwa1U3aW9QeDNxRHVhOFgzSkg2NDRsV0pvWDF5TUpUbVgzei1haGNPdUdSUm9ZZkE3N1F4czJNZVAyOXdlOE84M2lkOWh0b3R1VGgxVnNVdE5xcklFWENSX1lOU2tENDFNTW4yc1hXLWRYc0F3N1VvSG4ta1hoLXVraHZVQ1Y1RnNoZVVUS29PalZNcWk5Ylk2bF9OZ01SckI1V1Z6NUVzUUs5MHRCT1NJMno1bUQzUmlCbGJV?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxNalMzWHp3ZjdpOWpOUU54OUV2ZTNwbWYxN2ZCam9IZkhZOEhPc2U5a192anBqSElzeXA2ZFB3MHcwa1U3aW9QeDNxRHVhOFgzSkg2NDRsV0pvWDF5TUpUbVgzei1haGNPdUdSUm9ZZkE3N1F4czJNZVAyOXdlOE84M2lkOWh0b3R1VGgxVnNVdE5xcklFWENSX1lOU2tENDFNTW4yc1hXLWRYc0F3N1VvSG4ta1hoLXVraHZVQ1Y1RnNoZVVUS29PalZNcWk5Ylk2bF9OZ01SckI1V1Z6NUVzUUs5MHRCT1NJMno1bUQzUmlCbGJV?oc=5\" target=\"_blank\"&gt;Government has not prepared a list of industrialists and businessmen to be detained: Finance Minister Wagle&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ekantipur.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxNalMzWHp3ZjdpOWpOUU54OUV2ZTNwbWYxN2ZCam9IZkhZOEhPc2U5a192anBqSElzeXA2ZFB3MHcwa1U3aW9QeDNxRHVhOFgzSkg2NDRsV0pvWDF5TUpUbVgzei1haGNPdUdSUm9ZZkE3N1F4czJNZVAyOXdlOE84M2lkOWh0b3R1VGgxVnNVdE5xcklFWENSX1lOU2tENDFNTW4yc1hXLWRYc0F3N1VvSG4ta1hoLXVraHZVQ1Y1RnNoZVVUS29PalZNcWk5Ylk2bF9OZ01SckI1V1Z6NUVzUUs5MHRCT1NJMno1bUQzUmlCbGJV?oc=5\" target=\"_blank\"&gt;Government has not prepared a list of industrialists and businessmen to be detained: Finance Minister Wagle&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Ekantipur&lt;/font&gt;",
       "date": "2026-05-09T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -409,9 +376,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Confusion over who pulled Placenames funding as Stormont at loggerheads - Belfast Live",
+      "title": "Confusion over who pulled Placenames funding as Stormont at loggerheads - belfastlive.co.uk",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPelNKMFNlZVl0SEVBMGs5el9FdkxVLXpFWTN6YmEwZndLOEZYLUM3VE1XVGpfeUV2SnZsZll6Q3V4SVVsVlRHM3ZLeDFtV2NpWUZ4T0RsQlVyS09JaldvMmdGWjBUclRWdzJGM0hXYy1ZRGN6blVKdHFIOHVpVFRJRGxKeWVKM3JJYlljcVFwdGxKcElWZmVEbVZB0gGfAUFVX3lxTE1JQ25FcjJ2UkkyQXRqMlQ3azd2RlcyTTh1cGFRa2V0d3J0Wm1UckZrZE9hQjNfYWNPVTNFU2FmNG1wSUctYm9QWk1WTlpPS3BkcjhFU2M0Y1NQUThOQXRGaVdwenVsUzkwclRRVnVwT2xHZDVKQVA1Y3JfQTJHZW5IWE0weVpycnUwN254WlRKWUpLSDFEbi1ISnFxV09xYw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPelNKMFNlZVl0SEVBMGs5el9FdkxVLXpFWTN6YmEwZndLOEZYLUM3VE1XVGpfeUV2SnZsZll6Q3V4SVVsVlRHM3ZLeDFtV2NpWUZ4T0RsQlVyS09JaldvMmdGWjBUclRWdzJGM0hXYy1ZRGN6blVKdHFIOHVpVFRJRGxKeWVKM3JJYlljcVFwdGxKcElWZmVEbVZB0gGfAUFVX3lxTE1JQ25FcjJ2UkkyQXRqMlQ3azd2RlcyTTh1cGFRa2V0d3J0Wm1UckZrZE9hQjNfYWNPVTNFU2FmNG1wSUctYm9QWk1WTlpPS3BkcjhFU2M0Y1NQUThOQXRGaVdwenVsUzkwclRRVnVwT2xHZDVKQVA1Y3JfQTJHZW5IWE0weVpycnUwN254WlRKWUpLSDFEbi1ISnFxV09xYw?oc=5\" target=\"_blank\"&gt;Confusion over who pulled Placenames funding as Stormont at loggerheads&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Belfast Live&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPelNKMFNlZVl0SEVBMGs5el9FdkxVLXpFWTN6YmEwZndLOEZYLUM3VE1XVGpfeUV2SnZsZll6Q3V4SVVsVlRHM3ZLeDFtV2NpWUZ4T0RsQlVyS09JaldvMmdGWjBUclRWdzJGM0hXYy1ZRGN6blVKdHFIOHVpVFRJRGxKeWVKM3JJYlljcVFwdGxKcElWZmVEbVZB0gGfAUFVX3lxTE1JQ25FcjJ2UkkyQXRqMlQ3azd2RlcyTTh1cGFRa2V0d3J0Wm1UckZrZE9hQjNfYWNPVTNFU2FmNG1wSUctYm9QWk1WTlpPS3BkcjhFU2M0Y1NQUThOQXRGaVdwenVsUzkwclRRVnVwT2xHZDVKQVA1Y3JfQTJHZW5IWE0weVpycnUwN254WlRKWUpLSDFEbi1ISnFxV09xYw?oc=5\" target=\"_blank\"&gt;Confusion over who pulled Placenames funding as Stormont at loggerheads&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;belfastlive.co.uk&lt;/font&gt;",
       "date": "2026-05-05T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -440,6 +407,17 @@
       "source": "ELIA",
       "source_display": "ELIA",
       "color": "#2a9d8f"
+    },
+    {
+      "title": "Bahrakhari Golf on April 19 - Ekantipur",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWERTaHZ4VTZIUDl0cW9uVFVjWS1NVkJjSUhMOU1GSm5XUnlFeGxXUFpTMDdkWHhrcS1UOUhCeXZ5WFN1WXViSUJ3Q2YzcmlNUnJsTE5nRk9mNE1UaloycVFFbjdWR0E2R29DZjNDdXcxUHJMWGdwbGlnc0NJSjNKeWQ1NFRTOGNS?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWERTaHZ4VTZIUDl0cW9uVFVjWS1NVkJjSUhMOU1GSm5XUnlFeGxXUFpTMDdkWHhrcS1UOUhCeXZ5WFN1WXViSUJ3Q2YzcmlNUnJsTE5nRk9mNE1UaloycVFFbjdWR0E2R29DZjNDdXcxUHJMWGdwbGlnc0NJSjNKeWQ1NFRTOGNS?oc=5\" target=\"_blank\"&gt;Bahrakhari Golf on April 19&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Ekantipur&lt;/font&gt;",
+      "date": "2026-04-16T07:00:00.000Z",
+      "image": "",
+      "cat": "Financial",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
     },
     {
       "title": "Seven Arguments for Limiting Russmedia’s Reach in European Courts - Tech Policy Press",
@@ -530,6 +508,17 @@
       "color": "#4285F4"
     },
     {
+      "title": "La empresa portuense CBLingua advierte del impacto social de eliminar el certificado de antecedentes penales en la regularización de inmigrantes - diariodecadiz.es",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVhvdFJ5anZRaGNQUHpHZzg4Mnl6c3JDaHJFaWJQb3RHa2UydERYMmVSdGIzUFpmbUFQaVpUem9tT0tlYWFDWkZxQ3h3WjJTSGpjZFRCVEVPMGFPUDNVMEFhZ2tKNTBhaGFFODVmZjV0aWQxeF9HLW1kX0NBV2N3d3d1TmJhSnVKYXRZSW9rek82Y3lrUFEtMVpVYUd1TWhY0gGmAUFVX3lxTE9aMTBXZVJVLWduSXJMNVF5TnJjOXhyRVVyZ21RSzFkaXp3a2VrbkZ1c09oVFlwWlcwdkRsUU5CYkRDdVFsc05ULTMxUTg0cEFxbDRaWFh6amxhMThVb1N1U2dOZ3NtZV9BR1VzSzViWkdBVUdleThnU0FTZ1U5WjMxTXZlZkVKdWRtZHFUdWtGblBIVVliSW9UWW9TT0x3d0xMLWY1cGc?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVhvdFJ5anZRaGNQUHpHZzg4Mnl6c3JDaHJFaWJQb3RHa2UydERYMmVSdGIzUFpmbUFQaVpUem9tT0tlYWFDWkZxQ3h3WjJTSGpjZFRCVEVPMGFPUDNVMEFhZ2tKNTBhaGFFODVmZjV0aWQxeF9HLW1kX0NBV2N3d3d1TmJhSnVKYXRZSW9rek82Y3lrUFEtMVpVYUd1TWhY0gGmAUFVX3lxTE9aMTBXZVJVLWduSXJMNVF5TnJjOXhyRVVyZ21RSzFkaXp3a2VrbkZ1c09oVFlwWlcwdkRsUU5CYkRDdVFsc05ULTMxUTg0cEFxbDRaWFh6amxhMThVb1N1U2dOZ3NtZV9BR1VzSzViWkdBVUdleThnU0FTZ1U5WjMxTXZlZkVKdWRtZHFUdWtGblBIVVliSW9UWW9TT0x3d0xMLWY1cGc?oc=5\" target=\"_blank\"&gt;La empresa portuense CBLingua advierte del impacto social de eliminar el certificado de antecedentes penales en la regularización de inmigrantes&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;diariodecadiz.es&lt;/font&gt;",
+      "date": "2026-02-02T08:00:00.000Z",
+      "image": "",
+      "cat": "Spain",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
       "title": "Tradutema alerta sobre la importancia de la traducción jurada en la regularización de extranjeros - Comunicae",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNHUza2dxejVlWGVwdGNIM21zQUdhRmhXRW9tamZPLUtfUjI0WHBHQ3ZGZFQxeFZoN21sOGFIUnBVLU1jemJBc3YyZmJWWDlva0VmN0FOQU1OdU5fMXJJYUxQZnpWcWpQenBaTHQ4OXE0OHQxaEFJS0RQTUlvZTd2NDVldDg0WDg?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQNHUza2dxejVlWGVwdGNIM21zQUdhRmhXRW9tamZPLUtfUjI0WHBHQ3ZGZFQxeFZoN21sOGFIUnBVLU1jemJBc3YyZmJWWDlva0VmN0FOQU1OdU5fMXJJYUxQZnpWcWpQenBaTHQ4OXE0OHQxaEFJS0RQTUlvZTd2NDVldDg0WDg?oc=5\" target=\"_blank\"&gt;Tradutema alerta sobre la importancia de la traducción jurada en la regularización de extranjeros&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Comunicae&lt;/font&gt;",
@@ -541,9 +530,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Who Offers the Best Certified Translation Services? - newswire.com",
+      "title": "Who Offers the Best Certified Translation Services? - Newswire.com",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSW9IYUlJS0hTMjdLR1FLSUZDTmhMLU5iN0VQbWFmN1l6VEhTQ2E0bUlnT3dpajJST0xMSms2T3VJVmdtUC1aLUdQOUNIbTNBSDJUZ0NfZWJnR1ZxTktWVzkzZTdMemhjS1NSVGNWTmNQZVhUcDdGNVVlT3AwT2gxNlRhX3JsWVE?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQSW9IYUlJS0hTMjdLR1FLSUZDTmhMLU5iN0VQbWFmN1l6VEhTQ2E0bUlnT3dpajJST0xMSms2T3VJVmdtUC1aLUdQOUNIbTNBSDJUZ0NfZWJnR1ZxTktWVzkzZTdMemhjS1NSVGNWTmNQZVhUcDdGNVVlT3AwT2gxNlRhX3JsWVE?oc=5\" target=\"_blank\"&gt;Who Offers the Best Certified Translation Services?&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;newswire.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQSW9IYUlJS0hTMjdLR1FLSUZDTmhMLU5iN0VQbWFmN1l6VEhTQ2E0bUlnT3dpajJST0xMSms2T3VJVmdtUC1aLUdQOUNIbTNBSDJUZ0NfZWJnR1ZxTktWVzkzZTdMemhjS1NSVGNWTmNQZVhUcDdGNVVlT3AwT2gxNlRhX3JsWVE?oc=5\" target=\"_blank\"&gt;Who Offers the Best Certified Translation Services?&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Newswire.com&lt;/font&gt;",
       "date": "2026-01-23T08:00:00.000Z",
       "image": "",
       "cat": "Legal",
@@ -596,9 +585,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Best Translation Services for Official Documents in 2025 (Expert-Verified) - hackernoon.com",
+      "title": "Best Translation Services for Official Documents in 2025 (Expert-Verified) - HackerNoon",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQnZVX2R3RG9PUEFyTlBoQWo1LUZzNl9XQmowejdtZjJOaFlaZ2RSWHNYVnhQZGZaVm9IemFWRm90aE9jVDBJbklHX3Qxb1lQamQwLUg1Zlk2TExzR0FmbS1fMkluM1MxRW5kVFh2TnM3WC1OSEtObjlpbUc3QjJfZEFqalJqZ2tiaU45WWJrY1ZqaG40Q0QwRnc3NA?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOQnZVX2R3RG9PUEFyTlBoQWo1LUZzNl9XQmowejdtZjJOaFlaZ2RSWHNYVnhQZGZaVm9IemFWRm90aE9jVDBJbklHX3Qxb1lQamQwLUg1Zlk2TExzR0FmbS1fMkluM1MxRW5kVFh2TnM3WC1OSEtObjlpbUc3QjJfZEFqalJqZ2tiaU45WWJrY1ZqaG40Q0QwRnc3NA?oc=5\" target=\"_blank\"&gt;Best Translation Services for Official Documents in 2025 (Expert-Verified)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;hackernoon.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOQnZVX2R3RG9PUEFyTlBoQWo1LUZzNl9XQmowejdtZjJOaFlaZ2RSWHNYVnhQZGZaVm9IemFWRm90aE9jVDBJbklHX3Qxb1lQamQwLUg1Zlk2TExzR0FmbS1fMkluM1MxRW5kVFh2TnM3WC1OSEtObjlpbUc3QjJfZEFqalJqZ2tiaU45WWJrY1ZqaG40Q0QwRnc3NA?oc=5\" target=\"_blank\"&gt;Best Translation Services for Official Documents in 2025 (Expert-Verified)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;HackerNoon&lt;/font&gt;",
       "date": "2025-11-26T08:00:00.000Z",
       "image": "",
       "cat": "Legal",
@@ -618,9 +607,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Understand the risks of using AI for legal translation and the importance of a sworn translator for the security and reputation - Leaders League",
+      "title": "Understand the risks of using AI for legal translation and the importance of a sworn translator for the security and reputation - leadersleague.com",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWGtIRnNwUjdGLVgtQ1A5V1l4c1E4Y0pPanF5T1piZVA5akkySVFxTjRrTlpkVkxEVUc5RExLRU9CSGxTWk96Tno0ZEtMaHg1bTV5SDN0dWE4WFV0aTRMV2hLQTFiY29rUmF3a3hTMGo2RkdYT0UxOURydTBVREdqSXdzQkMtdXhuZW14aW1yMXpVVjd5cXRZM3ZGMW15ejlwR2Vfa0xvQ1pNbTRkMDFiY1BwS1BsMEJSNkVRdHdnUk5OTFFzNWlvZEQyZFl1SmNiZGozQm9mRGVmUTNCVWdMVUNfdEMzWWd1MzY2ODkyajNMY1B0NVRiVQ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWGtIRnNwUjdGLVgtQ1A5V1l4c1E4Y0pPanF5T1piZVA5akkySVFxTjRrTlpkVkxEVUc5RExLRU9CSGxTWk96Tno0ZEtMaHg1bTV5SDN0dWE4WFV0aTRMV2hLQTFiY29rUmF3a3hTMGo2RkdYT0UxOURydTBVREdqSXdzQkMtdXhuZW14aW1yMXpVVjd5cXRZM3ZGMW15ejlwR2Vfa0xvQ1pNbTRkMDFiY1BwS1BsMEJSNkVRdHdnUk5OTFFzNWlvZEQyZFl1SmNiZGozQm9mRGVmUTNCVWdMVUNfdEMzWWd1MzY2ODkyajNMY1B0NVRiVQ?oc=5\" target=\"_blank\"&gt;Understand the risks of using AI for legal translation and the importance of a sworn translator for the security and reputation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Leaders League&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWGtIRnNwUjdGLVgtQ1A5V1l4c1E4Y0pPanF5T1piZVA5akkySVFxTjRrTlpkVkxEVUc5RExLRU9CSGxTWk96Tno0ZEtMaHg1bTV5SDN0dWE4WFV0aTRMV2hLQTFiY29rUmF3a3hTMGo2RkdYT0UxOURydTBVREdqSXdzQkMtdXhuZW14aW1yMXpVVjd5cXRZM3ZGMW15ejlwR2Vfa0xvQ1pNbTRkMDFiY1BwS1BsMEJSNkVRdHdnUk5OTFFzNWlvZEQyZFl1SmNiZGozQm9mRGVmUTNCVWdMVUNfdEMzWWd1MzY2ODkyajNMY1B0NVRiVQ?oc=5\" target=\"_blank\"&gt;Understand the risks of using AI for legal translation and the importance of a sworn translator for the security and reputation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;leadersleague.com&lt;/font&gt;",
       "date": "2025-10-15T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
@@ -640,20 +629,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Top 4 Italian Translation Services In 2025 (Reviews) - AWISEE.com",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWYWtiTVJBZWNBOHl4Y19CdXBzcXRXRVdGSERnTkd3SktMb1lRZDNldG1McGRmdk52MWZFUjc3TzNIRldLLTQxTThSc0hvMWIyNjdFdmExR1FNV2l0Q1c5eEVjcw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWYWtiTVJBZWNBOHl4Y19CdXBzcXRXRVdGSERnTkd3SktMb1lRZDNldG1McGRmdk52MWZFUjc3TzNIRldLLTQxTThSc0hvMWIyNjdFdmExR1FNV2l0Q1c5eEVjcw?oc=5\" target=\"_blank\"&gt;Top 4 Italian Translation Services In 2025 (Reviews)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;AWISEE.com&lt;/font&gt;",
-      "date": "2025-08-18T07:00:00.000Z",
-      "image": "",
-      "cat": "Legal",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
-      "title": "A corpus-driven study on legal translation challenges among Arab law students: examining gender and academic level in applied legal linguistics - nature.com",
+      "title": "A corpus-driven study on legal translation challenges among Arab law students: examining gender and academic level in applied legal linguistics - Nature",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGSEx3OFhfLXhpTEZTUnBmZHM2X2hlMy1aSXdQNU5nWm1TQUFraXc5LUZCaUR1eWxmVFFJSUtxZS16MlVvRHVHZ2tpQU1CQVBjZU1paE9OMmdsZ09Xcy00?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGSEx3OFhfLXhpTEZTUnBmZHM2X2hlMy1aSXdQNU5nWm1TQUFraXc5LUZCaUR1eWxmVFFJSUtxZS16MlVvRHVHZ2tpQU1CQVBjZU1paE9OMmdsZ09Xcy00?oc=5\" target=\"_blank\"&gt;A corpus-driven study on legal translation challenges among Arab law students: examining gender and academic level in applied legal linguistics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;nature.com&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGSEx3OFhfLXhpTEZTUnBmZHM2X2hlMy1aSXdQNU5nWm1TQUFraXc5LUZCaUR1eWxmVFFJSUtxZS16MlVvRHVHZ2tpQU1CQVBjZU1paE9OMmdsZ09Xcy00?oc=5\" target=\"_blank\"&gt;A corpus-driven study on legal translation challenges among Arab law students: examining gender and academic level in applied legal linguistics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Nature&lt;/font&gt;",
       "date": "2025-07-09T07:00:00.000Z",
       "image": "",
       "cat": "Legal",
@@ -704,6 +682,17 @@
       "source": "Unbabel",
       "source_display": "Unbabel",
       "color": "#00a3ff"
+    },
+    {
+      "title": "¿Quieres trabajar como traductor jurado en España? Todo lo que debes saber en 2025 - Law&amp;Trends",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemh0d18yZkd4Y2pyNTd2a3JiNV8tblJaOG9qcXVYQjZSalNmaURSMlotRnpuMHRZV01MSXdiODhJRTFwYUpWNG9KcG5KWE5iNXRJQ2FpZXVGRHZMd2Q4ZE5hMDBKZ2p0VlhkY25BOWxDR3RsMjl1elFQbzlpUDNCR2w4ek1UbE5zQ1puTXpYbFBuY1pMWUltOFp5TXlFUlV0YXhUb05jZWlEYU5ZaFFKZzVDb0UxNW9HeHBvUkRKbFBscWJsbXN0clZULUhjdVN1WHp2ZndoTWJIdw?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemh0d18yZkd4Y2pyNTd2a3JiNV8tblJaOG9qcXVYQjZSalNmaURSMlotRnpuMHRZV01MSXdiODhJRTFwYUpWNG9KcG5KWE5iNXRJQ2FpZXVGRHZMd2Q4ZE5hMDBKZ2p0VlhkY25BOWxDR3RsMjl1elFQbzlpUDNCR2w4ek1UbE5zQ1puTXpYbFBuY1pMWUltOFp5TXlFUlV0YXhUb05jZWlEYU5ZaFFKZzVDb0UxNW9HeHBvUkRKbFBscWJsbXN0clZULUhjdVN1WHp2ZndoTWJIdw?oc=5\" target=\"_blank\"&gt;¿Quieres trabajar como traductor jurado en España? Todo lo que debes saber en 2025&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Law&amp;Trends&lt;/font&gt;",
+      "date": "2025-05-07T07:00:00.000Z",
+      "image": "",
+      "cat": "Spain",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
     },
     {
       "title": "Unbabel&#8217;s Latest Releases – Q1 2025",
@@ -871,17 +860,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "GCC Translation Service Market Valuation to Hit US$ - globenewswire.com",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQLTJRSmxqTFllRWZSdG1tOXpoUEduWU5EOUdEZGtYNkJBajNuR2MxS296SHd5N0gyb29RQ2JtNDE5Y3pLU3ozRjRoRFlEQ0hnc0JOWmo4Q3JBc1RySVYzRmw1Z2lIOFRXQXAyNUppYnRPbVVNVFBRLUFDZkN3dmdzZXZpYlRRNWdwa0FvVnlINmtMUmRZOUtFcHlYYy1oVy1QMnNrRnk5eTJndXJ3Z1RveWo2eGY3MHgwSF92TC1nNTZrN0Ewc1dBU0k4bHJnaVNza2d4UmhSVjFaSlNDMG12UQ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxQLTJRSmxqTFllRWZSdG1tOXpoUEduWU5EOUdEZGtYNkJBajNuR2MxS296SHd5N0gyb29RQ2JtNDE5Y3pLU3ozRjRoRFlEQ0hnc0JOWmo4Q3JBc1RySVYzRmw1Z2lIOFRXQXAyNUppYnRPbVVNVFBRLUFDZkN3dmdzZXZpYlRRNWdwa0FvVnlINmtMUmRZOUtFcHlYYy1oVy1QMnNrRnk5eTJndXJ3Z1RveWo2eGY3MHgwSF92TC1nNTZrN0Ewc1dBU0k4bHJnaVNza2d4UmhSVjFaSlNDMG12UQ?oc=5\" target=\"_blank\"&gt;GCC Translation Service Market Valuation to Hit US$&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;globenewswire.com&lt;/font&gt;",
-      "date": "2024-09-30T07:00:00.000Z",
-      "image": "",
-      "cat": "Financial",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "Herramientas de traducción jurídica: la clave para la comunicación global en el ámbito legal - Economist &amp; Jurist",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUGg1ZmUteGVBUE9wdjFrTnJIVHRvZ2ZRQ1ZTQXEwakNWQzR5a1lJY09fd0ZhWUVhbDhvQ1lnLWFBZDgyRXB5R2tla2didXZudGdES3BoN05falFXUmt0bmtqV1pJRDNmQm50ZjVMRnF0WWZXRXBXQnpHTnZYcjFHaWRqUGx5YmVnd1prN0VFT3FQVTJqR3l5N1FTUlpsT2c0STB1TWRjUFZ6RzhtTkhFbUhwYURIQXFoTXFFNXdwbDFLa3EzMW5sZk9IUHVVNHhOSUZVdWtNTEZUdw?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUGg1ZmUteGVBUE9wdjFrTnJIVHRvZ2ZRQ1ZTQXEwakNWQzR5a1lJY09fd0ZhWUVhbDhvQ1lnLWFBZDgyRXB5R2tla2didXZudGdES3BoN05falFXUmt0bmtqV1pJRDNmQm50ZjVMRnF0WWZXRXBXQnpHTnZYcjFHaWRqUGx5YmVnd1prN0VFT3FQVTJqR3l5N1FTUlpsT2c0STB1TWRjUFZ6RzhtTkhFbUhwYURIQXFoTXFFNXdwbDFLa3EzMW5sZk9IUHVVNHhOSUZVdWtNTEZUdw?oc=5\" target=\"_blank\"&gt;Herramientas de traducción jurídica: la clave para la comunicación global en el ámbito legal&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Economist &amp; Jurist&lt;/font&gt;",
@@ -904,9 +882,20 @@
       "color": "#4285F4"
     },
     {
-      "title": "Committee testimony begins for Michigan Voting Rights Act bills - wdet.org",
+      "title": "[Inside Korean Startup Renaissance]⑦ Bering Lab pioneers multilingual AI legal translation services - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSzBFcFJ3aTAzelpETFVHMTNKZ2FiandlaVdqWnVhV3YzTDhMenlDb2duaFQwckdxN3FJM0JjQlFYR1U0N0wwWV9Ud3BHSUd4Qk9IbVVrVkxLcjQzTjlZUkJDTmlJeTJMME1KdnNKNVNjVDFQRjVYNmxDdkpMbE1TOXVKOGFWaTI1?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSzBFcFJ3aTAzelpETFVHMTNKZ2FiandlaVdqWnVhV3YzTDhMenlDb2duaFQwckdxN3FJM0JjQlFYR1U0N0wwWV9Ud3BHSUd4Qk9IbVVrVkxLcjQzTjlZUkJDTmlJeTJMME1KdnNKNVNjVDFQRjVYNmxDdkpMbE1TOXVKOGFWaTI1?oc=5\" target=\"_blank\"&gt;[Inside Korean Startup Renaissance]⑦ Bering Lab pioneers multilingual AI legal translation services&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;조선일보&lt;/font&gt;",
+      "date": "2024-05-11T07:00:00.000Z",
+      "image": "",
+      "cat": "Financial",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
+      "title": "Committee testimony begins for Michigan Voting Rights Act bills - WDET 101.9 FM",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEFiamRWekdIejBtazMzRUN3ajN1Q0ttdnJQS3VwUWd4Mkg2dTVVZVNZYVBlMnc0THJpUlVRblJqRkRGbU1qdDl2cUtoNFFpeEJPa2ZhRWg0WUV1SGJOTTN1SjJrQnhWV1BHOTE1cjhvcWVOT3BxMkc1TmxWSGU0bjNLZzJ0ZThZX21wNlBqcEI3ZDVIV0dJ?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEFiamRWekdIejBtazMzRUN3ajN1Q0ttdnJQS3VwUWd4Mkg2dTVVZVNZYVBlMnc0THJpUlVRblJqRkRGbU1qdDl2cUtoNFFpeEJPa2ZhRWg0WUV1SGJOTTN1SjJrQnhWV1BHOTE1cjhvcWVOT3BxMkc1TmxWSGU0bjNLZzJ0ZThZX21wNlBqcEI3ZDVIV0dJ?oc=5\" target=\"_blank\"&gt;Committee testimony begins for Michigan Voting Rights Act bills&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;wdet.org&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEFiamRWekdIejBtazMzRUN3ajN1Q0ttdnJQS3VwUWd4Mkg2dTVVZVNZYVBlMnc0THJpUlVRblJqRkRGbU1qdDl2cUtoNFFpeEJPa2ZhRWg0WUV1SGJOTTN1SjJrQnhWV1BHOTE1cjhvcWVOT3BxMkc1TmxWSGU0bjNLZzJ0ZThZX21wNlBqcEI3ZDVIV0dJ?oc=5\" target=\"_blank\"&gt;Committee testimony begins for Michigan Voting Rights Act bills&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;WDET 101.9 FM&lt;/font&gt;",
       "date": "2024-05-06T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -959,17 +948,6 @@
       "color": "#4285F4"
     },
     {
-      "title": "Quinto seminario web del ciclo \"Nueve Meses, Nueve Universidades\" - Universidad de Granada",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdGZfczVWRkZHd3Q0YUhWenNWS3MzRXVvc1l4dXYtS0RzZmgxWVp2bEUxNVNpbGZSdkl0VEt6dHpobFZXTDJpUm5rM2lZS3ZqTmN3QlBvbnRSMzlBdFN1UDg2RzM4M0dsN00taTJ2VFBHTGVBZ1VUUjVzcllYdmN5VW9rc3VQT3pNellQZkNCaF9OVjc1cG5ybjVRVUtoZ2M?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxOdGZfczVWRkZHd3Q0YUhWenNWS3MzRXVvc1l4dXYtS0RzZmgxWVp2bEUxNVNpbGZSdkl0VEt6dHpobFZXTDJpUm5rM2lZS3ZqTmN3QlBvbnRSMzlBdFN1UDg2RzM4M0dsN00taTJ2VFBHTGVBZ1VUUjVzcllYdmN5VW9rc3VQT3pNellQZkNCaF9OVjc1cG5ybjVRVUtoZ2M?oc=5\" target=\"_blank\"&gt;Quinto seminario web del ciclo \"Nueve Meses, Nueve Universidades\"&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Universidad de Granada&lt;/font&gt;",
-      "date": "2024-02-20T08:00:00.000Z",
-      "image": "",
-      "cat": "Spain",
-      "source": "Google News",
-      "source_display": "Google News",
-      "color": "#4285F4"
-    },
-    {
       "title": "Multilingualism in International Institutions: The Court of Justice of the European Union - University of Birmingham",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRm43SlFjakdYdUtKaWNrYWk2bWI0RElvNHRwTWk3RWJVVmlybE9LZGlSbk9tVkpPN1hROFZMbnFTRC1DVWUwVURFenlsUC1YMVpOVkJydkh5NE9ObWExNVhwQnRndi1VZVMzOVozZy1Ldlk5dmVicjV2bzlkLTBwTUZ3d1REeTRFRGJKWEQ5SmUwWEdUcUdRMkFsWQ?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNRm43SlFjakdYdUtKaWNrYWk2bWI0RElvNHRwTWk3RWJVVmlybE9LZGlSbk9tVkpPN1hROFZMbnFTRC1DVWUwVURFenlsUC1YMVpOVkJydkh5NE9ObWExNVhwQnRndi1VZVMzOVozZy1Ldlk5dmVicjV2bzlkLTBwTUZ3d1REeTRFRGJKWEQ5SmUwWEdUcUdRMkFsWQ?oc=5\" target=\"_blank\"&gt;Multilingualism in International Institutions: The Court of Justice of the European Union&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;University of Birmingham&lt;/font&gt;",
@@ -1003,9 +981,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Catalan, Basque and Galician are unlikely to become official EU languages, but alternatives to connect with regional language speakers are out there - The Conversation",
+      "title": "Catalan, Basque and Galician are unlikely to become official EU languages, but alternatives to connect with regional language speakers are out there - theconversation.com",
       "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPWFY1NXN6T1pLeDk4NFUzeG9OUFRoWjVIVFFFTnVVQXpZaWswSEp3a1hTTVZzSTRQT2hXWW9RMHYtMWRWLXpUVDdMeHdVOUVMU3pLU1RSQlBieWxZYkNNaVN5N0R1cl9nNXhqNkowTndZVmN5ZmFVQ3JsZXlGYmFZSm9vN0lCS2FWR0ZDem5fa0EzOFdTOXRaVUkySnFWTEZTczVxQzVvTFBjVl96NGZ2VnpPWHY0UnI3VU9fY2hjZVctVkxHdVlCekk1VXhfZzBmV1RnZmxlSDR5VkpzeW83Z21wTGhVelIwa2plWXFvd3ZaLU41QXF1T2tEdDNXZXF5WThka0tVd0VCSV9tUXc?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgJBVV95cUxPWFY1NXN6T1pLeDk4NFUzeG9OUFRoWjVIVFFFTnVVQXpZaWswSEp3a1hTTVZzSTRQT2hXWW9RMHYtMWRWLXpUVDdMeHdVOUVMU3pLU1RSQlBieWxZYkNNaVN5N0R1cl9nNXhqNkowTndZVmN5ZmFVQ3JsZXlGYmFZSm9vN0lCS2FWR0ZDem5fa0EzOFdTOXRaVUkySnFWTEZTczVxQzVvTFBjVl96NGZ2VnpPWHY0UnI3VU9fY2hjZVctVkxHdVlCekk1VXhfZzBmV1RnZmxlSDR5VkpzeW83Z21wTGhVelIwa2plWXFvd3ZaLU41QXF1T2tEdDNXZXF5WThka0tVd0VCSV9tUXc?oc=5\" target=\"_blank\"&gt;Catalan, Basque and Galician are unlikely to become official EU languages, but alternatives to connect with regional language speakers are out there&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;The Conversation&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgJBVV95cUxPWFY1NXN6T1pLeDk4NFUzeG9OUFRoWjVIVFFFTnVVQXpZaWswSEp3a1hTTVZzSTRQT2hXWW9RMHYtMWRWLXpUVDdMeHdVOUVMU3pLU1RSQlBieWxZYkNNaVN5N0R1cl9nNXhqNkowTndZVmN5ZmFVQ3JsZXlGYmFZSm9vN0lCS2FWR0ZDem5fa0EzOFdTOXRaVUkySnFWTEZTczVxQzVvTFBjVl96NGZ2VnpPWHY0UnI3VU9fY2hjZVctVkxHdVlCekk1VXhfZzBmV1RnZmxlSDR5VkpzeW83Z21wTGhVelIwa2plWXFvd3ZaLU41QXF1T2tEdDNXZXF5WThka0tVd0VCSV9tUXc?oc=5\" target=\"_blank\"&gt;Catalan, Basque and Galician are unlikely to become official EU languages, but alternatives to connect with regional language speakers are out there&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;theconversation.com&lt;/font&gt;",
       "date": "2023-09-13T07:00:00.000Z",
       "image": "",
       "cat": "EU",
@@ -1179,7 +1157,7 @@
       "color": "#e76f51"
     },
     {
-      "title": "Oposiciones: cómo y cuándo presentar los méritos - ANPE Canarias",
+      "title": "Oposiciones: cómo y cu��ndo presentar los méritos - ANPE Canarias",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMmdpU1RfMUtsbjd5U2lPVnhnZUZBdTRGV3hfNnFPeEVrVEdodDBNdzVQR0lmNG9CU2tQMUUwQ2hlTko0X2ZsZUFGZUY1SmhJd2dpSU5DVlZJM2hoTVdpWVJkSUdHaDFTZkJkTERZOVB2OHJJeDJTdHpxbHhzS0VwM3Fsa1dINHc3cDJWLWRfeFB0dHlQZ1hBV1lhTGRtRGtIWUhn?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNMmdpU1RfMUtsbjd5U2lPVnhnZUZBdTRGV3hfNnFPeEVrVEdodDBNdzVQR0lmNG9CU2tQMUUwQ2hlTko0X2ZsZUFGZUY1SmhJd2dpSU5DVlZJM2hoTVdpWVJkSUdHaDFTZkJkTERZOVB2OHJJeDJTdHpxbHhzS0VwM3Fsa1dINHc3cDJWLWRfeFB0dHlQZ1hBV1lhTGRtRGtIWUhn?oc=5\" target=\"_blank\"&gt;Oposiciones: cómo y cuándo presentar los méritos&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ANPE Canarias&lt;/font&gt;",
       "date": "2021-07-12T07:00:00.000Z",
@@ -1212,9 +1190,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "In focus: The New York translation services during COVID-19 - un.org",
+      "title": "In focus: The New York translation services during COVID-19 - Welcome to the United Nations",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbWNSZ05ia1Z4dmZGbU1hSFJNRE13WDZBTTdqTk9qTmVheWdMRHpBZzAwWlpvM1NYWkJqN2ZVcU9zZW9oZmNacmxkUmthMW5nSENGS1p6YnNWVnZMcGJLNVhRVjkzNnB6WFFvRE1XQjN4SW8tcW5VdmYzOXZDYUl4RFNWU0RKbVI0UER6ZjN3?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQbWNSZ05ia1Z4dmZGbU1hSFJNRE13WDZBTTdqTk9qTmVheWdMRHpBZzAwWlpvM1NYWkJqN2ZVcU9zZW9oZmNacmxkUmthMW5nSENGS1p6YnNWVnZMcGJLNVhRVjkzNnB6WFFvRE1XQjN4SW8tcW5VdmYzOXZDYUl4RFNWU0RKbVI0UER6ZjN3?oc=5\" target=\"_blank\"&gt;In focus: The New York translation services during COVID-19&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;un.org&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQbWNSZ05ia1Z4dmZGbU1hSFJNRE13WDZBTTdqTk9qTmVheWdMRHpBZzAwWlpvM1NYWkJqN2ZVcU9zZW9oZmNacmxkUmthMW5nSENGS1p6YnNWVnZMcGJLNVhRVjkzNnB6WFFvRE1XQjN4SW8tcW5VdmYzOXZDYUl4RFNWU0RKbVI0UER6ZjN3?oc=5\" target=\"_blank\"&gt;In focus: The New York translation services during COVID-19&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Welcome to the United Nations&lt;/font&gt;",
       "date": "2020-10-12T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -1245,6 +1223,17 @@
       "color": "#4285F4"
     },
     {
+      "title": "Germany Rejects ISO Standard for Legal Translation - Slator",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1YclkwOG9ZZThrYl8wazZRc2VTU0dwT2E0V283eTdXQ3ZDaFNqWjZSTFJWcnFQcEJSTDFxSzM5S3M4Uy1FenB4bjhOTWkzSVhvczQzcV9DQVY4WUZDbE1Wbk1RaEpzanNaelVqekpSYWNselZBc3lMM1pR?oc=5",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE1YclkwOG9ZZThrYl8wazZRc2VTU0dwT2E0V283eTdXQ3ZDaFNqWjZSTFJWcnFQcEJSTDFxSzM5S3M4Uy1FenB4bjhOTWkzSVhvczQzcV9DQVY4WUZDbE1Wbk1RaEpzanNaelVqekpSYWNselZBc3lMM1pR?oc=5\" target=\"_blank\"&gt;Germany Rejects ISO Standard for Legal Translation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
+      "date": "2020-05-06T07:00:00.000Z",
+      "image": "",
+      "cat": "Legal",
+      "source": "Google News",
+      "source_display": "Google News",
+      "color": "#4285F4"
+    },
+    {
       "title": "What It Takes to Be a Lawyer-Linguist at the European Union - Slator",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdngydFI2WWNPTTNOZDljS2c0N0FJLVBiWUF6LTFPamZxbnF3TDI0eFdFeThOY0xlS0dSRUZHWmJ0MUdoallUa3BpZ3lXVnZrVVFSekNRWEEtdEE0Rkx4S01qZDBIeGhmWjdBZER2NF9DRFlHbVlmYWRKR3pVSFZVV1FjNVgyZw?oc=5",
       "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxNdngydFI2WWNPTTNOZDljS2c0N0FJLVBiWUF6LTFPamZxbnF3TDI0eFdFeThOY0xlS0dSRUZHWmJ0MUdoallUa3BpZ3lXVnZrVVFSekNRWEEtdEE0Rkx4S01qZDBIeGhmWjdBZER2NF9DRFlHbVlmYWRKR3pVSFZVV1FjNVgyZw?oc=5\" target=\"_blank\"&gt;What It Takes to Be a Lawyer-Linguist at the European Union&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Slator&lt;/font&gt;",
@@ -1267,9 +1256,9 @@
       "color": "#4285F4"
     },
     {
-      "title": "Team coordinates medical care, translation services and more for international patients - uclahealth.org",
+      "title": "Team coordinates medical care, translation services and more for international patients - UCLA Health",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWGtOWUwwYk9ZYjhjWHFOX0JzZVZ2d3JJbm03bmpOUHdVT3ItMi12TXZwQ3BsMFpsbVB4VFJHTUJ4RkNXSm5BdE01Q0M5VFRqbFcwMlhWbDZmVzVfZ3ZxSlkwT2J6cV9ZNGpZcmtMbmxIMUYwc1BvUDBTUThIMEMxUm5xdzRETXd0dzVOcDBIS0R4YUdTRGtFUXF1dzR5eXBxSURiOERYeWVDZThPeWJRLU96NmwyWXZERHJTVlVaQWpMZWlw?oc=5",
-      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQWGtOWUwwYk9ZYjhjWHFOX0JzZVZ2d3JJbm03bmpOUHdVT3ItMi12TXZwQ3BsMFpsbVB4VFJHTUJ4RkNXSm5BdE01Q0M5VFRqbFcwMlhWbDZmVzVfZ3ZxSlkwT2J6cV9ZNGpZcmtMbmxIMUYwc1BvUDBTUThIMEMxUm5xdzRETXd0dzVOcDBIS0R4YUdTRGtFUXF1dzR5eXBxSURiOERYeWVDZThPeWJRLU96NmwyWXZERHJTVlVaQWpMZWlw?oc=5\" target=\"_blank\"&gt;Team coordinates medical care, translation services and more for international patients&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;uclahealth.org&lt;/font&gt;",
+      "description": "&lt;a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQWGtOWUwwYk9ZYjhjWHFOX0JzZVZ2d3JJbm03bmpOUHdVT3ItMi12TXZwQ3BsMFpsbVB4VFJHTUJ4RkNXSm5BdE01Q0M5VFRqbFcwMlhWbDZmVzVfZ3ZxSlkwT2J6cV9ZNGpZcmtMbmxIMUYwc1BvUDBTUThIMEMxUm5xdzRETXd0dzVOcDBIS0R4YUdTRGtFUXF1dzR5eXBxSURiOERYeWVDZThPeWJRLU96NmwyWXZERHJTVlVaQWpMZWlw?oc=5\" target=\"_blank\"&gt;Team coordinates medical care, translation services and more for international patients&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;UCLA Health&lt;/font&gt;",
       "date": "2019-07-21T07:00:00.000Z",
       "image": "",
       "cat": "Financial",
@@ -1289,22 +1278,22 @@
       "color": "#4285F4"
     }
   ],
-  "generated": "2026-09-09T18:30:55.917Z",
+  "generated": "2026-09-10T06:30:53.199Z",
   "sources": [
+    "POEditor",
     "Slator",
     "Google News",
-    "POEditor",
     "Welocalize",
     "ELIA",
     "Unbabel",
     "TWB"
   ],
   "categories": {
-    "Industry": 20,
-    "Legal": 27,
     "Tech": 12,
-    "Spain": 22,
+    "Industry": 20,
+    "Legal": 26,
     "EU": 15,
+    "Spain": 22,
     "Financial": 15,
     "Global": 6
   }
